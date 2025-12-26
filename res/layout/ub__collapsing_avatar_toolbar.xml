@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_ui.views.CollapsingAvatarToolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/ThemeOverlay.Platform.Dark.Header" android:id="@id/ub__fleet_collapsing_avatar_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UCollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentScrim="?colorPrimary" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_collapseMode="parallax">
+			<com.ubercab.ui.CircleImageView android:layout_gravity="center" android:id="@id/ub__fleet_avatar_view" android:layout_width="@dimen/ui__avatar_large" android:layout_height="@dimen/ui__avatar_large" android:layout_marginTop="?actionBarSize" />
+			<com.ubercab.ui.core.UTextView android:textColor="?brandWhite" android:gravity="center" android:id="@id/ub__fleet_avatar_view_title" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" style="@style/Platform.TextStyle.Title.Normal" />
+		</com.ubercab.ui.core.ULinearLayout>
+		<com.ubercab.ui.core.UToolbar android:theme="@style/Fleet.Toolbar.Theme" android:id="@id/ub__fleet_avatar_toolbar_view" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:layout_collapseMode="pin" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" style="@style/Widget.Platform.Toolbar" />
+		<com.ubercab.ui.commons.widget.BitLoadingIndicator android:layout_gravity="bottom" android:id="@id/toolbar_loading_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:bli_bitColor="?colorAccentInverse" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+	</com.ubercab.ui.core.UCollapsingToolbarLayout>
+</com.ubercab.fleet_ui.views.CollapsingAvatarToolbar>

@@ -1,0 +1,34 @@
+.class public final synthetic Landroidx/core/app/-$$Lambda$a$do8KQVE7HG2b0YiyqA4Tm7pTMD8;
+.super Ljava/lang/Object;
+.source "lambda"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field private final synthetic f$0:Landroid/app/Activity;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroid/app/Activity;)V
+    .registers 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/core/app/-$$Lambda$a$do8KQVE7HG2b0YiyqA4Tm7pTMD8;->f$0:Landroid/app/Activity;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .registers 2
+
+    iget-object v0, p0, Landroidx/core/app/-$$Lambda$a$do8KQVE7HG2b0YiyqA4Tm7pTMD8;->f$0:Landroid/app/Activity;
+
+    invoke-static {v0}, Landroidx/core/app/a;->lambda$do8KQVE7HG2b0YiyqA4Tm7pTMD8(Landroid/app/Activity;)V
+
+    return-void
+.end method

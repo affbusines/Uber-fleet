@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_true_earnings.date_picker.DatePickerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="11142c2d-4f5c">
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorTertiary" android:gravity="center_horizontal" android:id="@id/ub__true_earning_date_picker_hint" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tap_to_view_daily_details" android:textAllCaps="true" uber:analyticsId="ba0cad6d-7de4" style="@style/Platform.TextStyle.Small.Normal" />
+	<com.ubercab.ui.core.UHorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+		<com.ubercab.ui.core.ULinearLayout android:gravity="center_horizontal" android:id="@id/ub__true_earning_dates_container" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	</com.ubercab.ui.core.UHorizontalScrollView>
+</com.ubercab.fleet_true_earnings.date_picker.DatePickerView>

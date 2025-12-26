@@ -1,0 +1,203 @@
+.class public Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field private labelViewModel:Lcom/uber/model/core/generated/types/common/ui_component/LabelViewModel;
+
+.field private metadata:Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListMetadata;
+
+.field private quickActionList:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "+",
+            "Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionV1/QuickActionV1;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 7
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x7
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v5}, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;-><init>(Lcom/uber/model/core/generated/types/common/ui_component/LabelViewModel;Ljava/util/List;Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListMetadata;ILawt/h;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/uber/model/core/generated/types/common/ui_component/LabelViewModel;Ljava/util/List;Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListMetadata;)V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/uber/model/core/generated/types/common/ui_component/LabelViewModel;",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionV1/QuickActionV1;",
+            ">;",
+            "Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListMetadata;",
+            ")V"
+        }
+    .end annotation
+
+    .line 63
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 70
+    iput-object p1, p0, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;->labelViewModel:Lcom/uber/model/core/generated/types/common/ui_component/LabelViewModel;
+
+    .line 76
+    iput-object p2, p0, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;->quickActionList:Ljava/util/List;
+
+    .line 81
+    iput-object p3, p0, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;->metadata:Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListMetadata;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/uber/model/core/generated/types/common/ui_component/LabelViewModel;Ljava/util/List;Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListMetadata;ILawt/h;)V
+    .registers 7
+
+    and-int/lit8 p5, p4, 0x1
+
+    const/4 v0, 0x0
+
+    if-eqz p5, :cond_6
+
+    move-object p1, v0
+
+    :cond_6
+    and-int/lit8 p5, p4, 0x2
+
+    if-eqz p5, :cond_b
+
+    move-object p2, v0
+
+    :cond_b
+    and-int/lit8 p4, p4, 0x4
+
+    if-eqz p4, :cond_10
+
+    move-object p3, v0
+
+    .line 65
+    :cond_10
+    invoke-direct {p0, p1, p2, p3}, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;-><init>(Lcom/uber/model/core/generated/types/common/ui_component/LabelViewModel;Ljava/util/List;Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListMetadata;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public build()Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1;
+    .registers 5
+
+    .line 101
+    iget-object v0, p0, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;->labelViewModel:Lcom/uber/model/core/generated/types/common/ui_component/LabelViewModel;
+
+    .line 102
+    iget-object v1, p0, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;->quickActionList:Ljava/util/List;
+
+    if-eqz v1, :cond_d
+
+    check-cast v1, Ljava/util/Collection;
+
+    invoke-static {v1}, Lkq/y;->a(Ljava/util/Collection;)Lkq/y;
+
+    move-result-object v1
+
+    goto :goto_e
+
+    :cond_d
+    const/4 v1, 0x0
+
+    .line 103
+    :goto_e
+    iget-object v2, p0, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;->metadata:Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListMetadata;
+
+    .line 100
+    new-instance v3, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1;
+
+    invoke-direct {v3, v0, v1, v2}, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1;-><init>(Lcom/uber/model/core/generated/types/common/ui_component/LabelViewModel;Lkq/y;Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListMetadata;)V
+
+    return-object v3
+.end method
+
+.method public labelViewModel(Lcom/uber/model/core/generated/types/common/ui_component/LabelViewModel;)Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;
+    .registers 3
+
+    .line 83
+    move-object v0, p0
+
+    check-cast v0, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;
+
+    .line 84
+    iput-object p1, v0, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;->labelViewModel:Lcom/uber/model/core/generated/types/common/ui_component/LabelViewModel;
+
+    return-object v0
+.end method
+
+.method public metadata(Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListMetadata;)Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;
+    .registers 3
+
+    .line 91
+    move-object v0, p0
+
+    check-cast v0, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;
+
+    .line 92
+    iput-object p1, v0, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;->metadata:Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListMetadata;
+
+    return-object v0
+.end method
+
+.method public quickActionList(Ljava/util/List;)Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionV1/QuickActionV1;",
+            ">;)",
+            "Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;"
+        }
+    .end annotation
+
+    .line 87
+    move-object v0, p0
+
+    check-cast v0, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;
+
+    .line 88
+    iput-object p1, v0, Lcom/uber/model/core/generated/money/walletux/thrift/wallethome/quickactionlistV1/QuickActionListV1$Builder;->quickActionList:Ljava/util/List;
+
+    return-object v0
+.end method

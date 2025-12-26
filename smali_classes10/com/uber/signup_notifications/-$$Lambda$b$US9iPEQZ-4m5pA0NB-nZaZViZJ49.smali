@@ -1,0 +1,56 @@
+.class public final synthetic Lcom/uber/signup_notifications/-$$Lambda$b$US9iPEQZ-4m5pA0NB-nZaZViZJ49;
+.super Ljava/lang/Object;
+.source "lambda"
+
+# interfaces
+.implements Lio/reactivex/functions/Function;
+
+
+# instance fields
+.field private final synthetic f$0:Lcom/uber/signup_notifications/b;
+
+.field private final synthetic f$1:Lcom/uber/model/core/generated/edge/services/assistiveonboarding/EventType;
+
+.field private final synthetic f$2:Lcom/uber/model/core/generated/rtapi/models/deviceData/DeviceData;
+
+.field private final synthetic f$3:Lcom/uber/model/core/generated/edge/models/data/schemas/basic/UUID;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/uber/signup_notifications/b;Lcom/uber/model/core/generated/edge/services/assistiveonboarding/EventType;Lcom/uber/model/core/generated/rtapi/models/deviceData/DeviceData;Lcom/uber/model/core/generated/edge/models/data/schemas/basic/UUID;)V
+    .registers 5
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/uber/signup_notifications/-$$Lambda$b$US9iPEQZ-4m5pA0NB-nZaZViZJ49;->f$0:Lcom/uber/signup_notifications/b;
+
+    iput-object p2, p0, Lcom/uber/signup_notifications/-$$Lambda$b$US9iPEQZ-4m5pA0NB-nZaZViZJ49;->f$1:Lcom/uber/model/core/generated/edge/services/assistiveonboarding/EventType;
+
+    iput-object p3, p0, Lcom/uber/signup_notifications/-$$Lambda$b$US9iPEQZ-4m5pA0NB-nZaZViZJ49;->f$2:Lcom/uber/model/core/generated/rtapi/models/deviceData/DeviceData;
+
+    iput-object p4, p0, Lcom/uber/signup_notifications/-$$Lambda$b$US9iPEQZ-4m5pA0NB-nZaZViZJ49;->f$3:Lcom/uber/model/core/generated/edge/models/data/schemas/basic/UUID;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 6
+
+    iget-object v0, p0, Lcom/uber/signup_notifications/-$$Lambda$b$US9iPEQZ-4m5pA0NB-nZaZViZJ49;->f$0:Lcom/uber/signup_notifications/b;
+
+    iget-object v1, p0, Lcom/uber/signup_notifications/-$$Lambda$b$US9iPEQZ-4m5pA0NB-nZaZViZJ49;->f$1:Lcom/uber/model/core/generated/edge/services/assistiveonboarding/EventType;
+
+    iget-object v2, p0, Lcom/uber/signup_notifications/-$$Lambda$b$US9iPEQZ-4m5pA0NB-nZaZViZJ49;->f$2:Lcom/uber/model/core/generated/rtapi/models/deviceData/DeviceData;
+
+    iget-object v3, p0, Lcom/uber/signup_notifications/-$$Lambda$b$US9iPEQZ-4m5pA0NB-nZaZViZJ49;->f$3:Lcom/uber/model/core/generated/edge/models/data/schemas/basic/UUID;
+
+    check-cast p1, Ljava/lang/String;
+
+    invoke-static {v0, v1, v2, v3, p1}, Lcom/uber/signup_notifications/b;->lambda$US9iPEQZ-4m5pA0NB-nZaZViZJ49(Lcom/uber/signup_notifications/b;Lcom/uber/model/core/generated/edge/services/assistiveonboarding/EventType;Lcom/uber/model/core/generated/rtapi/models/deviceData/DeviceData;Lcom/uber/model/core/generated/edge/models/data/schemas/basic/UUID;Ljava/lang/String;)Lio/reactivex/SingleSource;
+
+    move-result-object p1
+
+    return-object p1
+.end method

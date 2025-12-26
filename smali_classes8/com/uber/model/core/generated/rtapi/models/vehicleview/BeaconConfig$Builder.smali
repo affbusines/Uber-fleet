@@ -1,0 +1,212 @@
+.class public Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field private enabled:Ljava/lang/Boolean;
+
+.field private override:Ljava/lang/Boolean;
+
+.field private restrictedColors:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "+",
+            "Lcom/uber/model/core/generated/rtapi/models/vehicleview/RestrictedColorRange;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 7
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x7
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v5}, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;-><init>(Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/util/List;ILawt/h;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/util/List;)V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Boolean;",
+            "Ljava/lang/Boolean;",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/uber/model/core/generated/rtapi/models/vehicleview/RestrictedColorRange;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 90
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 96
+    iput-object p1, p0, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;->enabled:Ljava/lang/Boolean;
+
+    .line 97
+    iput-object p2, p0, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;->override:Ljava/lang/Boolean;
+
+    .line 98
+    iput-object p3, p0, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;->restrictedColors:Ljava/util/List;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/util/List;ILawt/h;)V
+    .registers 7
+
+    and-int/lit8 p5, p4, 0x1
+
+    const/4 v0, 0x0
+
+    if-eqz p5, :cond_6
+
+    move-object p1, v0
+
+    :cond_6
+    and-int/lit8 p5, p4, 0x2
+
+    if-eqz p5, :cond_b
+
+    move-object p2, v0
+
+    :cond_b
+    and-int/lit8 p4, p4, 0x4
+
+    if-eqz p4, :cond_10
+
+    move-object p3, v0
+
+    .line 92
+    :cond_10
+    invoke-direct {p0, p1, p2, p3}, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;-><init>(Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/util/List;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public build()Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig;
+    .registers 9
+
+    .line 118
+    iget-object v1, p0, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;->enabled:Ljava/lang/Boolean;
+
+    .line 119
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;->override:Ljava/lang/Boolean;
+
+    .line 120
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;->restrictedColors:Ljava/util/List;
+
+    if-eqz v0, :cond_f
+
+    check-cast v0, Ljava/util/Collection;
+
+    invoke-static {v0}, Lkq/y;->a(Ljava/util/Collection;)Lkq/y;
+
+    move-result-object v0
+
+    goto :goto_10
+
+    :cond_f
+    const/4 v0, 0x0
+
+    :goto_10
+    move-object v3, v0
+
+    const/4 v4, 0x0
+
+    const/16 v5, 0x8
+
+    const/4 v6, 0x0
+
+    .line 117
+    new-instance v7, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig;
+
+    move-object v0, v7
+
+    invoke-direct/range {v0 .. v6}, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig;-><init>(Ljava/lang/Boolean;Ljava/lang/Boolean;Lkq/y;Layj/i;ILawt/h;)V
+
+    return-object v7
+.end method
+
+.method public enabled(Ljava/lang/Boolean;)Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;
+    .registers 3
+
+    .line 100
+    move-object v0, p0
+
+    check-cast v0, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;
+
+    .line 101
+    iput-object p1, v0, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;->enabled:Ljava/lang/Boolean;
+
+    return-object v0
+.end method
+
+.method public override(Ljava/lang/Boolean;)Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;
+    .registers 3
+
+    .line 104
+    move-object v0, p0
+
+    check-cast v0, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;
+
+    .line 105
+    iput-object p1, v0, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;->override:Ljava/lang/Boolean;
+
+    return-object v0
+.end method
+
+.method public restrictedColors(Ljava/util/List;)Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/uber/model/core/generated/rtapi/models/vehicleview/RestrictedColorRange;",
+            ">;)",
+            "Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;"
+        }
+    .end annotation
+
+    .line 108
+    move-object v0, p0
+
+    check-cast v0, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;
+
+    .line 109
+    iput-object p1, v0, Lcom/uber/model/core/generated/rtapi/models/vehicleview/BeaconConfig$Builder;->restrictedColors:Ljava/util/List;
+
+    return-object v0
+.end method

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_2x" android:text="@string/top_feedback" app:analyticsId="5260fd62-17d5" style="@style/Platform.TextStyle.Subtitle.Normal" />
+	<com.ubercab.ui.core.UFlexboxLayout android:id="@id/ub__feedback_flexbox_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_2x" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" app:alignContent="stretch" app:alignItems="center" app:flexWrap="wrap" />
+	<com.ubercab.ui.core.UButton android:id="@id/ub__view_ratings_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_2x" android:text="@string/top_feedback_button" android:textAllCaps="true" android:elevation="@dimen/ui__elevation_low" style="?platformButtonPrimary" />
+</com.ubercab.ui.core.ULinearLayout>

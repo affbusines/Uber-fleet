@@ -1,0 +1,158 @@
+.class public final Lbaz/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lbaj/l;
+
+
+# static fields
+.field static final b:Lban/a;
+
+
+# instance fields
+.field final a:Ljava/util/concurrent/atomic/AtomicReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Lban/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 76
+    new-instance v0, Lbaz/a$1;
+
+    invoke-direct {v0}, Lbaz/a$1;-><init>()V
+
+    sput-object v0, Lbaz/a;->b:Lban/a;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 2
+
+    .line 32
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 33
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    iput-object v0, p0, Lbaz/a;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    return-void
+.end method
+
+.method private constructor <init>(Lban/a;)V
+    .registers 3
+
+    .line 36
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 37
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lbaz/a;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    return-void
+.end method
+
+.method public static a()Lbaz/a;
+    .registers 1
+
+    .line 46
+    new-instance v0, Lbaz/a;
+
+    invoke-direct {v0}, Lbaz/a;-><init>()V
+
+    return-object v0
+.end method
+
+.method public static a(Lban/a;)Lbaz/a;
+    .registers 2
+
+    .line 57
+    new-instance v0, Lbaz/a;
+
+    invoke-direct {v0, p0}, Lbaz/a;-><init>(Lban/a;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public isUnsubscribed()Z
+    .registers 3
+
+    .line 62
+    iget-object v0, p0, Lbaz/a;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    sget-object v1, Lbaz/a;->b:Lban/a;
+
+    if-ne v0, v1, :cond_c
+
+    const/4 v0, 0x1
+
+    goto :goto_d
+
+    :cond_c
+    const/4 v0, 0x0
+
+    :goto_d
+    return v0
+.end method
+
+.method public unsubscribe()V
+    .registers 3
+
+    .line 67
+    iget-object v0, p0, Lbaz/a;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lban/a;
+
+    .line 68
+    sget-object v1, Lbaz/a;->b:Lban/a;
+
+    if-eq v0, v1, :cond_1d
+
+    .line 69
+    iget-object v0, p0, Lbaz/a;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lban/a;
+
+    if-eqz v0, :cond_1d
+
+    .line 70
+    sget-object v1, Lbaz/a;->b:Lban/a;
+
+    if-eq v0, v1, :cond_1d
+
+    .line 71
+    invoke-interface {v0}, Lban/a;->call()V
+
+    :cond_1d
+    return-void
+.end method

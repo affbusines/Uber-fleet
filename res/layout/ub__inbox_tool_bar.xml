@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_ui.views.InboxToolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/fleet_inbox_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UToolbar android:theme="@style/Fleet.Toolbar.Theme" android:id="@id/toolbar_view" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" style="@style/Widget.Platform.Toolbar">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.UTextView android:id="@id/toolbar_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Platform.TextStyle.Title.Normal" />
+			<com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/ub__inbox_dot" android:padding="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/notification_center_new_count_dot" />
+			<com.ubercab.ui.core.UTextView android:layout_gravity="center_vertical" android:id="@id/ub__inbox_card_new_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Small.Medium" />
+			<com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/ub__inbox_dot_alert" android:padding="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/notification_center_new_count_dot" />
+			<com.ubercab.ui.core.UTextView android:layout_gravity="center_vertical" android:id="@id/ub__inbox_card_alert_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Small.Medium" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.UToolbar>
+</com.ubercab.fleet_ui.views.InboxToolbar>

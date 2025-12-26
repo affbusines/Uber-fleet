@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="72.0dip" android:width="72.0dip" android:viewportWidth="72.0" android:viewportHeight="72.0">
+	<path android:fillColor="?onboardingBackgroundColor" android:pathData="M21.0878 -0.000244141L0 21.0884l0 29.8235 21.0878 21.0879 29.8236 0L72 50.9119 72 21.0884 50.9114 -0.000244141l-29.8236 0z" />
+	<path android:fillColor="?onboardingPrimaryColor" android:pathData="M36 -0.000244141L36 71.9998l14.9114 0L72 50.9119 72 21.0884 50.9114 -0.000244141l-14.9114 0z" />
+	<path android:fillColor="?onboardingBackgroundColor" android:pathData="M48.8782 4.90894l-12.8782 0 0 62.18186 12.8782 0 18.2127 -18.2128 0 -25.7563L48.8782 4.90894Z" />
+	<path android:fillColor="?onboardingGridColor" android:pathData="M23.1214 4.90894L4.90869 23.1217l0 25.7563 18.21271 18.2128 12.8782 0 0 -62.18186 -12.8782 0z" />
+	<path android:fillColor="?iconColorInverse" android:pathData="M23.8629 65.301L6.69824 48.1372l0 -24.2738 17.16466 -17.16467 24.2738 0 17.1646 17.16467 0 24.2738 -17.1646 17.1638 -24.2738 0z" />
+	<path android:fillColor="?onboardingGridColor" android:pathData="M48.1374 6.69824l-12.1369 0 0 58.60226 12.1369 0 17.1646 -17.163 0 -24.2746L48.1374 6.69824Z" />
+	<path android:fillColor="?onboardingPrimaryColor" android:pathData="M38.6413 43.9595l-4.671 0c-0.2871 0 -0.5195 -0.2324 -0.5195 -0.5187l0 -5.1873c0 -0.2757 0.1096 -0.5392 0.3044 -0.7339l4.7454 -4.7446c0.6235 -0.6243 1.0628 -1.4294 1.1553 -2.3065 0.2323 -2.2083 -1.5006 -4.0819 -3.663 -4.0819 -1.8794 0 -3.4347 1.4146 -3.6573 3.2351 -0.0319 0.2577 -0.2512 0.4492 -0.5114 0.4492l-4.6914 0c-0.2921 0 -0.5351 -0.2414 -0.5187 -0.5335 0.297 -5.2723 4.9614 -9.396 10.4244 -8.8028 4.0926 0.4443 7.9364 4.3552 8.3078 8.4551 0.2569 2.8334 -0.7298 5.5432 -2.7106 7.524l-3.1713 3.1713c-0.1947 0.1939 -0.3035 0.4581 -0.3035 0.7339l0 2.8219c0 0.2863 -0.2324 0.5187 -0.5196 0.5187z" />
+	<path android:fillColor="?onboardingPrimaryColor" android:pathData="M39.1172 50.1878c0 1.5627 -1.2674 2.83 -2.8301 2.83 -1.5635 0 -2.8301 -1.2673 -2.8301 -2.83 0 -1.5636 1.2666 -2.8301 2.8301 -2.8301 1.5627 0 2.8301 1.2665 2.8301 2.8301z" />
+</vector>

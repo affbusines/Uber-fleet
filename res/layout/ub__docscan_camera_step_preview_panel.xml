@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="?backgroundAlwaysDark" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<com.ubercab.ui.core.UImageView android:layout_gravity="center" android:id="@id/preview_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:adjustViewBounds="true" android:layout_weight="1.0" app:analyticsId="43a4d9a5-64cb" />
+		<com.ubercab.ui.core.ULinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+			<com.ubercab.ui.core.button.BaseMaterialButton android:textColor="?contentOnColor" android:id="@id/retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_1x" android:text="@string/retake_photo_button" android:layout_weight="1.0" app:analyticsId="f6571627-4a48" app:buttonType="primary" app:shape="rect" app:size="medium" style="@style/Platform.Button.BaseDynamic" />
+			<com.ubercab.ui.core.button.BaseMaterialButton android:textColor="?contentOnColor" android:id="@id/accept_photo_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_1x" android:text="@string/accept_photo_button" android:layout_weight="1.0" app:analyticsId="981d516b-77f5" app:buttonType="primary" app:shape="rect" app:size="medium" style="@style/Platform.Button.BaseDynamic" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.ULinearLayout>
+</merge>

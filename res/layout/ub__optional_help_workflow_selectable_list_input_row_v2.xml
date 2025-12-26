@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+	<com.ubercab.ui.core.UCheckedTextView android:textAppearance="@style/Platform.TextStyle.H5" android:gravity="center_vertical" android:id="@id/help_workflow_selectable_list_input_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/ui__spacing_unit_1x" android:labelFor="@id/help_workflow_selectable_list_input_row_check" android:drawableTint="?buttonPrimaryTint" app:drawableStartCompat="?android:listChoiceIndicatorMultiple" />
+</merge>

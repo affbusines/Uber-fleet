@@ -1,0 +1,262 @@
+.class public final Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    .line 168
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lawt/h;)V
+    .registers 2
+
+    invoke-direct {p0}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final builder()Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+    .registers 13
+
+    .line 249
+    new-instance v11, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/16 v9, 0xff
+
+    const/4 v10, 0x0
+
+    move-object v0, v11
+
+    invoke-direct/range {v0 .. v10}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;-><init>(Lcom/uber/model/core/generated/types/common/ui/SemanticColor;Lcom/uber/model/core/generated/types/common/ui/SemanticColor;Lcom/uber/model/core/generated/types/common/ui/PlatformSize;Lcom/uber/model/core/generated/types/common/ui/PlatformBorder;Lcom/uber/model/core/generated/types/common/ui/PlatformShadow;Lcom/uber/model/core/generated/types/common/ui/PlatformRoundedCorners;Lcom/uber/model/core/generated/types/common/ui/PlatformEdgeInsets;Lcom/uber/model/core/generated/types/common/ui/PlatformEdgeInsets;ILawt/h;)V
+
+    return-object v11
+.end method
+
+.method public final builderWithDefaults()Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+    .registers 5
+
+    .line 254
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion;->builder()Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+
+    move-result-object v0
+
+    .line 255
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$1;
+
+    sget-object v3, Lcom/uber/model/core/generated/types/common/ui/SemanticColor;->Companion:Lcom/uber/model/core/generated/types/common/ui/SemanticColor$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$1;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/types/common/ui/SemanticColor;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;->backgroundColor(Lcom/uber/model/core/generated/types/common/ui/SemanticColor;)Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+
+    move-result-object v0
+
+    .line 256
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$2;
+
+    sget-object v3, Lcom/uber/model/core/generated/types/common/ui/SemanticColor;->Companion:Lcom/uber/model/core/generated/types/common/ui/SemanticColor$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$2;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/types/common/ui/SemanticColor;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;->tintColor(Lcom/uber/model/core/generated/types/common/ui/SemanticColor;)Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+
+    move-result-object v0
+
+    .line 257
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$3;
+
+    sget-object v3, Lcom/uber/model/core/generated/types/common/ui/PlatformSize;->Companion:Lcom/uber/model/core/generated/types/common/ui/PlatformSize$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$3;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/types/common/ui/PlatformSize;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;->dimensions(Lcom/uber/model/core/generated/types/common/ui/PlatformSize;)Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+
+    move-result-object v0
+
+    .line 258
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$4;
+
+    sget-object v3, Lcom/uber/model/core/generated/types/common/ui/PlatformBorder;->Companion:Lcom/uber/model/core/generated/types/common/ui/PlatformBorder$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$4;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/types/common/ui/PlatformBorder;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;->border(Lcom/uber/model/core/generated/types/common/ui/PlatformBorder;)Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+
+    move-result-object v0
+
+    .line 259
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$5;
+
+    sget-object v3, Lcom/uber/model/core/generated/types/common/ui/PlatformShadow;->Companion:Lcom/uber/model/core/generated/types/common/ui/PlatformShadow$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$5;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/types/common/ui/PlatformShadow;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;->shadow(Lcom/uber/model/core/generated/types/common/ui/PlatformShadow;)Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+
+    move-result-object v0
+
+    .line 260
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$6;
+
+    sget-object v3, Lcom/uber/model/core/generated/types/common/ui/PlatformRoundedCorners;->Companion:Lcom/uber/model/core/generated/types/common/ui/PlatformRoundedCorners$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$6;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/types/common/ui/PlatformRoundedCorners;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;->roundedCorners(Lcom/uber/model/core/generated/types/common/ui/PlatformRoundedCorners;)Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+
+    move-result-object v0
+
+    .line 261
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$7;
+
+    sget-object v3, Lcom/uber/model/core/generated/types/common/ui/PlatformEdgeInsets;->Companion:Lcom/uber/model/core/generated/types/common/ui/PlatformEdgeInsets$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$7;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/types/common/ui/PlatformEdgeInsets;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;->contentInset(Lcom/uber/model/core/generated/types/common/ui/PlatformEdgeInsets;)Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+
+    move-result-object v0
+
+    .line 262
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$8;
+
+    sget-object v3, Lcom/uber/model/core/generated/types/common/ui/PlatformEdgeInsets;->Companion:Lcom/uber/model/core/generated/types/common/ui/PlatformEdgeInsets$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion$builderWithDefaults$8;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/types/common/ui/PlatformEdgeInsets;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;->paddingWhenVisible(Lcom/uber/model/core/generated/types/common/ui/PlatformEdgeInsets;)Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final stub()Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle;
+    .registers 2
+
+    .line 267
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Companion;->builderWithDefaults()Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle$Builder;->build()Lcom/uber/model/core/generated/types/common/ui_component/IllustrationViewModelStyle;
+
+    move-result-object v0
+
+    return-object v0
+.end method

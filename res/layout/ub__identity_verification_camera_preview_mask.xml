@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.uber.safety.identity.verification.user.identity.utils.camera.USnapCameraPreviewMaskView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?brandBlack" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.UPlainView android:layout_gravity="bottom" android:background="?brandBlack" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_3x" />
+	<com.ubercab.ui.core.UImageView android:layout_gravity="center" android:id="@id/ub__usnap_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:analyticsId="56fafee6-8f38" />
+	<com.ubercab.ui.core.UFrameLayout android:background="?brandBlack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+		<com.ubercab.ui.core.UTextView android:textColor="?brandWhite" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/ub__preview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:paddingStart="@dimen/ui__spacing_unit_3x" android:paddingEnd="@dimen/ui__spacing_unit_3x" app:analyticsId="bbe65a1a-4b94" style="@style/Platform.TextStyle.Move.H11" />
+	</com.ubercab.ui.core.UFrameLayout>
+</com.uber.safety.identity.verification.user.identity.utils.camera.USnapCameraPreviewMaskView>

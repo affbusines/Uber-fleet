@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ub__system_message_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginTop="@dimen/ub__intercom_space_between_groups" android:layout_marginRight="@dimen/ui__spacing_unit_2x">
+	<com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__system_message_bubble_timestamp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsId="20823a8d-1b0c" style="@style/Intercom.System.Message.Timestamp.TextView" />
+	<androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="@dimen/ub__intercom_space_between_messages" />
+	<com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__system_message_bubble_text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsId="8a4a8d60-07ef" style="@style/Intercom.System.Message.TextView" />
+	<androidx.legacy.widget.Space android:id="@id/group_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ub__intercom_space_between_groups" />
+</com.ubercab.ui.core.ULinearLayout>

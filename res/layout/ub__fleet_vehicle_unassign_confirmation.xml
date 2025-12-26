@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.FramedCircleImageView android:layout_gravity="center" android:id="@id/driver_avatar" android:duplicateParentState="false" android:layout_width="@dimen/ui__avatar_large" android:layout_height="@dimen/ui__avatar_large" app:analyticsId="39c822fa-a5f9" />
+	<com.ubercab.ui.core.UTextView android:layout_gravity="center" android:id="@id/driver_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" android:layout_marginBottom="?contentInset" app:analyticsId="450b7ba3-d432" style="@style/Platform.TextStyle.LabelSmall" />
+	<com.ubercab.ui.core.UTextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" android:layout_marginBottom="?contentInset" android:text="@string/vehicle_assign_unassign_confirmation_question" app:analyticsId="8606b51d-6f27" style="@style/Platform.TextStyle.LabelLarge" />
+</com.ubercab.ui.core.ULinearLayout>

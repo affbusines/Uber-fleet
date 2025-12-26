@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.UFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.URecyclerView android:id="@id/ub__contact_drop_down_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.ui.core.UFrameLayout>

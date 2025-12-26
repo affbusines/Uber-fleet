@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.profiles.features.business_hub.profile_list.BusinessHubProfileListContentView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.URecyclerView android:id="@id/ub__profile_list_recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ubercab.profiles.features.business_hub.profile_list.BusinessHubProfileListContentView>

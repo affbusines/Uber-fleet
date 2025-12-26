@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.UConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/ub__performance_report_list_last" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:elevation="@dimen/ui__elevation_medium">
+	<include layout="@layout/ub__fleet_drivers_report_item_view_driver_content" />
+</com.ubercab.ui.core.UConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_true_earnings.v2.advance_filters.AdvanceFiltersView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="93242b4c-f9b1">
+	<com.ubercab.ui.core.UImageView android:background="@drawable/foot_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_constraintBottom_toTopOf="@id/driver_filter_selection" />
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/driver_filter_selection" android:background="?brandWhite" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" uber:layout_constraintBottom_toBottomOf="parent">
+		<com.ubercab.ui.core.UButton android:id="@id/ub__advance_filter_clear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/true_earnings_filter_clear" style="?platformButtonSecondary" />
+		<com.ubercab.ui.core.UButton android:id="@id/ub__advance_filter_selected" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/true_earnings_filter_show_transactions" style="?platformButtonPrimary" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<include android:id="@id/fleet_fixed_toolbar" uber:layout_constraintTop_toTopOf="parent" layout="@layout/ub__fixed_tool_bar" />
+	<com.ubercab.ui.core.URecyclerView android:id="@id/ub__advance_filter_content" android:layout_width="fill_parent" android:layout_height="0.0dip" uber:layout_constraintBottom_toTopOf="@id/driver_filter_selection" uber:layout_constraintTop_toBottomOf="@id/fleet_fixed_toolbar" />
+</com.ubercab.fleet_true_earnings.v2.advance_filters.AdvanceFiltersView>

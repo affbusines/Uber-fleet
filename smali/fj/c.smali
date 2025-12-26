@@ -1,0 +1,153 @@
+.class public final Lfj/c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private final a:Landroid/graphics/drawable/Drawable;
+
+.field private final b:Z
+
+
+# direct methods
+.method public constructor <init>(Landroid/graphics/drawable/Drawable;Z)V
+    .registers 4
+
+    const-string v0, "drawable"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 13
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 14
+    iput-object p1, p0, Lfj/c;->a:Landroid/graphics/drawable/Drawable;
+
+    .line 15
+    iput-boolean p2, p0, Lfj/c;->b:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Landroid/graphics/drawable/Drawable;
+    .registers 2
+
+    .line 14
+    iget-object v0, p0, Lfj/c;->a:Landroid/graphics/drawable/Drawable;
+
+    return-object v0
+.end method
+
+.method public final b()Z
+    .registers 2
+
+    .line 15
+    iget-boolean v0, p0, Lfj/c;->b:Z
+
+    return v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .registers 6
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_4
+
+    return v0
+
+    :cond_4
+    instance-of v1, p1, Lfj/c;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_a
+
+    return v2
+
+    :cond_a
+    check-cast p1, Lfj/c;
+
+    iget-object v1, p0, Lfj/c;->a:Landroid/graphics/drawable/Drawable;
+
+    iget-object v3, p1, Lfj/c;->a:Landroid/graphics/drawable/Drawable;
+
+    invoke-static {v1, v3}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_17
+
+    return v2
+
+    :cond_17
+    iget-boolean v1, p0, Lfj/c;->b:Z
+
+    iget-boolean p1, p1, Lfj/c;->b:Z
+
+    if-eq v1, p1, :cond_1e
+
+    return v2
+
+    :cond_1e
+    return v0
+.end method
+
+.method public hashCode()I
+    .registers 3
+
+    iget-object v0, p0, Lfj/c;->a:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->hashCode()I
+
+    move-result v0
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-boolean v1, p0, Lfj/c;->b:Z
+
+    if-eqz v1, :cond_d
+
+    const/4 v1, 0x1
+
+    :cond_d
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "DecodeResult(drawable="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lfj/c;->a:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", isSampled="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Lfj/c;->b:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x29
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

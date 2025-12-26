@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="160.0dip" android:width="220.0dip" android:viewportWidth="220.0" android:viewportHeight="160.0">
+	<path android:fillColor="@drawable/$ub__vehicle_preview_place_holder__0" android:pathData="M30.5,90.5c0,-16.8 10,-33 15,-39L50,51.5c7,-1.333 25.6,-4 44,-4s37.667,2.667 45,4c-0.833,-2.5 -2.4,-7.5 -2,-7.5 7.2,0 8,6 7.5,9 9.667,1.333 30.1,4.3 34.5,5.5 5.5,1.5 16,21.5 16,38.5s-6.5,27.5 -9.5,30.5c-2.4,2.4 -7.667,3 -9.5,2.5 -1.333,1.333 -5.9,4 -13.5,4s-11.833,-2.667 -13,-4h-73c-0.833,1.333 -4.9,4 -14.5,4s-12,-3.667 -12,-5.5h-9c-4.5,0 -10.5,-17 -10.5,-38Z" />
+</vector>

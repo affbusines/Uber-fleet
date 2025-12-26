@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.URecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+	<com.ubercab.fleet_ui.views.FleetEmptyStateView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:emptyIcon="@drawable/ub_ic_car_front" />
+	<com.ubercab.ui.core.UExtendedFloatingActionButton android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" android:textColor="?android:textColorPrimaryInverse" android:layout_gravity="end|bottom|center" android:id="@id/ub_add_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/vehicle_list_add_button" android:textAllCaps="false" android:elevation="@dimen/ui__fleet_divider_height" app:analyticsId="762cf769-24a3" app:backgroundTint="?iconColor" app:icon="@drawable/ub_ic_plus" app:iconTint="?iconColorInverse" app:rippleColor="?secondary" />
+	<com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/loading_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:bli_bitColor="?contentPrimary" />
+</merge>

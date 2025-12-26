@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/ub_splash_ub_logo">
+	<target android:name="u_1" android:animation="@drawable/$ub_splash_animation__0" />
+	<target android:name="u_2" android:animation="@drawable/$ub_splash_animation__1" />
+	<target android:name="b_1" android:animation="@drawable/$ub_splash_animation__2" />
+	<target android:name="b_2" android:animation="@drawable/$ub_splash_animation__3" />
+	<target android:name="e_1" android:animation="@drawable/$ub_splash_animation__4" />
+	<target android:name="e_2" android:animation="@drawable/$ub_splash_animation__5" />
+	<target android:name="r_1" android:animation="@drawable/$ub_splash_animation__6" />
+	<target android:name="r_2" android:animation="@drawable/$ub_splash_animation__7" />
+</animated-vector>

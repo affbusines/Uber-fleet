@@ -1,0 +1,48 @@
+.class public final synthetic Lcom/ubercab/help/feature/home/card/appointments/-$$Lambda$HelpHomeCardAppointmentsRouter$MP2GduQvRSEGkpRN6mTbGVsz71E5;
+.super Ljava/lang/Object;
+.source "lambda"
+
+# interfaces
+.implements Lcom/uber/rib/core/al$a;
+
+
+# instance fields
+.field private final synthetic f$0:Lahv/g;
+
+.field private final synthetic f$1:Lcom/ubercab/help/core/interfaces/model/HelpAppointmentId;
+
+.field private final synthetic f$2:Lahv/g$a;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lahv/g;Lcom/ubercab/help/core/interfaces/model/HelpAppointmentId;Lahv/g$a;)V
+    .registers 4
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/ubercab/help/feature/home/card/appointments/-$$Lambda$HelpHomeCardAppointmentsRouter$MP2GduQvRSEGkpRN6mTbGVsz71E5;->f$0:Lahv/g;
+
+    iput-object p2, p0, Lcom/ubercab/help/feature/home/card/appointments/-$$Lambda$HelpHomeCardAppointmentsRouter$MP2GduQvRSEGkpRN6mTbGVsz71E5;->f$1:Lcom/ubercab/help/core/interfaces/model/HelpAppointmentId;
+
+    iput-object p3, p0, Lcom/ubercab/help/feature/home/card/appointments/-$$Lambda$HelpHomeCardAppointmentsRouter$MP2GduQvRSEGkpRN6mTbGVsz71E5;->f$2:Lahv/g$a;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final buildViewRouter(Landroid/view/ViewGroup;)Lcom/uber/rib/core/ViewRouter;
+    .registers 5
+
+    iget-object v0, p0, Lcom/ubercab/help/feature/home/card/appointments/-$$Lambda$HelpHomeCardAppointmentsRouter$MP2GduQvRSEGkpRN6mTbGVsz71E5;->f$0:Lahv/g;
+
+    iget-object v1, p0, Lcom/ubercab/help/feature/home/card/appointments/-$$Lambda$HelpHomeCardAppointmentsRouter$MP2GduQvRSEGkpRN6mTbGVsz71E5;->f$1:Lcom/ubercab/help/core/interfaces/model/HelpAppointmentId;
+
+    iget-object v2, p0, Lcom/ubercab/help/feature/home/card/appointments/-$$Lambda$HelpHomeCardAppointmentsRouter$MP2GduQvRSEGkpRN6mTbGVsz71E5;->f$2:Lahv/g$a;
+
+    invoke-static {v0, v1, v2, p1}, Lcom/ubercab/help/feature/home/card/appointments/HelpHomeCardAppointmentsRouter;->lambda$MP2GduQvRSEGkpRN6mTbGVsz71E5(Lahv/g;Lcom/ubercab/help/core/interfaces/model/HelpAppointmentId;Lahv/g$a;Landroid/view/ViewGroup;)Lcom/uber/rib/core/ViewRouter;
+
+    move-result-object p1
+
+    return-object p1
+.end method

@@ -1,0 +1,42 @@
+.class public final synthetic Lcom/google/android/gms/internal/location/c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/location/j;
+
+
+# static fields
+.field public static final synthetic a:Lcom/google/android/gms/internal/location/c;
+
+
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .registers 1
+
+    new-instance v0, Lcom/google/android/gms/internal/location/c;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/location/c;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/internal/location/c;->a:Lcom/google/android/gms/internal/location/c;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lcom/google/android/gms/internal/location/ab;Lcom/google/android/gms/common/api/internal/j$a;ZLjr/i;)V
+    .registers 5
+
+    invoke-virtual {p1, p2, p3, p4}, Lcom/google/android/gms/internal/location/ab;->a(Lcom/google/android/gms/common/api/internal/j$a;ZLjr/i;)V
+
+    return-void
+.end method

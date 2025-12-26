@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_web_dispatch.error.FleetWebDispatchErrorView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<com.ubercab.ui.core.UTextView android:id="@id/ub__driver_dispatch_error" android:padding="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" app:analyticsId="56e7771a-ad48" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.UButton android:layout_gravity="center_horizontal" android:id="@id/ub__driver_dispatch_error_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/error_view_retry" app:analyticsId="0c61d9c3-9914" style="@style/Platform.Button.Primary" />
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.fleet_web_dispatch.error.FleetWebDispatchErrorView>

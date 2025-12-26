@@ -1,0 +1,60 @@
+.class Landroidx/camera/view/PreviewView$d;
+.super Landroid/view/ScaleGestureDetector$SimpleOnScaleGestureListener;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/camera/view/PreviewView;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = "d"
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Landroidx/camera/view/PreviewView;
+
+
+# direct methods
+.method constructor <init>(Landroidx/camera/view/PreviewView;)V
+    .registers 2
+
+    .line 910
+    iput-object p1, p0, Landroidx/camera/view/PreviewView$d;->a:Landroidx/camera/view/PreviewView;
+
+    invoke-direct {p0}, Landroid/view/ScaleGestureDetector$SimpleOnScaleGestureListener;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onScale(Landroid/view/ScaleGestureDetector;)Z
+    .registers 3
+
+    .line 914
+    iget-object v0, p0, Landroidx/camera/view/PreviewView$d;->a:Landroidx/camera/view/PreviewView;
+
+    iget-object v0, v0, Landroidx/camera/view/PreviewView;->g:Landroidx/camera/view/a;
+
+    if-eqz v0, :cond_11
+
+    .line 915
+    iget-object v0, p0, Landroidx/camera/view/PreviewView$d;->a:Landroidx/camera/view/PreviewView;
+
+    iget-object v0, v0, Landroidx/camera/view/PreviewView;->g:Landroidx/camera/view/a;
+
+    invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getScaleFactor()F
+
+    move-result p1
+
+    invoke-virtual {v0, p1}, Landroidx/camera/view/a;->a(F)V
+
+    :cond_11
+    const/4 p1, 0x1
+
+    return p1
+.end method

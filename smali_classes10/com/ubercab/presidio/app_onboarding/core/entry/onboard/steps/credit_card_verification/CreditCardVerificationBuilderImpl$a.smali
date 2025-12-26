@@ -1,0 +1,37 @@
+.class public interface abstract Lcom/ubercab/presidio/app_onboarding/core/entry/onboard/steps/credit_card_verification/CreditCardVerificationBuilderImpl$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/ubercab/presidio/app_onboarding/core/entry/onboard/steps/credit_card_verification/CreditCardVerificationBuilderImpl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "a"
+.end annotation
+
+
+# virtual methods
+.method public abstract A()Ltq/a;
+.end method
+
+.method public abstract ad()Lcom/ubercab/presidio/app_onboarding/core/entry/onboard/steps/credit_card_verification/b$a;
+.end method
+
+.method public abstract k()Landroid/content/Context;
+.end method
+
+.method public abstract n()Ladg/a;
+.end method
+
+.method public abstract p()Lcom/ubercab/presidio/app_onboarding/core/entry/onboard/j;
+.end method
+
+.method public abstract q()Lcom/ubercab/presidio/app_onboarding/core/entry/onboard/bz;
+.end method
+
+.method public abstract s()Lcom/uber/rib/core/screenstack/f;
+.end method

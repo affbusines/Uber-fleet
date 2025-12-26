@@ -1,0 +1,98 @@
+.class final Lbaq/j$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Comparable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lbaq/j;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "b"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/lang/Comparable<",
+        "Lbaq/j$b;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final a:Lban/a;
+
+.field final b:Ljava/lang/Long;
+
+.field final c:I
+
+
+# direct methods
+.method constructor <init>(Lban/a;Ljava/lang/Long;I)V
+    .registers 4
+
+    .line 107
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 108
+    iput-object p1, p0, Lbaq/j$b;->a:Lban/a;
+
+    .line 109
+    iput-object p2, p0, Lbaq/j$b;->b:Ljava/lang/Long;
+
+    .line 110
+    iput p3, p0, Lbaq/j$b;->c:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lbaq/j$b;)I
+    .registers 4
+
+    .line 115
+    iget-object v0, p0, Lbaq/j$b;->b:Ljava/lang/Long;
+
+    iget-object v1, p1, Lbaq/j$b;->b:Ljava/lang/Long;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Long;->compareTo(Ljava/lang/Long;)I
+
+    move-result v0
+
+    if-nez v0, :cond_13
+
+    .line 117
+    iget v0, p0, Lbaq/j$b;->c:I
+
+    iget p1, p1, Lbaq/j$b;->c:I
+
+    invoke-static {v0, p1}, Lbaq/j;->a(II)I
+
+    move-result p1
+
+    return p1
+
+    :cond_13
+    return v0
+.end method
+
+.method public synthetic compareTo(Ljava/lang/Object;)I
+    .registers 2
+
+    .line 102
+    check-cast p1, Lbaq/j$b;
+
+    invoke-virtual {p0, p1}, Lbaq/j$b;->a(Lbaq/j$b;)I
+
+    move-result p1
+
+    return p1
+.end method

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_true_earnings.v2.summary.TrueEarningSummaryView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.fleet_ui.views.FleetEmptyStateView android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:emptyIcon="@drawable/ub__fleet_ic_document" app:titleText="@string/true_earnings_empty_data_week" />
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/true_earnings_container_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+	<include layout="@layout/ub__fixed_tool_bar" />
+</com.ubercab.fleet_true_earnings.v2.summary.TrueEarningSummaryView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_performance_analytics.feature.overall.PerformanceView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="b2a5faa7-fa05">
+	<com.ubercab.ui.core.UScrollView android:id="@id/ub__performance_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/drivers_report_entry_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" />
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/summary_with_date_range" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/summary_weekly_earnings" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/summary_weekly_overview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/performance_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.UScrollView>
+	<com.ubercab.fleet_ui.views.FleetEmptyStateView android:id="@id/empty_view" android:background="?lightBackground" android:paddingBottom="@dimen/ui__spacing_unit_0.5x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ubercab.fleet_performance_analytics.feature.overall.PerformanceView>

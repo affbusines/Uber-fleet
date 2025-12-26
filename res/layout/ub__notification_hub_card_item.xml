@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@id/ub__notification_card" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.CircleImageView android:layout_gravity="center_vertical" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" />
+	<com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

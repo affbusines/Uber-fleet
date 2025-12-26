@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_performance_analytics.feature.v2.simple_summary.SimpleSummaryView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/weekly_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/summary_rating" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/qpm_entry" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.fleet_performance_analytics.feature.v2.simple_summary.SimpleSummaryView>

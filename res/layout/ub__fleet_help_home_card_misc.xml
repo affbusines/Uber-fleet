@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+	<com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextStyle.Small.Normal" android:textColor="?android:textColorSecondary" android:paddingLeft="?gutterSize" android:paddingTop="?contentInset" android:paddingRight="?gutterSize" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_home_card_misc_title" app:analyticsId="cd992b9f-8c9f" />
+	<com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fleet_help_home_card_misc_row_messages" android:background="?selectableItemBackground" android:paddingLeft="?gutterSize" android:paddingTop="?contentInset" android:paddingRight="?gutterSize" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ub__fleet_ic_message" />
+		<com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextStyle.Subtitle.Normal" android:textColor="?android:textColorPrimary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset" android:text="@string/help_home_card_misc_messages" android:layout_weight="1.0" />
+	</com.ubercab.ui.core.ULinearLayout>
+</merge>

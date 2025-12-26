@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/ub__previous" android:background="?selectableItemBackground" android:padding="@dimen/ui__spacing_unit_2x" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:autoMirrored="true" uber:srcCompat="@drawable/ub__fleet_chevron_start" uber:tint="?buttonPrimaryTint" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="center" android:id="@id/ub__period_label" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/ub__next" android:background="?selectableItemBackground" android:padding="@dimen/ui__spacing_unit_2x" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:autoMirrored="true" uber:srcCompat="@drawable/ub__fleet_chevron_end" uber:tint="?buttonPrimaryTint" />
+		<com.ubercab.ui.core.UPlainView android:background="@drawable/divider_vertical_light" android:layout_width="@dimen/ui__fleet_divider_height" android:layout_height="fill_parent" />
+		<com.ubercab.ui.core.UImageView android:id="@id/ub__calendar" android:background="?selectableItemBackground" android:padding="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:srcCompat="@drawable/ub__fleet_ic_calendar" uber:tint="?buttonPrimaryTint" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.UPlainView android:layout_gravity="bottom" android:background="@drawable/divider_horizontal_light" android:layout_width="fill_parent" android:layout_height="@dimen/ui__fleet_divider_height" />
+</merge>

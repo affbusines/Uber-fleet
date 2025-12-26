@@ -1,0 +1,165 @@
+.class final Lcom/ubercab/fleet_qpm/models/AutoValue_TopFeedbackItemModel$Builder;
+.super Lcom/ubercab/fleet_qpm/models/TopFeedbackItemModel$Builder;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/ubercab/fleet_qpm/models/AutoValue_TopFeedbackItemModel;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field private feedbackTags:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Landroidx/core/util/Pair<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>()V
+    .registers 1
+
+    .line 57
+    invoke-direct {p0}, Lcom/ubercab/fleet_qpm/models/TopFeedbackItemModel$Builder;-><init>()V
+
+    return-void
+.end method
+
+.method private constructor <init>(Lcom/ubercab/fleet_qpm/models/TopFeedbackItemModel;)V
+    .registers 2
+
+    .line 59
+    invoke-direct {p0}, Lcom/ubercab/fleet_qpm/models/TopFeedbackItemModel$Builder;-><init>()V
+
+    .line 60
+    invoke-virtual {p1}, Lcom/ubercab/fleet_qpm/models/TopFeedbackItemModel;->feedbackTags()Ljava/util/List;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/ubercab/fleet_qpm/models/AutoValue_TopFeedbackItemModel$Builder;->feedbackTags:Ljava/util/List;
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/ubercab/fleet_qpm/models/TopFeedbackItemModel;Lcom/ubercab/fleet_qpm/models/AutoValue_TopFeedbackItemModel$1;)V
+    .registers 3
+
+    .line 55
+    invoke-direct {p0, p1}, Lcom/ubercab/fleet_qpm/models/AutoValue_TopFeedbackItemModel$Builder;-><init>(Lcom/ubercab/fleet_qpm/models/TopFeedbackItemModel;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public build()Lcom/ubercab/fleet_qpm/models/TopFeedbackItemModel;
+    .registers 5
+
+    .line 73
+    iget-object v0, p0, Lcom/ubercab/fleet_qpm/models/AutoValue_TopFeedbackItemModel$Builder;->feedbackTags:Ljava/util/List;
+
+    const-string v1, ""
+
+    if-nez v0, :cond_17
+
+    .line 74
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " feedbackTags"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 76
+    :cond_17
+    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_26
+
+    .line 79
+    new-instance v0, Lcom/ubercab/fleet_qpm/models/AutoValue_TopFeedbackItemModel;
+
+    iget-object v1, p0, Lcom/ubercab/fleet_qpm/models/AutoValue_TopFeedbackItemModel$Builder;->feedbackTags:Ljava/util/List;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lcom/ubercab/fleet_qpm/models/AutoValue_TopFeedbackItemModel;-><init>(Ljava/util/List;Lcom/ubercab/fleet_qpm/models/AutoValue_TopFeedbackItemModel$1;)V
+
+    return-object v0
+
+    .line 77
+    :cond_26
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Missing required properties:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public feedbackTags(Ljava/util/List;)Lcom/ubercab/fleet_qpm/models/TopFeedbackItemModel$Builder;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroidx/core/util/Pair<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;>;)",
+            "Lcom/ubercab/fleet_qpm/models/TopFeedbackItemModel$Builder;"
+        }
+    .end annotation
+
+    if-eqz p1, :cond_5
+
+    .line 67
+    iput-object p1, p0, Lcom/ubercab/fleet_qpm/models/AutoValue_TopFeedbackItemModel$Builder;->feedbackTags:Ljava/util/List;
+
+    return-object p0
+
+    .line 65
+    :cond_5
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "Null feedbackTags"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method

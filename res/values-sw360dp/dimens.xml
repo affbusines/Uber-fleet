@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<item type="dimen" name="country_picker_marginTop">@dimen/ui__spacing_unit_4x</item>
+<item type="dimen" name="country_picker_paddingBottom">@dimen/ui__spacing_unit_5x</item>
+<item type="dimen" name="country_picker_paddingTop">@dimen/ui__spacing_unit_4x</item>
+<item type="dimen" name="header_marginTop">@dimen/ui__spacing_unit_4x</item>
+</resources>

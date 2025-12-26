@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="helix_phone_country_picker_description">Le code du pays est %1$s</string>
+<string name="helix_phone_enter_your_mobile_number">Saisissez votre numéro de téléphone portable</string>
+<string name="helix_phone_mobile_number">Numéro de portable</string>
+</resources>

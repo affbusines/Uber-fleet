@@ -1,0 +1,330 @@
+.class public final Lbu/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lbu/b$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Lbu/b$a;
+
+.field private static final c:J
+
+.field private static final d:J
+
+.field private static final e:J
+
+.field private static final f:J
+
+
+# instance fields
+.field private final b:J
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 9
+
+    new-instance v0, Lbu/b$a;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lbu/b$a;-><init>(Lawt/h;)V
+
+    sput-object v0, Lbu/b;->a:Lbu/b$a;
+
+    const/4 v0, 0x3
+
+    int-to-long v0, v0
+
+    const/16 v2, 0x20
+
+    shl-long v3, v0, v2
+
+    const/4 v5, 0x0
+
+    int-to-long v5, v5
+
+    const-wide v7, 0xffffffffL
+
+    and-long/2addr v5, v7
+
+    or-long/2addr v5, v3
+
+    .line 57
+    invoke-static {v5, v6}, Lbu/b;->d(J)J
+
+    move-result-wide v5
+
+    sput-wide v5, Lbu/b;->c:J
+
+    const/4 v5, 0x1
+
+    int-to-long v5, v5
+
+    and-long/2addr v5, v7
+
+    or-long/2addr v5, v3
+
+    .line 64
+    invoke-static {v5, v6}, Lbu/b;->d(J)J
+
+    move-result-wide v5
+
+    sput-wide v5, Lbu/b;->d:J
+
+    const/4 v5, 0x2
+
+    int-to-long v5, v5
+
+    and-long/2addr v5, v7
+
+    or-long/2addr v3, v5
+
+    .line 71
+    invoke-static {v3, v4}, Lbu/b;->d(J)J
+
+    move-result-wide v3
+
+    sput-wide v3, Lbu/b;->e:J
+
+    const/4 v3, 0x4
+
+    int-to-long v3, v3
+
+    shl-long v2, v3, v2
+
+    and-long/2addr v0, v7
+
+    or-long/2addr v0, v2
+
+    .line 79
+    invoke-static {v0, v1}, Lbu/b;->d(J)J
+
+    move-result-wide v0
+
+    sput-wide v0, Lbu/b;->f:J
+
+    return-void
+.end method
+
+.method public static final a(J)I
+    .registers 3
+
+    const/16 v0, 0x20
+
+    shr-long/2addr p0, v0
+
+    long-to-int p1, p0
+
+    return p1
+.end method
+
+.method public static final a(JJ)Z
+    .registers 5
+
+    cmp-long v0, p0, p2
+
+    if-nez v0, :cond_6
+
+    const/4 p0, 0x1
+
+    goto :goto_7
+
+    :cond_6
+    const/4 p0, 0x0
+
+    :goto_7
+    return p0
+.end method
+
+.method public static a(JLjava/lang/Object;)Z
+    .registers 7
+
+    instance-of v0, p2, Lbu/b;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_6
+
+    return v1
+
+    :cond_6
+    check-cast p2, Lbu/b;
+
+    invoke-virtual {p2}, Lbu/b;->a()J
+
+    move-result-wide v2
+
+    cmp-long p2, p0, v2
+
+    if-eqz p2, :cond_11
+
+    return v1
+
+    :cond_11
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
+.method public static final synthetic b()J
+    .registers 2
+
+    .line 30
+    sget-wide v0, Lbu/b;->c:J
+
+    return-wide v0
+.end method
+
+.method public static b(J)Ljava/lang/String;
+    .registers 4
+
+    .line 83
+    sget-wide v0, Lbu/b;->c:J
+
+    invoke-static {p0, p1, v0, v1}, Lbu/b;->a(JJ)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_b
+
+    const-string p0, "Rgb"
+
+    goto :goto_2e
+
+    .line 84
+    :cond_b
+    sget-wide v0, Lbu/b;->d:J
+
+    invoke-static {p0, p1, v0, v1}, Lbu/b;->a(JJ)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_16
+
+    const-string p0, "Xyz"
+
+    goto :goto_2e
+
+    .line 85
+    :cond_16
+    sget-wide v0, Lbu/b;->e:J
+
+    invoke-static {p0, p1, v0, v1}, Lbu/b;->a(JJ)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_21
+
+    const-string p0, "Lab"
+
+    goto :goto_2e
+
+    .line 86
+    :cond_21
+    sget-wide v0, Lbu/b;->f:J
+
+    invoke-static {p0, p1, v0, v1}, Lbu/b;->a(JJ)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_2c
+
+    const-string p0, "Cmyk"
+
+    goto :goto_2e
+
+    :cond_2c
+    const-string p0, "Unknown"
+
+    :goto_2e
+    return-object p0
+.end method
+
+.method public static c(J)I
+    .registers 2
+
+    invoke-static {p0, p1}, L$r8$java8methods$utility2$Long$hashCode$IJ;->hashCode(J)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static final synthetic c()J
+    .registers 2
+
+    .line 30
+    sget-wide v0, Lbu/b;->d:J
+
+    return-wide v0
+.end method
+
+.method public static final synthetic d()J
+    .registers 2
+
+    .line 30
+    sget-wide v0, Lbu/b;->e:J
+
+    return-wide v0
+.end method
+
+.method public static d(J)J
+    .registers 2
+
+    return-wide p0
+.end method
+
+
+# virtual methods
+.method public final synthetic a()J
+    .registers 3
+
+    iget-wide v0, p0, Lbu/b;->b:J
+
+    return-wide v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .registers 4
+
+    iget-wide v0, p0, Lbu/b;->b:J
+
+    invoke-static {v0, v1, p1}, Lbu/b;->a(JLjava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public hashCode()I
+    .registers 3
+
+    iget-wide v0, p0, Lbu/b;->b:J
+
+    invoke-static {v0, v1}, Lbu/b;->c(J)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 3
+
+    .line 82
+    iget-wide v0, p0, Lbu/b;->b:J
+
+    invoke-static {v0, v1}, Lbu/b;->b(J)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_map_tracker.map_tooltip.DriverTrackerTooltipView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UFrameLayout android:layout_gravity="center" android:id="@id/ub__fleet_driver_item_avatar_group" android:layout_width="@dimen/ui__spacing_unit_6x" android:layout_height="@dimen/ui__spacing_unit_6x">
+			<com.ubercab.ui.CircleImageView android:layout_gravity="center" android:id="@id/ub__fleet_driver_item_avatar" android:layout_width="@dimen/ui__avatar_xsmall" android:layout_height="@dimen/ui__avatar_xsmall" app:circleImageBorderColor="?brandWhite" app:circleImageBorderWidth="@dimen/fleet_ub__avatar_border" app:srcCompat="@drawable/ub__ic_avatar_placeholder_light" />
+			<com.ubercab.ui.core.UImageView android:layout_gravity="end|bottom|center" android:id="@id/ub__fleet_driver_item_driver_status" android:layout_width="@dimen/fleet_ui__spacing_unit_1.75x" android:layout_height="@dimen/fleet_ui__spacing_unit_1.75x" android:layout_margin="@dimen/fleet_ui__spacing_unit_0.75x" />
+		</com.ubercab.ui.core.UFrameLayout>
+		<com.ubercab.ui.core.ULinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/fleet_ui__spacing_unit_1.5x">
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/ub__fleet_driver_item_driver_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/ui__spacing_unit_11x" android:maxLines="1" style="@style/Platform.TextStyle.Small.Medium" />
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/ub__fleet_driver_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/ui__spacing_unit_11x" android:maxLines="1" style="@style/Platform.TextStyle.Small.Medium" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.fleet_map_tracker.map_tooltip.DriverTrackerTooltipView>

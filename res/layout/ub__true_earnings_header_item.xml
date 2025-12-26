@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/true_earnings_range_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/true_earnings_day_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/true_earnings_details_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/true_earnings_promotion_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/true_earnings_payments_filter_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UPlainView android:background="@drawable/true_earnings_title_background" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_3x" />
+		<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/true_earnings_payments_filter" android:background="@drawable/true_earnings_item_background" android:padding="?contentInset" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.UImageView android:layout_width="wrap_content" android:layout_height="fill_parent" uber:srcCompat="@drawable/ic_filter_list" />
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/true_earnings_filter_transactions" android:layout_marginStart="@dimen/ui__spacing_unit_3x" style="@style/Platform.TextStyle.Subtitle.Medium" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/true_earnings_no_active_drivers_message" android:padding="?contentInset" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/true_earnings_no_trips_message" android:layout_weight="1.0" android:layout_centerVertical="true" />
+		<com.ubercab.ui.CircleImageView android:id="@id/illustration_car_hand" android:layout_width="@dimen/ui__spacing_unit_6x" android:layout_height="@dimen/ui__spacing_unit_6x" android:layout_weight="0.0" android:layout_centerVertical="true" uber:srcCompat="@drawable/ub__true_earnings_car_hand" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/true_earnings_carousel_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.ui.core.ULinearLayout>

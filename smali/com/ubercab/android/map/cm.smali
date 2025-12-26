@@ -1,0 +1,177 @@
+.class public Lcom/ubercab/android/map/cm;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:Lcom/ubercab/android/map/cm;
+
+
+# instance fields
+.field public final b:D
+
+.field public final c:D
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 3
+
+    .line 5
+    new-instance v0, Lcom/ubercab/android/map/cm;
+
+    const-wide/16 v1, 0x0
+
+    invoke-direct {v0, v1, v2, v1, v2}, Lcom/ubercab/android/map/cm;-><init>(DD)V
+
+    sput-object v0, Lcom/ubercab/android/map/cm;->a:Lcom/ubercab/android/map/cm;
+
+    return-void
+.end method
+
+.method public constructor <init>(DD)V
+    .registers 5
+
+    .line 16
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 17
+    iput-wide p1, p0, Lcom/ubercab/android/map/cm;->b:D
+
+    .line 18
+    iput-wide p3, p0, Lcom/ubercab/android/map/cm;->c:D
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .registers 9
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_4
+
+    return v0
+
+    :cond_4
+    const/4 v1, 0x0
+
+    if-eqz p1, :cond_27
+
+    .line 31
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v3
+
+    if-eq v2, v3, :cond_12
+
+    goto :goto_27
+
+    .line 35
+    :cond_12
+    check-cast p1, Lcom/ubercab/android/map/cm;
+
+    .line 36
+    iget-wide v2, p0, Lcom/ubercab/android/map/cm;->b:D
+
+    iget-wide v4, p1, Lcom/ubercab/android/map/cm;->b:D
+
+    cmpl-double v6, v2, v4
+
+    if-nez v6, :cond_25
+
+    iget-wide v2, p0, Lcom/ubercab/android/map/cm;->c:D
+
+    iget-wide v4, p1, Lcom/ubercab/android/map/cm;->c:D
+
+    cmpl-double p1, v2, v4
+
+    if-nez p1, :cond_25
+
+    goto :goto_26
+
+    :cond_25
+    const/4 v0, 0x0
+
+    :goto_26
+    return v0
+
+    :cond_27
+    :goto_27
+    return v1
+.end method
+
+.method public hashCode()I
+    .registers 5
+
+    .line 41
+    iget-wide v0, p0, Lcom/ubercab/android/map/cm;->b:D
+
+    invoke-static {v0, v1}, Ljava/lang/Double;->doubleToLongBits(D)J
+
+    move-result-wide v0
+
+    const-wide/16 v2, 0x1f
+
+    mul-long v0, v0, v2
+
+    .line 42
+    iget-wide v2, p0, Lcom/ubercab/android/map/cm;->c:D
+
+    invoke-static {v2, v3}, Ljava/lang/Double;->doubleToLongBits(D)J
+
+    move-result-wide v2
+
+    add-long/2addr v0, v2
+
+    const/16 v2, 0x20
+
+    shr-long v2, v0, v2
+
+    xor-long/2addr v0, v2
+
+    long-to-int v1, v0
+
+    return v1
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 4
+
+    .line 23
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "Size2D{width="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-wide v1, p0, Lcom/ubercab/android/map/cm;->b:D
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+
+    const-string v1, ", height="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-wide v1, p0, Lcom/ubercab/android/map/cm;->c:D
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x7d
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

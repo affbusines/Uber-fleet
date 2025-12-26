@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/ledger_view" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UPlainView android:background="?brandGrey20" android:layout_width="fill_parent" android:layout_height="@dimen/ui__fleet_divider_height" />
+	<com.ubercab.ui.core.UPlainView android:layout_width="fill_parent" android:layout_height="?contentInset" />
+	<com.ubercab.ui.core.ULinearLayout android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/ledger_type" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextStyle.Subtitle.Normal" />
+		<com.ubercab.ui.core.UPlainView android:layout_width="@dimen/ui__spacing_unit_0.5x" android:layout_height="fill_parent" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/ledger_earnings" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Subtitle.Medium" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ledger_section_second" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:gravity="start" android:id="@id/ledger_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:gravity="end" android:id="@id/ledger_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" style="@style/Platform.TextStyle.Paragraph.Normal" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.UPlainView android:layout_width="fill_parent" android:layout_height="?contentInset" />
+</com.ubercab.ui.core.ULinearLayout>

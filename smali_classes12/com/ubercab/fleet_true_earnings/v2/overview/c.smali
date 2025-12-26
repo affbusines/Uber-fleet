@@ -1,0 +1,180 @@
+.class public Lcom/ubercab/fleet_true_earnings/v2/overview/c;
+.super Landroidx/recyclerview/widget/RecyclerView$a;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/ubercab/fleet_true_earnings/v2/overview/c$b;,
+        Lcom/ubercab/fleet_true_earnings/v2/overview/c$a;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroidx/recyclerview/widget/RecyclerView$a<",
+        "Lcom/ubercab/fleet_true_earnings/v2/overview/c$a;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private a:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/ubercab/fleet_true_earnings/v2/overview/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private b:Lcom/ubercab/fleet_true_earnings/v2/overview/c$b;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 2
+
+    .line 21
+    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$a;-><init>()V
+
+    .line 23
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/ubercab/fleet_true_earnings/v2/overview/c;->a:Ljava/util/List;
+
+    return-void
+.end method
+
+.method static synthetic a(Lcom/ubercab/fleet_true_earnings/v2/overview/c;)Lcom/ubercab/fleet_true_earnings/v2/overview/c$b;
+    .registers 1
+
+    .line 21
+    iget-object p0, p0, Lcom/ubercab/fleet_true_earnings/v2/overview/c;->b:Lcom/ubercab/fleet_true_earnings/v2/overview/c$b;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public a()I
+    .registers 2
+
+    .line 44
+    iget-object v0, p0, Lcom/ubercab/fleet_true_earnings/v2/overview/c;->a:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public synthetic a(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$w;
+    .registers 3
+
+    .line 21
+    invoke-virtual {p0, p1, p2}, Lcom/ubercab/fleet_true_earnings/v2/overview/c;->c(Landroid/view/ViewGroup;I)Lcom/ubercab/fleet_true_earnings/v2/overview/c$a;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic a(Landroidx/recyclerview/widget/RecyclerView$w;I)V
+    .registers 3
+
+    .line 21
+    check-cast p1, Lcom/ubercab/fleet_true_earnings/v2/overview/c$a;
+
+    invoke-virtual {p0, p1, p2}, Lcom/ubercab/fleet_true_earnings/v2/overview/c;->a(Lcom/ubercab/fleet_true_earnings/v2/overview/c$a;I)V
+
+    return-void
+.end method
+
+.method public a(Lcom/ubercab/fleet_true_earnings/v2/overview/c$a;I)V
+    .registers 4
+
+    .line 39
+    iget-object v0, p0, Lcom/ubercab/fleet_true_earnings/v2/overview/c;->a:Ljava/util/List;
+
+    invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Lcom/ubercab/fleet_true_earnings/v2/overview/b;
+
+    invoke-virtual {p1, p2}, Lcom/ubercab/fleet_true_earnings/v2/overview/c$a;->a(Lcom/ubercab/fleet_true_earnings/v2/overview/b;)V
+
+    return-void
+.end method
+
+.method public a(Lcom/ubercab/fleet_true_earnings/v2/overview/c$b;)V
+    .registers 2
+
+    .line 27
+    iput-object p1, p0, Lcom/ubercab/fleet_true_earnings/v2/overview/c;->b:Lcom/ubercab/fleet_true_earnings/v2/overview/c$b;
+
+    return-void
+.end method
+
+.method public a(Ljava/util/List;)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/ubercab/fleet_true_earnings/v2/overview/b;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 48
+    iget-object v0, p0, Lcom/ubercab/fleet_true_earnings/v2/overview/c;->a:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->clear()V
+
+    .line 49
+    iget-object v0, p0, Lcom/ubercab/fleet_true_earnings/v2/overview/c;->a:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 50
+    invoke-virtual {p0}, Lcom/ubercab/fleet_true_earnings/v2/overview/c;->bN_()V
+
+    return-void
+.end method
+
+.method public c(Landroid/view/ViewGroup;I)Lcom/ubercab/fleet_true_earnings/v2/overview/c$a;
+    .registers 6
+
+    .line 32
+    new-instance p2, Lcom/ubercab/fleet_true_earnings/v2/overview/c$a;
+
+    .line 33
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object v0
+
+    sget v1, Lng/a$i;->ub__true_earnings_v2_overview_item:I
+
+    const/4 v2, 0x0
+
+    .line 34
+    invoke-virtual {v0, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    invoke-direct {p2, p0, p1}, Lcom/ubercab/fleet_true_earnings/v2/overview/c$a;-><init>(Lcom/ubercab/fleet_true_earnings/v2/overview/c;Landroid/view/View;)V
+
+    return-object p2
+.end method

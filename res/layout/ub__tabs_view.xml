@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.UTabLayout android:id="@id/ub__tab_layout" android:background="?brandWhite" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_7x" app:tabIndicatorColor="?accentPrimary" />
+</merge>

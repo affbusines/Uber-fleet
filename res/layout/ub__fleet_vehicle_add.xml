@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<include layout="@layout/ub__fixed_tool_bar" />
+		<com.ubercab.ui.core.input.BaseEditText android:id="@id/edit_text_license_plate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" android:maxLines="1" android:inputType="textCapCharacters|textNoSuggestions" android:imeOptions="actionNext" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset" app:analyticsId="01901365-11fe" app:input_clearButtonEnabled="false" app:input_heading="@string/vehicle_add_label_license_plate" app:input_placeholderHint="@string/vehicle_add_label_license_plate_example" />
+		<com.ubercab.ui.core.input.BaseEditText android:id="@id/edit_text_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:maxLines="1" android:inputType="textCapCharacters|textNoSuggestions" android:imeOptions="actionDone" app:analyticsId="8413002d-e232" app:input_clearButtonEnabled="true" app:input_heading="@string/vehicle_add_label_custom_id" app:input_placeholderHint="@string/vehicle_add_label_custom_id_example" />
+		<com.ubercab.ui.core.UPlainView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+		<com.ubercab.ui.core.button.BaseMaterialButton android:enabled="false" android:id="@id/ub__submit_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/vehicle_list_add_button" app:analyticsId="946e95aa-849a" app:backgroundTint="?buttonPrimary" app:buttonType="primary" app:rippleColor="?foregroundSelectorColor" app:shape="rect" app:size="large" style="@style/Platform.Button.BaseDynamic" />
+	</com.ubercab.ui.core.ULinearLayout>
+</merge>

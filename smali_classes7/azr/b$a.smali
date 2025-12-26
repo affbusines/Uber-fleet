@@ -1,0 +1,33 @@
+.class public Lazr/b$a;
+.super Lazr/b;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lazr/b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 5
+
+    const-string v0, "ES256"
+
+    const-string v1, "SHA256withECDSA"
+
+    const-string v2, "P-256"
+
+    const/16 v3, 0x40
+
+    .line 248
+    invoke-direct {p0, v0, v1, v2, v3}, Lazr/b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+
+    return-void
+.end method

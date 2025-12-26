@@ -1,0 +1,44 @@
+.class public final Lcom/uber/model/core/generated/u4b/lumbergh/PushBusinessPoliciesDataPushModel;
+.super Lvi/m;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lvi/m<",
+        "Lcom/uber/model/core/generated/u4b/lumbergh/PushBusinessPoliciesData;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final INSTANCE:Lcom/uber/model/core/generated/u4b/lumbergh/PushBusinessPoliciesDataPushModel;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    new-instance v0, Lcom/uber/model/core/generated/u4b/lumbergh/PushBusinessPoliciesDataPushModel;
+
+    invoke-direct {v0}, Lcom/uber/model/core/generated/u4b/lumbergh/PushBusinessPoliciesDataPushModel;-><init>()V
+
+    sput-object v0, Lcom/uber/model/core/generated/u4b/lumbergh/PushBusinessPoliciesDataPushModel;->INSTANCE:Lcom/uber/model/core/generated/u4b/lumbergh/PushBusinessPoliciesDataPushModel;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .registers 3
+
+    .line 11
+    const-class v0, Lcom/uber/model/core/generated/u4b/lumbergh/PushBusinessPoliciesData;
+
+    const-string v1, "push_business_policies"
+
+    invoke-direct {p0, v0, v1}, Lvi/m;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
+
+    return-void
+.end method

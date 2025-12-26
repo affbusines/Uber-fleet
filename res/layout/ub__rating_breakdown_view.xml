@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/ub__rating_time_window" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/driver_qpm_entry" app:analyticsId="7c78b546-9f19" style="@style/Platform.TextStyle.Paragraph.Normal" />
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="center" android:id="@id/ub__average_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fleet_ui__spacing_unit_1.5x" app:analyticsId="865e6653-7fb1" app:drawableEndCompat="@drawable/ub__fleet_ic_star_24" style="@style/Platform.TextStyle.DisplayLarge.Normal" />
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__rating_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.ui.core.ULinearLayout>

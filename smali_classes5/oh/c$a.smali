@@ -1,0 +1,25 @@
+.class public interface abstract Loh/c$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Loh/c;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "a"
+.end annotation
+
+
+# virtual methods
+.method public abstract j()Ltq/a;
+.end method
+
+.method public abstract k()Lcom/ubercab/analytics/core/e;
+.end method
+
+.method public abstract l()Labi/a;
+.end method

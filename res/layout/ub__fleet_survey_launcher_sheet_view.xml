@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_fork_survey.launcher.SurveyLauncherView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?brandWhite" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="92de6048-3fce">
+	<com.ubercab.ui.core.UTextView android:id="@id/ub__survey_launcher_title" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="9451d022-8980" style="@style/Platform.TextStyle.Title.Normal" />
+	<com.ubercab.ui.core.UTextView android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/survey_subtitle" uber:analyticsId="d24cac6d-a67d" style="@style/Platform.TextStyle.Paragraph.Normal" />
+	<com.ubercab.ui.core.UButton android:id="@id/ub__survey_launcher_button_skip" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?platformButtonSecondary" />
+	<com.ubercab.ui.core.UButton android:id="@id/ub__survey_launcher_button_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/take_survey" style="?platformButtonPrimary" />
+</com.ubercab.fleet_fork_survey.launcher.SurveyLauncherView>

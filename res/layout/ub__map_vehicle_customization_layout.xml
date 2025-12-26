@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.uber.mapsvehiclecustomization.VehicleCustomizationView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?backgroundPrimary" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="d34f7501-d32d">
+	<com.ubercab.ui.core.header.BaseHeader android:theme="@style/Theme.Platform.Header" android:id="@id/header_tv" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:header_state="collapse" />
+	<com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.text.BaseTextView android:id="@id/description_tv" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Paragraph.Medium" />
+			<com.ubercab.ui.core.image.BaseImageView android:id="@id/vehicle_preview_img" android:background="@drawable/ub__vehicle_customization_background_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/ub__vehicle_customization_sprite_preview_height" android:adjustViewBounds="true" />
+			<com.ubercab.ui.core.URecyclerView android:id="@id/vehicle_list" android:paddingTop="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/ui__spacing_unit_2x" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.UScrollView>
+	<com.ubercab.ui.core.dockedbutton.ButtonDock android:id="@id/apply_button_dock" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x">
+		<com.ubercab.ui.core.button.BaseMaterialButton android:gravity="center" android:id="@id/apply_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/uber_celebrate_apply" app:buttonType="primary" app:itemPriority="primary" app:shape="rect" app:size="large" style="@style/Platform.Button.BaseDynamic" />
+	</com.ubercab.ui.core.dockedbutton.ButtonDock>
+</com.uber.mapsvehiclecustomization.VehicleCustomizationView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.URelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clickable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ub__profile_list_tooltip_displacement">
+	<com.ubercab.ui.core.ULinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/tooltip_arrow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/tooltip_body">
+		<com.ubercab.ui.core.UPlainView android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+		<com.ubercab.ui.core.UImageView android:layout_gravity="bottom|center" android:layout_width="@dimen/ub__profile_list_tooltip_arrow_width" android:layout_height="@dimen/ub__profile_list_tooltip_arrow_height" android:layout_marginBottom="@dimen/ub__profile_list_tooltip_arrow_displacement" app:srcCompat="@drawable/ub__profile_tooltip_triangle" />
+		<com.ubercab.ui.core.UPlainView android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="5.0" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/tooltip_body" android:background="?accentPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:gravity="start" android:id="@id/tooltip_msg" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/ub__profile_list_tooltip_body_height" android:layout_weight="1.0" style="@style/Platform.TextStyle.H6.News.Primary.Inverse" />
+		<com.ubercab.ui.core.UTextView android:ellipsize="end" android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/tooltip_button" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ub__profile_list_tooltip_body_height" android:maxLines="1" style="@style/Platform.TextStyle.H6.News.Primary.Inverse" />
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.URelativeLayout>

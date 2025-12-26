@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ub__promotions_option_container" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ui__spacing_unit_0.5x" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_0.5x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="start" android:id="@id/ub__promotions_option_text" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" app:analyticsId="737ca742-8749" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.UImageView android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="@dimen/ui__spacing_unit_3x" android:layout_height="@dimen/ui__spacing_unit_3x" app:analyticsId="eea6c8c0-85dc" app:srcCompat="@drawable/ub__fleet_ic_chevron_right" style="@style/Platform.TextStyle.Small.Secondary" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.UPlainView android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ui__fleet_divider_height" />
+</com.ubercab.ui.core.ULinearLayout>

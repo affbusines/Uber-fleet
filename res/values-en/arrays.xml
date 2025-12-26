@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="bug_reporter_issue_category_hints"><item>@string/bug_reporter_issue_category_hint</item></string-array>
+</resources>

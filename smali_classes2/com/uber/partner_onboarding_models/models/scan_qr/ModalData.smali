@@ -1,0 +1,649 @@
+.class public final Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lnb/g;
+    a = true
+.end annotation
+
+
+# instance fields
+.field private final ctaTertiaryText:Ljava/lang/String;
+
+.field private final header:Ljava/lang/String;
+
+.field private final paragraph:Ljava/lang/String;
+
+.field private final primaryCTAText:Ljava/lang/String;
+
+.field private final primaryCTAUrl:Ljava/lang/String;
+
+.field private final secondaryCTAText:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .registers 8
+    .param p1    # Ljava/lang/String;
+        .annotation runtime Lnb/e;
+            a = "header"
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation runtime Lnb/e;
+            a = "paragraph"
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/String;
+        .annotation runtime Lnb/e;
+            a = "primaryCTAText"
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/String;
+        .annotation runtime Lnb/e;
+            a = "secondaryCTAText"
+        .end annotation
+    .end param
+    .param p5    # Ljava/lang/String;
+        .annotation runtime Lnb/e;
+            a = "ctaTertiaryText"
+        .end annotation
+    .end param
+    .param p6    # Ljava/lang/String;
+        .annotation runtime Lnb/e;
+            a = "primaryCTAUrl"
+        .end annotation
+    .end param
+
+    const-string v0, "header"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "paragraph"
+
+    invoke-static {p2, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "primaryCTAText"
+
+    invoke-static {p3, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 70
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 72
+    iput-object p1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->header:Ljava/lang/String;
+
+    .line 73
+    iput-object p2, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->paragraph:Ljava/lang/String;
+
+    .line 74
+    iput-object p3, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAText:Ljava/lang/String;
+
+    .line 75
+    iput-object p4, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->secondaryCTAText:Ljava/lang/String;
+
+    .line 76
+    iput-object p5, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->ctaTertiaryText:Ljava/lang/String;
+
+    .line 77
+    iput-object p6, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAUrl:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILawt/h;)V
+    .registers 18
+
+    and-int/lit8 v0, p7, 0x8
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_7
+
+    move-object v6, v1
+
+    goto :goto_8
+
+    :cond_7
+    move-object v6, p4
+
+    :goto_8
+    and-int/lit8 v0, p7, 0x10
+
+    if-eqz v0, :cond_e
+
+    move-object v7, v1
+
+    goto :goto_f
+
+    :cond_e
+    move-object v7, p5
+
+    :goto_f
+    and-int/lit8 v0, p7, 0x20
+
+    if-eqz v0, :cond_15
+
+    move-object v8, v1
+
+    goto :goto_16
+
+    :cond_15
+    move-object v8, p6
+
+    :goto_16
+    move-object v2, p0
+
+    move-object v3, p1
+
+    move-object v4, p2
+
+    move-object v5, p3
+
+    .line 71
+    invoke-direct/range {v2 .. v8}, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static synthetic copy$default(Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;
+    .registers 13
+
+    and-int/lit8 p8, p7, 0x1
+
+    if-eqz p8, :cond_6
+
+    iget-object p1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->header:Ljava/lang/String;
+
+    :cond_6
+    and-int/lit8 p8, p7, 0x2
+
+    if-eqz p8, :cond_c
+
+    iget-object p2, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->paragraph:Ljava/lang/String;
+
+    :cond_c
+    move-object p8, p2
+
+    and-int/lit8 p2, p7, 0x4
+
+    if-eqz p2, :cond_13
+
+    iget-object p3, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAText:Ljava/lang/String;
+
+    :cond_13
+    move-object v0, p3
+
+    and-int/lit8 p2, p7, 0x8
+
+    if-eqz p2, :cond_1a
+
+    iget-object p4, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->secondaryCTAText:Ljava/lang/String;
+
+    :cond_1a
+    move-object v1, p4
+
+    and-int/lit8 p2, p7, 0x10
+
+    if-eqz p2, :cond_21
+
+    iget-object p5, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->ctaTertiaryText:Ljava/lang/String;
+
+    :cond_21
+    move-object v2, p5
+
+    and-int/lit8 p2, p7, 0x20
+
+    if-eqz p2, :cond_28
+
+    iget-object p6, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAUrl:Ljava/lang/String;
+
+    :cond_28
+    move-object v3, p6
+
+    move-object p2, p0
+
+    move-object p3, p1
+
+    move-object p4, p8
+
+    move-object p5, v0
+
+    move-object p6, v1
+
+    move-object p7, v2
+
+    move-object p8, v3
+
+    invoke-virtual/range {p2 .. p8}, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->copy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final component1()Ljava/lang/String;
+    .registers 2
+
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->header:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final component2()Ljava/lang/String;
+    .registers 2
+
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->paragraph:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final component3()Ljava/lang/String;
+    .registers 2
+
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAText:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final component4()Ljava/lang/String;
+    .registers 2
+
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->secondaryCTAText:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final component5()Ljava/lang/String;
+    .registers 2
+
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->ctaTertiaryText:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final component6()Ljava/lang/String;
+    .registers 2
+
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAUrl:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final copy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;
+    .registers 15
+    .param p1    # Ljava/lang/String;
+        .annotation runtime Lnb/e;
+            a = "header"
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation runtime Lnb/e;
+            a = "paragraph"
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/String;
+        .annotation runtime Lnb/e;
+            a = "primaryCTAText"
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/String;
+        .annotation runtime Lnb/e;
+            a = "secondaryCTAText"
+        .end annotation
+    .end param
+    .param p5    # Ljava/lang/String;
+        .annotation runtime Lnb/e;
+            a = "ctaTertiaryText"
+        .end annotation
+    .end param
+    .param p6    # Ljava/lang/String;
+        .annotation runtime Lnb/e;
+            a = "primaryCTAUrl"
+        .end annotation
+    .end param
+
+    const-string v0, "header"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "paragraph"
+
+    invoke-static {p2, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "primaryCTAText"
+
+    invoke-static {p3, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;
+
+    move-object v1, v0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    move-object v6, p5
+
+    move-object v7, p6
+
+    invoke-direct/range {v1 .. v7}, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .registers 6
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_4
+
+    return v0
+
+    :cond_4
+    instance-of v1, p1, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_a
+
+    return v2
+
+    :cond_a
+    check-cast p1, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;
+
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->header:Ljava/lang/String;
+
+    iget-object v3, p1, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->header:Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_17
+
+    return v2
+
+    :cond_17
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->paragraph:Ljava/lang/String;
+
+    iget-object v3, p1, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->paragraph:Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_22
+
+    return v2
+
+    :cond_22
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAText:Ljava/lang/String;
+
+    iget-object v3, p1, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAText:Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2d
+
+    return v2
+
+    :cond_2d
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->secondaryCTAText:Ljava/lang/String;
+
+    iget-object v3, p1, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->secondaryCTAText:Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_38
+
+    return v2
+
+    :cond_38
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->ctaTertiaryText:Ljava/lang/String;
+
+    iget-object v3, p1, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->ctaTertiaryText:Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_43
+
+    return v2
+
+    :cond_43
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAUrl:Ljava/lang/String;
+
+    iget-object p1, p1, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAUrl:Ljava/lang/String;
+
+    invoke-static {v1, p1}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_4e
+
+    return v2
+
+    :cond_4e
+    return v0
+.end method
+
+.method public final getCtaTertiaryText()Ljava/lang/String;
+    .registers 2
+
+    .line 76
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->ctaTertiaryText:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final getHeader()Ljava/lang/String;
+    .registers 2
+
+    .line 72
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->header:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final getParagraph()Ljava/lang/String;
+    .registers 2
+
+    .line 73
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->paragraph:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final getPrimaryCTAText()Ljava/lang/String;
+    .registers 2
+
+    .line 74
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAText:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final getPrimaryCTAUrl()Ljava/lang/String;
+    .registers 2
+
+    .line 77
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAUrl:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final getSecondaryCTAText()Ljava/lang/String;
+    .registers 2
+
+    .line 75
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->secondaryCTAText:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public hashCode()I
+    .registers 4
+
+    iget-object v0, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->header:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->paragraph:Ljava/lang/String;
+
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAText:Ljava/lang/String;
+
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->secondaryCTAText:Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_21
+
+    const/4 v1, 0x0
+
+    goto :goto_25
+
+    :cond_21
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    move-result v1
+
+    :goto_25
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->ctaTertiaryText:Ljava/lang/String;
+
+    if-nez v1, :cond_2e
+
+    const/4 v1, 0x0
+
+    goto :goto_32
+
+    :cond_2e
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    move-result v1
+
+    :goto_32
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAUrl:Ljava/lang/String;
+
+    if-nez v1, :cond_3a
+
+    goto :goto_3e
+
+    :cond_3a
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    move-result v2
+
+    :goto_3e
+    add-int/2addr v0, v2
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "ModalData(header="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->header:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", paragraph="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->paragraph:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", primaryCTAText="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAText:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", secondaryCTAText="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->secondaryCTAText:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", ctaTertiaryText="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->ctaTertiaryText:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", primaryCTAUrl="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/uber/partner_onboarding_models/models/scan_qr/ModalData;->primaryCTAUrl:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x29
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

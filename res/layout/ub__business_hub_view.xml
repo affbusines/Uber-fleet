@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.profiles.features.business_hub.BusinessHubView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?bgContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="fcd0b719-4dad">
+	<com.ubercab.ui.core.widget.CollapsingHeaderAppBarLayout android:theme="?toolbarTheme" android:id="@id/appbar" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/header_elevation" uber:contentInsetStartWithNavigation="0.0dip" uber:elevation="0.0dip" />
+	<com.ubercab.ui.core.UTextView android:id="@id/ub__business_hub_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:text="@string/business_preferences" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" uber:analyticsId="e0d60c6c-33b4" style="@style/U4BBaseHeaderMedium" />
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__business_hub_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ubercab.profiles.features.business_hub.BusinessHubView>

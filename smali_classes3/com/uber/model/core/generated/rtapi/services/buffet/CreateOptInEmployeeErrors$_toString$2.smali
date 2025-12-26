@@ -1,0 +1,277 @@
+.class final Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;
+.super Lawt/r;
+.source "SourceFile"
+
+# interfaces
+.implements Laws/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;-><init>(Ljava/lang/String;Lcom/uber/model/core/generated/rtapi/models/exception/ServerError;Lcom/uber/model/core/generated/rtapi/models/exception/BadRequest;Lcom/uber/model/core/generated/rtapi/models/exception/RateLimited;Lcom/uber/model/core/generated/rtapi/services/buffet/EmployeeInviteEmployeeAlreadyConfirmed;Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeDomainRestrictionsMissing;Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeDisabledForOrganization;Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeDomainNotAllowed;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lawt/r;",
+        "Laws/a<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+
+# direct methods
+.method constructor <init>(Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;)V
+    .registers 2
+
+    iput-object p1, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lawt/r;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .registers 2
+
+    .line 51
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->invoke()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final invoke()Ljava/lang/String;
+    .registers 5
+
+    .line 55
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-static {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->access$getCode$p(Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_16
+
+    .line 57
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-static {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->access$getCode$p(Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "code"
+
+    goto/16 :goto_a1
+
+    .line 58
+    :cond_16
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->serverError()Lcom/uber/model/core/generated/rtapi/models/exception/ServerError;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2c
+
+    .line 60
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->serverError()Lcom/uber/model/core/generated/rtapi/models/exception/ServerError;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "serverError"
+
+    goto/16 :goto_a1
+
+    .line 61
+    :cond_2c
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->badRequest()Lcom/uber/model/core/generated/rtapi/models/exception/BadRequest;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_41
+
+    .line 63
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->badRequest()Lcom/uber/model/core/generated/rtapi/models/exception/BadRequest;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "badRequest"
+
+    goto :goto_a1
+
+    .line 64
+    :cond_41
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->rateLimited()Lcom/uber/model/core/generated/rtapi/models/exception/RateLimited;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_56
+
+    .line 66
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->rateLimited()Lcom/uber/model/core/generated/rtapi/models/exception/RateLimited;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "rateLimited"
+
+    goto :goto_a1
+
+    .line 67
+    :cond_56
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->employeeAlreadyConfirmed()Lcom/uber/model/core/generated/rtapi/services/buffet/EmployeeInviteEmployeeAlreadyConfirmed;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_6b
+
+    .line 69
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->employeeAlreadyConfirmed()Lcom/uber/model/core/generated/rtapi/services/buffet/EmployeeInviteEmployeeAlreadyConfirmed;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "employeeAlreadyConfirmed"
+
+    goto :goto_a1
+
+    .line 70
+    :cond_6b
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->domainRestrictionsMissing()Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeDomainRestrictionsMissing;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_80
+
+    .line 72
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->domainRestrictionsMissing()Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeDomainRestrictionsMissing;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "domainRestrictionsMissing"
+
+    goto :goto_a1
+
+    .line 73
+    :cond_80
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->optInDisabledForOrganization()Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeDisabledForOrganization;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_95
+
+    .line 75
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->optInDisabledForOrganization()Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeDisabledForOrganization;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "optInDisabledForOrganization"
+
+    goto :goto_a1
+
+    .line 78
+    :cond_95
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeErrors;->domainNotAllowed()Lcom/uber/model/core/generated/rtapi/services/buffet/CreateOptInEmployeeDomainNotAllowed;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "domainNotAllowed"
+
+    .line 81
+    :goto_a1
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "CreateOptInEmployeeErrors("
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x3d
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v0, 0x29
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

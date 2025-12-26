@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.UFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:id="@id/ub__tooltip_container" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_5x" android:paddingEnd="@dimen/ui__spacing_unit_5x">
+	<com.ubercab.ui.commons.tooltip.AnchorImageView android:id="@id/ub__tooltip_anchor" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="74c63252-d993" />
+	<include layout="@layout/ub__tooltip_content" />
+</com.ubercab.ui.core.UFrameLayout>

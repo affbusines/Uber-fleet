@@ -1,0 +1,61 @@
+.class Laqz/a$2;
+.super Lio/reactivex/observers/DisposableCompletableObserver;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Laqz/a;->a(Laok/g;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Laqz/a;
+
+
+# direct methods
+.method constructor <init>(Laqz/a;)V
+    .registers 2
+
+    .line 74
+    iput-object p1, p0, Laqz/a$2;->a:Laqz/a;
+
+    invoke-direct {p0}, Lio/reactivex/observers/DisposableCompletableObserver;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onComplete()V
+    .registers 1
+
+    return-void
+.end method
+
+.method public onError(Ljava/lang/Throwable;)V
+    .registers 5
+
+    .line 82
+    sget-object v0, Laqy/a;->a:Laqy/a;
+
+    invoke-static {v0}, Lake/d;->a(Lakf/b;)Lake/e;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const-string v2, "Error when creating chrome trace event for umetric."
+
+    .line 83
+    invoke-virtual {v0, p1, v2, v1}, Lake/e;->a(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    return-void
+.end method

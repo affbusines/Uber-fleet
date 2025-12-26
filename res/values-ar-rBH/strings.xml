@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="helix_phone_country_picker_description">%1$sMã quố gia là</string>
+<string name="helix_phone_enter_your_mobile_number">أدخل رقم هاتفك المتحرك</string>
+<string name="helix_phone_mobile_number">رقم الهاتف المتحرك</string>
+</resources>

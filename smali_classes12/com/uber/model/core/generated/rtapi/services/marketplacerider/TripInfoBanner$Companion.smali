@@ -1,0 +1,148 @@
+.class public final Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Companion;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    .line 126
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lawt/h;)V
+    .registers 2
+
+    invoke-direct {p0}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Companion;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final builder()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;
+    .registers 9
+
+    .line 180
+    new-instance v7, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/16 v5, 0xf
+
+    const/4 v6, 0x0
+
+    move-object v0, v7
+
+    invoke-direct/range {v0 .. v6}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;-><init>(Lcom/uber/model/core/generated/types/common/ui_component/BannerViewModel;Lcom/uber/model/core/generated/rtapi/services/marketplacerider/BannerActionLink;Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBannerType;Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBannerTypeV2;ILawt/h;)V
+
+    return-object v7
+.end method
+
+.method public final builderWithDefaults()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;
+    .registers 5
+
+    .line 185
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Companion;->builder()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;
+
+    move-result-object v0
+
+    .line 186
+    sget-object v1, Lcom/uber/model/core/generated/types/common/ui_component/BannerViewModel;->Companion:Lcom/uber/model/core/generated/types/common/ui_component/BannerViewModel$Companion;
+
+    invoke-virtual {v1}, Lcom/uber/model/core/generated/types/common/ui_component/BannerViewModel$Companion;->stub()Lcom/uber/model/core/generated/types/common/ui_component/BannerViewModel;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;->bannerViewModel(Lcom/uber/model/core/generated/types/common/ui_component/BannerViewModel;)Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;
+
+    move-result-object v0
+
+    .line 187
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Companion$builderWithDefaults$1;
+
+    sget-object v3, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/BannerActionLink;->Companion:Lcom/uber/model/core/generated/rtapi/services/marketplacerider/BannerActionLink$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Companion$builderWithDefaults$1;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/BannerActionLink;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;->actionLink(Lcom/uber/model/core/generated/rtapi/services/marketplacerider/BannerActionLink;)Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;
+
+    move-result-object v0
+
+    .line 188
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    const-class v2, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBannerType;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->randomMemberOf(Ljava/lang/Class;)Ljava/lang/Enum;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBannerType;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;->bannerType(Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBannerType;)Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;
+
+    move-result-object v0
+
+    .line 189
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    const-class v2, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBannerTypeV2;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableRandomMemberOf(Ljava/lang/Class;)Ljava/lang/Enum;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBannerTypeV2;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;->bannerTypeV2(Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBannerTypeV2;)Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final stub()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner;
+    .registers 2
+
+    .line 194
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Companion;->builderWithDefaults()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner$Builder;->build()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/TripInfoBanner;
+
+    move-result-object v0
+
+    return-object v0
+.end method

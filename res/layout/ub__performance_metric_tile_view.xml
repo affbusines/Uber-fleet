@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.ULinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:gravity="center_horizontal" android:id="@id/metric_label" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Meta.Normal" />
+		<com.ubercab.ui.core.UTextView android:gravity="center_horizontal" android:id="@id/metric_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_0.5x" style="@style/Platform.TextStyle.Subtitle.Medium" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.UImageView android:layout_gravity="end|bottom|center" android:id="@id/metric_indicator_icon" android:paddingLeft="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_0.5x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_1x" android:paddingEnd="@dimen/ui__spacing_unit_1x" app:analyticsId="a72af583-973a" />
+</merge>

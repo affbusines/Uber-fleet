@@ -1,0 +1,99 @@
+.class public final Lcom/uber/model/core/generated/rtapi/models/rider/RideStatus$Companion;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/uber/model/core/generated/rtapi/models/rider/RideStatus;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    .line 38
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lawt/h;)V
+    .registers 2
+
+    invoke-direct {p0}, Lcom/uber/model/core/generated/rtapi/models/rider/RideStatus$Companion;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final fromValue(I)Lcom/uber/model/core/generated/rtapi/models/rider/RideStatus;
+    .registers 5
+
+    if-eqz p1, :cond_2b
+
+    const/4 v0, 0x1
+
+    if-eq p1, v0, :cond_28
+
+    const/4 v0, 0x2
+
+    if-eq p1, v0, :cond_25
+
+    const/4 v0, 0x3
+
+    if-ne p1, v0, :cond_e
+
+    .line 51
+    sget-object p1, Lcom/uber/model/core/generated/rtapi/models/rider/RideStatus;->ON_TRIP:Lcom/uber/model/core/generated/rtapi/models/rider/RideStatus;
+
+    goto :goto_2d
+
+    .line 52
+    :cond_e
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Unexpected value: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 50
+    :cond_25
+    sget-object p1, Lcom/uber/model/core/generated/rtapi/models/rider/RideStatus;->WAITING_FOR_PICKUP:Lcom/uber/model/core/generated/rtapi/models/rider/RideStatus;
+
+    goto :goto_2d
+
+    .line 49
+    :cond_28
+    sget-object p1, Lcom/uber/model/core/generated/rtapi/models/rider/RideStatus;->DISPATCHING:Lcom/uber/model/core/generated/rtapi/models/rider/RideStatus;
+
+    goto :goto_2d
+
+    .line 48
+    :cond_2b
+    sget-object p1, Lcom/uber/model/core/generated/rtapi/models/rider/RideStatus;->LOOKING:Lcom/uber/model/core/generated/rtapi/models/rider/RideStatus;
+
+    :goto_2d
+    return-object p1
+.end method

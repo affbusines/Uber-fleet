@@ -1,0 +1,368 @@
+.class public final Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Companion;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    .line 200
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lawt/h;)V
+    .registers 2
+
+    invoke-direct {p0}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Companion;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final builder()Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;
+    .registers 11
+
+    .line 268
+    new-instance v9, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/16 v7, 0x3f
+
+    const/4 v8, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;-><init>(Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Integer;Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;ILawt/h;)V
+
+    return-object v9
+.end method
+
+.method public final builderWithDefaults()Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;
+    .registers 4
+
+    .line 273
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Companion;->builder()Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;
+
+    move-result-object v0
+
+    .line 274
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    invoke-virtual {v1}, Lcom/uber/model/core/internal/RandomUtil;->randomBoolean()Z
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;->content(Ljava/lang/Boolean;)Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;
+
+    move-result-object v0
+
+    .line 275
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    invoke-virtual {v1}, Lcom/uber/model/core/internal/RandomUtil;->nullableRandomBoolean()Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;->content(Ljava/lang/Boolean;)Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;
+
+    move-result-object v0
+
+    .line 276
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    invoke-virtual {v1}, Lcom/uber/model/core/internal/RandomUtil;->nullableRandomDouble()Ljava/lang/Double;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;->fixed(Ljava/lang/Double;)Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;
+
+    move-result-object v0
+
+    .line 277
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    invoke-virtual {v1}, Lcom/uber/model/core/internal/RandomUtil;->nullableRandomBoolean()Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;->matchParent(Ljava/lang/Boolean;)Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;
+
+    move-result-object v0
+
+    .line 278
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    invoke-virtual {v1}, Lcom/uber/model/core/internal/RandomUtil;->nullableRandomDouble()Ljava/lang/Double;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;->aspectRatio(Ljava/lang/Double;)Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;
+
+    move-result-object v0
+
+    .line 279
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    invoke-virtual {v1}, Lcom/uber/model/core/internal/RandomUtil;->nullableRandomInt()Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;->weight(Ljava/lang/Integer;)Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;
+
+    move-result-object v0
+
+    .line 280
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    const-class v2, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->randomMemberOf(Ljava/lang/Class;)Ljava/lang/Enum;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;->type(Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;)Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final createAspectRatio(Ljava/lang/Double;)Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+    .registers 13
+
+    .line 301
+    sget-object v6, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;->ASPECT_RATIO:Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;
+
+    .line 300
+    new-instance v10, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v7, 0x0
+
+    const/16 v8, 0x57
+
+    const/4 v9, 0x0
+
+    move-object v0, v10
+
+    move-object v4, p1
+
+    invoke-direct/range {v0 .. v9}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;-><init>(Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Integer;Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;Layj/i;ILawt/h;)V
+
+    return-object v10
+.end method
+
+.method public final createContent(Ljava/lang/Boolean;)Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+    .registers 13
+
+    .line 289
+    sget-object v6, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;->CONTENT:Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;
+
+    .line 288
+    new-instance v10, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v7, 0x0
+
+    const/16 v8, 0x5e
+
+    const/4 v9, 0x0
+
+    move-object v0, v10
+
+    move-object v1, p1
+
+    invoke-direct/range {v0 .. v9}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;-><init>(Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Integer;Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;Layj/i;ILawt/h;)V
+
+    return-object v10
+.end method
+
+.method public final createFixed(Ljava/lang/Double;)Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+    .registers 13
+
+    .line 293
+    sget-object v6, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;->FIXED:Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;
+
+    .line 292
+    new-instance v10, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+
+    const/4 v1, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v7, 0x0
+
+    const/16 v8, 0x5d
+
+    const/4 v9, 0x0
+
+    move-object v0, v10
+
+    move-object v2, p1
+
+    invoke-direct/range {v0 .. v9}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;-><init>(Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Integer;Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;Layj/i;ILawt/h;)V
+
+    return-object v10
+.end method
+
+.method public final createMatchParent(Ljava/lang/Boolean;)Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+    .registers 13
+
+    .line 297
+    sget-object v6, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;->MATCH_PARENT:Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;
+
+    .line 296
+    new-instance v10, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v7, 0x0
+
+    const/16 v8, 0x5b
+
+    const/4 v9, 0x0
+
+    move-object v0, v10
+
+    move-object v3, p1
+
+    invoke-direct/range {v0 .. v9}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;-><init>(Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Integer;Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;Layj/i;ILawt/h;)V
+
+    return-object v10
+.end method
+
+.method public final createUnknown()Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+    .registers 12
+
+    .line 309
+    new-instance v10, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+
+    .line 310
+    sget-object v6, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;->UNKNOWN:Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v7, 0x0
+
+    const/16 v8, 0x5f
+
+    const/4 v9, 0x0
+
+    move-object v0, v10
+
+    .line 309
+    invoke-direct/range {v0 .. v9}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;-><init>(Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Integer;Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;Layj/i;ILawt/h;)V
+
+    return-object v10
+.end method
+
+.method public final createWeight(Ljava/lang/Integer;)Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+    .registers 13
+
+    .line 305
+    sget-object v6, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;->WEIGHT:Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;
+
+    .line 304
+    new-instance v10, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v7, 0x0
+
+    const/16 v8, 0x4f
+
+    const/4 v9, 0x0
+
+    move-object v0, v10
+
+    move-object v5, p1
+
+    invoke-direct/range {v0 .. v9}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;-><init>(Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Integer;Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeTypeUnionType;Layj/i;ILawt/h;)V
+
+    return-object v10
+.end method
+
+.method public final stub()Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+    .registers 2
+
+    .line 285
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Companion;->builderWithDefaults()Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType$Builder;->build()Lcom/uber/model/core/generated/mobile/sdui/ViewModelStackSizeType;
+
+    move-result-object v0
+
+    return-object v0
+.end method

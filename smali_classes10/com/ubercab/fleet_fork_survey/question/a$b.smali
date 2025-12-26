@@ -1,0 +1,54 @@
+.class interface abstract Lcom/ubercab/fleet_fork_survey/question/a$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/ubercab/fleet_fork_survey/question/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x608
+    name = "b"
+.end annotation
+
+
+# virtual methods
+.method public abstract a()Lio/reactivex/Observable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/Observable<",
+            "Lawf/aa;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract a(Lcom/uber/model/core/generated/supply/survey/Question;)V
+.end method
+
+.method public abstract a(Ljava/util/Set;Lagd/c;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Set<",
+            "Lcom/uber/model/core/generated/supply/survey/Answer;",
+            ">;",
+            "Lagd/c;",
+            ")V"
+        }
+    .end annotation
+.end method
+
+.method public abstract b()Lio/reactivex/Observable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/Observable<",
+            "Lawf/aa;",
+            ">;"
+        }
+    .end annotation
+.end method

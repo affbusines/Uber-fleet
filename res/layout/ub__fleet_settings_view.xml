@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_settings.SettingsView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<include layout="@layout/ub__fixed_tool_bar" />
+	<com.ubercab.ui.core.UCoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_horizontal_light" android:showDividers="middle">
+				<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__fleet_settings_my_profile_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__fleet_settings_optional_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				<com.ubercab.ui.core.UTextView android:textColor="?colorNegative" android:layout_gravity="center_vertical" android:id="@id/ub__fleet_settings_sign_out_view" android:background="?selectableItemBackground" android:padding="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/signout" style="@style/Platform.TextStyle.Subtitle.Normal" />
+				<com.ubercab.ui.core.UTextView android:layout_gravity="center_vertical" android:id="@id/ub__fleet_settings_version_view" android:padding="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_3x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Small.Secondary" />
+			</com.ubercab.ui.core.ULinearLayout>
+		</com.ubercab.ui.core.UScrollView>
+	</com.ubercab.ui.core.UCoordinatorLayout>
+</com.ubercab.fleet_settings.SettingsView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<include layout="@layout/ub__fixed_tool_bar" />
+	<com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.UTextView android:id="@id/ub__edit_vehicle_label_remove_text" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tap_to_remove_label" app:analyticsId="8efd4296-6004" style="@style/Platform.TextStyle.LabelDefault" />
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__edit_vehicle_label_list_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<com.ubercab.ui.core.button.BaseMaterialButton android:id="@id/ub__add_vehicle_label_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/add_label" app:analyticsId="e7ca54da-633b" app:backgroundTint="?buttonPrimary" app:buttonType="primary" app:rippleColor="?foregroundSelectorColor" app:shape="rect" app:size="large" style="@style/Platform.Button.BaseDynamic" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.UScrollView>
+</merge>

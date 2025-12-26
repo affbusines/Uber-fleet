@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/vehicle_card_container" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.image.BaseImageView android:layout_gravity="center" android:id="@id/vehicle_sprite_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+	<com.ubercab.ui.core.text.BaseTextView android:gravity="center" android:layout_gravity="center" android:id="@id/vehicle_sprite_name_tv" android:paddingBottom="@dimen/ui__spacing_unit_1.5x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextStyle.LabelXSmall" />
+</com.ubercab.ui.core.ULinearLayout>

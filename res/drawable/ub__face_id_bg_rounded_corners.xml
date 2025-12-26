@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ub__identity_verification_how_it_works_learn_more_background" android:shape="rectangle">
+	<corners android:radius="@dimen/ui__spacing_unit_4.5x" />
+	<solid android:color="?buttonSecondary" />
+</shape>

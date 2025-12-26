@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.profiles.features.voucher_redeem_code_flow.landing.RedeemCodeLandingView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="a297594e-5fef">
+	<include layout="@layout/collapsing_header" />
+	<com.ubercab.ui.core.URelativeLayout android:background="?android:colorBackground" android:paddingTop="@dimen/ui__spacing_unit_4x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="?contentInset">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.UImageView android:layout_gravity="center" android:id="@id/ub__voucher_redeem_image" android:layout_width="@dimen/ub__voucher_deeplink_landing_image" android:layout_height="@dimen/ub__voucher_deeplink_landing_image" android:scaleType="fitCenter" android:adjustViewBounds="true" android:importantForAccessibility="no" />
+			<com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__voucher_redeem_heading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_4x" android:text="@string/voucher_landing_text_heading" style="@style/Platform.TextStyle.Headline.Medium" />
+			<com.ubercab.ui.core.UTextView android:textColor="@color/ub__ui_core_v2_gray600" android:gravity="center" android:id="@id/ub__voucher_redeem_details" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Subtitle.Normal" />
+		</com.ubercab.ui.core.ULinearLayout>
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+			<com.ubercab.ui.core.button.BaseMaterialButton android:id="@id/ub__voucher_redeem_accept_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/voucher_accept_action" app:analyticsId="87ee6e4c-1b97" app:buttonType="primary" style="@style/Platform.Button.BaseDynamic" />
+			<com.ubercab.ui.core.UTextView android:id="@id/ub__voucher_redeem_disclosure" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.H6.News.Tertiary" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.URelativeLayout>
+</com.ubercab.profiles.features.voucher_redeem_code_flow.landing.RedeemCodeLandingView>

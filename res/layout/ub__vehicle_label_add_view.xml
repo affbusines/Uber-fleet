@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.input.BaseEditText android:id="@id/edit_text_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:maxLines="1" android:inputType="textNoSuggestions" android:imeOptions="actionDone" app:analyticsId="8413002d-e232" app:input_clearButtonEnabled="true" app:input_placeholderHint="@string/ub__vehicle_label_example" />
+</com.ubercab.ui.core.ULinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_welcome_fre.FirstRunExperienceView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.UViewPager android:id="@id/ub__fre_view_pager" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_0x" android:layout_weight="1.0" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+	<com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.fleet_ui.viewpager.CirclePageIndicator android:id="@id/ub__fre_page_indicator" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fillColor="?android:textColorPrimary" app:pageColor="?android:textColorTertiary" app:strokeColor="?brandGrey60" app:strokeWidth="@dimen/ui__spacing_unit_0x" />
+		<com.ubercab.ui.core.UFrameLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+			<com.ubercab.fleet_ui.views.SignInSignUpView android:layout_gravity="center" android:id="@id/ub__sign_in_sign_up_button" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.Button.Secondary" />
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/ub__fre_button" android:background="?selectableItemBackgroundBorderless" android:padding="?contentInset" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="?contentInset" android:text="@string/skip" style="@style/Platform.TextStyle.Meta.Normal" />
+		</com.ubercab.ui.core.UFrameLayout>
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.fleet_welcome_fre.FirstRunExperienceView>

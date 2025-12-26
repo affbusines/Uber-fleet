@@ -1,0 +1,204 @@
+.class final Laxm/g$a;
+.super Lawl/l;
+.source "SourceFile"
+
+# interfaces
+.implements Laws/m;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Laxm/g;->a(Laxl/g;Lawj/g;Lawj/d;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lawl/l;",
+        "Laws/m<",
+        "Laxl/g<",
+        "-TT;>;",
+        "Lawj/d<",
+        "-",
+        "Lawf/aa;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field a:I
+
+.field synthetic b:Ljava/lang/Object;
+
+.field final synthetic c:Laxm/g;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Laxm/g<",
+            "TS;TT;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>(Laxm/g;Lawj/d;)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laxm/g<",
+            "TS;TT;>;",
+            "Lawj/d<",
+            "-",
+            "Laxm/g$a;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Laxm/g$a;->c:Laxm/g;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p2}, Lawl/l;-><init>(ILawj/d;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;Lawj/d;)Lawj/d;
+    .registers 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lawj/d<",
+            "*>;)",
+            "Lawj/d<",
+            "Lawf/aa;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Laxm/g$a;
+
+    iget-object v1, p0, Laxm/g$a;->c:Laxm/g;
+
+    invoke-direct {v0, v1, p2}, Laxm/g$a;-><init>(Laxm/g;Lawj/d;)V
+
+    iput-object p1, v0, Laxm/g$a;->b:Ljava/lang/Object;
+
+    check-cast v0, Lawj/d;
+
+    return-object v0
+.end method
+
+.method public final a(Laxl/g;Lawj/d;)Ljava/lang/Object;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laxl/g<",
+            "-TT;>;",
+            "Lawj/d<",
+            "-",
+            "Lawf/aa;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    invoke-virtual {p0, p1, p2}, Laxm/g$a;->a(Ljava/lang/Object;Lawj/d;)Lawj/d;
+
+    move-result-object p1
+
+    check-cast p1, Laxm/g$a;
+
+    sget-object p2, Lawf/aa;->a:Lawf/aa;
+
+    invoke-virtual {p1, p2}, Laxm/g$a;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 6
+
+    invoke-static {}, Lawk/b;->a()Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 152
+    iget v1, p0, Laxm/g$a;->a:I
+
+    const/4 v2, 0x1
+
+    if-eqz v1, :cond_17
+
+    if-ne v1, v2, :cond_f
+
+    invoke-static {p1}, Lawf/r;->a(Ljava/lang/Object;)V
+
+    goto :goto_2c
+
+    :cond_f
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_17
+    invoke-static {p1}, Lawf/r;->a(Ljava/lang/Object;)V
+
+    iget-object p1, p0, Laxm/g$a;->b:Ljava/lang/Object;
+
+    check-cast p1, Laxl/g;
+
+    iget-object v1, p0, Laxm/g$a;->c:Laxm/g;
+
+    move-object v3, p0
+
+    check-cast v3, Lawj/d;
+
+    iput v2, p0, Laxm/g$a;->a:I
+
+    invoke-virtual {v1, p1, v3}, Laxm/g;->b(Laxl/g;Lawj/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v0, :cond_2c
+
+    return-object v0
+
+    :cond_2c
+    :goto_2c
+    sget-object p1, Lawf/aa;->a:Lawf/aa;
+
+    return-object p1
+.end method
+
+.method public synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 3
+
+    check-cast p1, Laxl/g;
+
+    check-cast p2, Lawj/d;
+
+    invoke-virtual {p0, p1, p2}, Laxm/g$a;->a(Laxl/g;Lawj/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method

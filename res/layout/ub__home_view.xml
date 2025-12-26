@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_home.HomeView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<com.ubercab.ui.core.UFrameLayout android:focusable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__fleet_home_content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+			<com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__home_loading_indicator" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:bli_bitColor="?colorPrimary" />
+			<com.ubercab.ui.core.UPlainView android:layout_gravity="bottom" android:background="@drawable/ub__tab_nav_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/fleet_ui_shadow_height" />
+		</com.ubercab.ui.core.UFrameLayout>
+		<com.ubercab.fleet_ui.tabs.ImageTabsView android:id="@id/ub__fleet_home_image_tabs_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.fleet_home.HomeView>

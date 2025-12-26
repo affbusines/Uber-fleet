@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.uber.safety.identity.verification.flow.docscan.uscan_mask.USnapCameraControlOverlayOnboardingView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.UConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<include app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/identity_verification_camera_control_driver_license_overlay_image_classifier" />
+		<com.ubercab.ui.core.UImageView android:id="@id/gallery_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?contentOnColor" android:layout_marginHorizontal="@dimen/ui__spacing_unit_5x" android:layout_marginVertical="@dimen/ui__spacing_unit_5x" app:analyticsId="e17e8eeb-f74f" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:srcCompat="@drawable/ub__ic_photo_gallery" />
+	</com.ubercab.ui.core.UConstraintLayout>
+</com.uber.safety.identity.verification.flow.docscan.uscan_mask.USnapCameraControlOverlayOnboardingView>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/ub__menu_item_horizontal" android:insetLeft="@dimen/ui__spacing_unit_8x" />

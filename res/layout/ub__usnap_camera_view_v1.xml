@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.usnap.camera.USnapCameraViewV1 xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.UAppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/appbar" android:background="?brandBlack" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/header_elevation" uber:contentInsetStartWithNavigation="0.0dip">
+		<com.ubercab.ui.core.UToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" uber:contentInsetStartWithNavigation="0.0dip" uber:layout_collapseMode="pin" uber:popupTheme="@style/ThemeOverlay.AppCompat.Light" uber:titleTextAppearance="@style/Platform.TextStyle.H3.Book" style="@style/Widget.Platform.Toolbar">
+			<com.ubercab.ui.core.UTextView android:textColor="?contentOnColor" android:layout_gravity="end|center" android:id="@id/ub_usnap_camera_skip" android:padding="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__usnap_camera_skip" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" uber:analyticsId="edb480cd-8bb1" style="@style/Platform.TextStyle.LabelDefault" />
+			<com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:layout_gravity="end|center" android:orientation="horizontal" android:id="@id/ub__usnap_toolbar_custom_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</com.ubercab.ui.core.UToolbar>
+	</com.ubercab.ui.core.UAppBarLayout>
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__carbon_facecamera_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<com.ubercab.cameraview.UCameraView android:id="@id/ub__camera_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" uber:ucv_autoFocus="true" uber:ucv_facing="back" />
+	</com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.usnap.camera.USnapCameraViewV1>

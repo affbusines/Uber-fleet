@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.uber.mobilestudio.experiment.ExperimentView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="2" style="@style/MobileStudio.Plugin">
+	<TextView android:layout_gravity="end|fill_horizontal|start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Experiments" android:layout_columnSpan="2" style="@style/MobileStudio.Plugin.Header" />
+	<LinearLayout android:layout_gravity="end|fill_horizontal|start" android:orientation="horizontal" android:id="@id/experiment_launch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ub__mobilestudio_padding_2x" android:layout_columnSpan="2">
+		<TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:text="Launch Experiments" android:layout_weight="1.0" style="@style/MobileStudio.Plugin.RowTitle" />
+		<com.ubercab.ui.core.UImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/mobilestudio_ic_launch_arrow" />
+	</LinearLayout>
+	<com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:id="@id/untreat_experiments_title" android:visibility="gone" android:text="Untreat All Experiments" app:analyticsId="c49a9b71-52f1" style="@style/MobileStudio.Plugin.RowTitle" />
+	<com.ubercab.ui.core.USwitchCompat android:layout_gravity="start|center" android:id="@id/toggle_untreat_experiments" android:visibility="gone" style="@style/MobileStudio.Plugin.RowWidget" />
+</com.uber.mobilestudio.experiment.ExperimentView>

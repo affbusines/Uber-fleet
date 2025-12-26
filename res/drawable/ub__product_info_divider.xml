@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+	<size android:height="@dimen/ui__divider_width" android:width="@dimen/ui__divider_width" />
+	<solid android:color="@color/ub__selector_dark" />
+</shape>

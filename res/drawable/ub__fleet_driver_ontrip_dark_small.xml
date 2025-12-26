@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+	<solid android:color="?iconPositive" />
+	<stroke android:width="@dimen/fleet_ui__status_border_width" android:color="?iconColor" />
+	<size android:height="@dimen/fleet_ui__spacing_unit_1.75x" android:width="@dimen/fleet_ui__spacing_unit_1.75x" />
+</shape>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_map_tracker.map_tooltip.LastKnownLocTooltipView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/last_known_location" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/ub__last_known_loc_text_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Small.Medium" />
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.fleet_map_tracker.map_tooltip.LastKnownLocTooltipView>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_landing.optional.LandingView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.fleet_ui.views.SignInSignUpView android:layout_gravity="bottom" android:id="@id/sign_in_sign_up_view" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" app:showRegister="false" app:showSignIn="true" />
+</com.ubercab.fleet_landing.optional.LandingView>

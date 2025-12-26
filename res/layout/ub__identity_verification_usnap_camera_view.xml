@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.UConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<com.ubercab.cameraview.UCameraView2 android:id="@id/ub__camera_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:adjustViewBounds="true" android:keepScreenOn="true" app:camera_facing="back" app:layout_constraintDimensionRatio="H,3:4" />
+</com.ubercab.ui.core.UConstraintLayout>

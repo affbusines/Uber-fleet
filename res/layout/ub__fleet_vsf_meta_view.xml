@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?brandWhite" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/ui__elevation_low">
+	<com.ubercab.ui.core.ULinearLayout android:gravity="top" android:paddingTop="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x">
+		<com.ubercab.ui.core.UPlainView android:background="?colorPositive" android:layout_width="@dimen/ui__spacing_unit_1x" android:layout_height="@dimen/ui__spacing_unit_1x" android:layout_marginLeft="?contentInset" android:layout_marginTop="@dimen/ui__spacing_unit_0.5x" android:layout_marginRight="?contentInset" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/ub__fleet_trip_detail_pickup" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextStyle.Meta.Normal" />
+		<androidx.legacy.widget.Space android:layout_width="?contentInset" android:layout_height="fill_parent" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.ULinearLayout android:gravity="top" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UPlainView android:background="?colorNegative" android:layout_width="@dimen/ui__spacing_unit_1x" android:layout_height="@dimen/ui__spacing_unit_1x" android:layout_marginLeft="?contentInset" android:layout_marginTop="@dimen/ui__spacing_unit_0.5x" android:layout_marginRight="?contentInset" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/ub__fleet_trip_detail_destination" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextStyle.Meta.Normal" />
+		<androidx.legacy.widget.Space android:layout_width="?contentInset" android:layout_height="fill_parent" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.UImageView android:id="@id/ub__fleet_trip_detail_map" android:layout_width="fill_parent" android:layout_height="@dimen/ub__trip_map_height" android:scaleType="fitXY" app:analyticsId="ead944ba-2f6a" />
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:layout_gravity="center_horizontal" android:paddingTop="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_earnings" app:analyticsId="2f6d0f00-c906" style="@style/Platform.TextStyle.Paragraph.Normal" />
+	<com.ubercab.ui.core.UTextView android:layout_gravity="center_horizontal" android:id="@id/ub__fleet_trip_detail_total_earnings" android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" app:analyticsId="277e444a-6793" style="@style/Platform.TextStyle.DisplayLarge.Normal" />
+	<com.ubercab.ui.core.UPlainView android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="?dividerWidth" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:layout_marginBottom="?contentInset" />
+	<com.ubercab.ui.core.ULinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/duration" style="@style/Platform.TextStyle.Meta.Bold" />
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="center_horizontal" android:id="@id/ub__fleet_trip_detail_duration" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Subtitle.Normal" />
+		</com.ubercab.ui.core.ULinearLayout>
+		<com.ubercab.ui.core.UPlainView android:background="?dividerVertical" android:layout_width="@dimen/ui__divider_width" android:layout_height="fill_parent" />
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/distance" style="@style/Platform.TextStyle.Meta.Bold" />
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="center_horizontal" android:id="@id/ub__fleet_trip_detail_distance" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Subtitle.Normal" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

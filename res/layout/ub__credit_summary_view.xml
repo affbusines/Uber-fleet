@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.credits.CreditSummaryView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsId="4648ed07-32a3">
+	<include layout="@layout/collapsing_header" />
+	<com.ubercab.ui.core.URecyclerView android:id="@id/ub__credit_summary_recyclerview" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</com.ubercab.credits.CreditSummaryView>

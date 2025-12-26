@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_referrals.invite_status.InviteStatusView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/layout_pending_invites" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<include android:id="@id/load_more_pending_invites" uber:analyticsId="3ed317c0-e723" layout="@layout/ub__referrals_invite_status_load_more" />
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/layout_completed_invites" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<include android:id="@id/load_more_completed_invites" uber:analyticsId="44884f01-6518" layout="@layout/ub__referrals_invite_status_load_more" />
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/layout_banned_invites" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<include android:id="@id/load_more_banned_invites" uber:analyticsId="6408de38-eef8" layout="@layout/ub__referrals_invite_status_load_more" />
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/layout_empty_invites" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.fleet_referrals.invite_status.InviteStatusView>

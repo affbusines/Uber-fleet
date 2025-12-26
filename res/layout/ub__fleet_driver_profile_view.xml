@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_driver_profile.DriverProfileView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<include layout="@layout/ub__collapsing_avatar_toolbar" />
+	<com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__fleet_driver_profile_information_section" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__fleet_driver_profile_performance_section" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__fleet_driver_profile_user_action_section" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.UScrollView>
+</com.ubercab.fleet_driver_profile.DriverProfileView>

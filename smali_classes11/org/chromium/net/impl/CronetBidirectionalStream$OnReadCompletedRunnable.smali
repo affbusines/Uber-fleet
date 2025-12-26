@@ -1,0 +1,188 @@
+.class final Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/chromium/net/impl/CronetBidirectionalStream;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x12
+    name = "OnReadCompletedRunnable"
+.end annotation
+
+
+# instance fields
+.field mByteBuffer:Ljava/nio/ByteBuffer;
+
+.field mEndOfStream:Z
+
+.field final synthetic this$0:Lorg/chromium/net/impl/CronetBidirectionalStream;
+
+
+# direct methods
+.method private constructor <init>(Lorg/chromium/net/impl/CronetBidirectionalStream;)V
+    .registers 2
+
+    .line 166
+    iput-object p1, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->this$0:Lorg/chromium/net/impl/CronetBidirectionalStream;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lorg/chromium/net/impl/CronetBidirectionalStream;Lorg/chromium/net/impl/CronetBidirectionalStream$1;)V
+    .registers 3
+
+    .line 166
+    invoke-direct {p0, p1}, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;-><init>(Lorg/chromium/net/impl/CronetBidirectionalStream;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .registers 7
+
+    .line 176
+    :try_start_0
+    iget-object v0, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->mByteBuffer:Ljava/nio/ByteBuffer;
+
+    const/4 v1, 0x0
+
+    .line 177
+    iput-object v1, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->mByteBuffer:Ljava/nio/ByteBuffer;
+
+    .line 179
+    iget-object v1, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->this$0:Lorg/chromium/net/impl/CronetBidirectionalStream;
+
+    invoke-static {v1}, Lorg/chromium/net/impl/CronetBidirectionalStream;->access$000(Lorg/chromium/net/impl/CronetBidirectionalStream;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    monitor-enter v1
+    :try_end_c
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_c} :catch_53
+
+    .line 180
+    :try_start_c
+    iget-object v2, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->this$0:Lorg/chromium/net/impl/CronetBidirectionalStream;
+
+    invoke-static {v2}, Lorg/chromium/net/impl/CronetBidirectionalStream;->access$100(Lorg/chromium/net/impl/CronetBidirectionalStream;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_16
+
+    .line 181
+    monitor-exit v1
+
+    return-void
+
+    .line 183
+    :cond_16
+    iget-boolean v2, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->mEndOfStream:Z
+
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_2e
+
+    .line 184
+    iget-object v2, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->this$0:Lorg/chromium/net/impl/CronetBidirectionalStream;
+
+    const/4 v4, 0x4
+
+    invoke-static {v2, v4}, Lorg/chromium/net/impl/CronetBidirectionalStream;->access$202(Lorg/chromium/net/impl/CronetBidirectionalStream;I)I
+
+    .line 185
+    iget-object v2, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->this$0:Lorg/chromium/net/impl/CronetBidirectionalStream;
+
+    invoke-static {v2}, Lorg/chromium/net/impl/CronetBidirectionalStream;->access$300(Lorg/chromium/net/impl/CronetBidirectionalStream;)I
+
+    move-result v2
+
+    const/16 v4, 0xa
+
+    if-ne v2, v4, :cond_34
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x1
+
+    goto :goto_34
+
+    .line 187
+    :cond_2e
+    iget-object v2, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->this$0:Lorg/chromium/net/impl/CronetBidirectionalStream;
+
+    const/4 v4, 0x2
+
+    invoke-static {v2, v4}, Lorg/chromium/net/impl/CronetBidirectionalStream;->access$202(Lorg/chromium/net/impl/CronetBidirectionalStream;I)I
+
+    .line 189
+    :cond_34
+    :goto_34
+    monitor-exit v1
+    :try_end_35
+    .catchall {:try_start_c .. :try_end_35} :catchall_50
+
+    .line 190
+    :try_start_35
+    iget-object v1, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->this$0:Lorg/chromium/net/impl/CronetBidirectionalStream;
+
+    invoke-static {v1}, Lorg/chromium/net/impl/CronetBidirectionalStream;->access$500(Lorg/chromium/net/impl/CronetBidirectionalStream;)Lorg/chromium/net/impl/VersionSafeCallbacks$BidirectionalStreamCallback;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->this$0:Lorg/chromium/net/impl/CronetBidirectionalStream;
+
+    iget-object v4, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->this$0:Lorg/chromium/net/impl/CronetBidirectionalStream;
+
+    .line 191
+    invoke-static {v4}, Lorg/chromium/net/impl/CronetBidirectionalStream;->access$400(Lorg/chromium/net/impl/CronetBidirectionalStream;)Lorg/chromium/net/impl/UrlResponseInfoImpl;
+
+    move-result-object v4
+
+    iget-boolean v5, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->mEndOfStream:Z
+
+    .line 190
+    invoke-virtual {v1, v2, v4, v0, v5}, Lorg/chromium/net/impl/VersionSafeCallbacks$BidirectionalStreamCallback;->onReadCompleted(Lorg/chromium/net/BidirectionalStream;Lorg/chromium/net/UrlResponseInfo;Ljava/nio/ByteBuffer;Z)V
+
+    if-eqz v3, :cond_59
+
+    .line 193
+    iget-object v0, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->this$0:Lorg/chromium/net/impl/CronetBidirectionalStream;
+
+    invoke-static {v0}, Lorg/chromium/net/impl/CronetBidirectionalStream;->access$600(Lorg/chromium/net/impl/CronetBidirectionalStream;)V
+
+    goto :goto_59
+
+    :catchall_50
+    move-exception v0
+
+    .line 189
+    monitor-exit v1
+
+    throw v0
+    :try_end_53
+    .catch Ljava/lang/Exception; {:try_start_35 .. :try_end_53} :catch_53
+
+    :catch_53
+    move-exception v0
+
+    .line 196
+    iget-object v1, p0, Lorg/chromium/net/impl/CronetBidirectionalStream$OnReadCompletedRunnable;->this$0:Lorg/chromium/net/impl/CronetBidirectionalStream;
+
+    invoke-static {v1, v0}, Lorg/chromium/net/impl/CronetBidirectionalStream;->access$700(Lorg/chromium/net/impl/CronetBidirectionalStream;Ljava/lang/Exception;)V
+
+    :cond_59
+    :goto_59
+    return-void
+.end method

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_welcome_fre.FirstRunExperienceStepView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UImageView android:id="@id/ub__fre_step_image_view" android:layout_width="fill_parent" android:layout_height="@dimen/fleet_ui__fre_image_height" android:layout_marginTop="@dimen/ui__spacing_unit_5x" android:layout_marginBottom="@dimen/ui__spacing_unit_5x" android:scaleType="centerCrop" />
+		<com.ubercab.ui.core.ULinearLayout android:gravity="start" android:orientation="vertical" android:paddingLeft="@dimen/ui__spacing_unit_3x" android:paddingRight="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.UTextView android:gravity="start" android:id="@id/ub__fre_step_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" style="@style/Platform.TextStyle.Headline.Normal" />
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:gravity="start" android:id="@id/ub__fre_step_content_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.fleet_welcome_fre.FirstRunExperienceStepView>

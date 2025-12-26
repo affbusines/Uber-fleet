@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.risk.challenges.penny_auth.consent.PennyAuthConsentView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?backgroundPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.UToolbar android:theme="@style/ThemeOverlay.Platform.Light.Header" android:id="@id/white_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" style="@style/Widget.Platform.Toolbar" />
+	<com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:layout_marginBottom="@dimen/ui__spacing_unit_11x">
+		<com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_2x" android:layout_marginEnd="@dimen/ui__spacing_unit_2x">
+			<com.ubercab.ui.core.UImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:analyticsId="8062d901-0a9c" app:srcCompat="@drawable/ub__penny_auth_consent_logo" />
+			<com.ubercab.ui.core.UTextView android:textColor="?textPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_0.5x" android:text="@string/penny_auth_landing_page_verify_message" android:layout_marginStart="@dimen/ui__spacing_unit_0.5x" app:analyticsId="b65ce5d8-81a6" style="@style/Platform.TextStyle.DisplayXSmall" />
+			<com.ubercab.ui.core.UTextView android:textColor="?textPrimary" android:id="@id/ub__penny_auth_card_info_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginStart="@dimen/ui__spacing_unit_0.5x" app:analyticsId="e002d89d-0997" style="@style/Platform.TextStyle.ParagraphDefault" />
+			<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:weightSum="10.0">
+				<com.ubercab.ui.core.ULinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.8">
+					<com.ubercab.ui.core.UTextView android:textColor="?textPrimary" android:background="?backgroundTertiary" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/penny_auth_consent_line_number_1" android:layout_marginStart="@dimen/ui__spacing_unit_0.5x" app:analyticsId="c9f9a16b-29b7" style="@style/Platform.TextStyle.Small.Bold" />
+				</com.ubercab.ui.core.ULinearLayout>
+				<com.ubercab.ui.core.UTextView android:textColor="?textPrimary" android:id="@id/line1_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.2" app:analyticsId="ddb30dc1-8600" style="@style/Platform.TextStyle.ParagraphDefault" />
+			</com.ubercab.ui.core.ULinearLayout>
+			<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:weightSum="10.0">
+				<com.ubercab.ui.core.ULinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.8">
+					<com.ubercab.ui.core.UTextView android:textColor="?textPrimary" android:background="?backgroundTertiary" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/penny_auth_consent_line_number_2" android:layout_marginStart="@dimen/ui__spacing_unit_0.5x" app:analyticsId="a09e996f-33c4" style="@style/Platform.TextStyle.Small.Bold" />
+				</com.ubercab.ui.core.ULinearLayout>
+				<com.ubercab.ui.core.UTextView android:textColor="?textPrimary" android:id="@id/line2_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.2" app:analyticsId="dda2533c-6d6d" style="@style/Platform.TextStyle.ParagraphDefault" />
+			</com.ubercab.ui.core.ULinearLayout>
+			<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:weightSum="10.0">
+				<com.ubercab.ui.core.ULinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.8">
+					<com.ubercab.ui.core.UTextView android:textColor="?textPrimary" android:background="?backgroundTertiary" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/penny_auth_consent_line_number_3" android:layout_marginStart="@dimen/ui__spacing_unit_0.5x" app:analyticsId="8415e922-c09d" style="@style/Platform.TextStyle.Small.Bold" />
+				</com.ubercab.ui.core.ULinearLayout>
+				<com.ubercab.ui.core.UTextView android:textColor="?textPrimary" android:id="@id/line3_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.2" app:analyticsId="0ef4bdd8-56c2" style="@style/Platform.TextStyle.ParagraphDefault" />
+			</com.ubercab.ui.core.ULinearLayout>
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.UScrollView>
+	<com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="?backgroundPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UPlainView android:background="?backgroundTertiary" android:layout_width="fill_parent" android:layout_height="@dimen/penny_auth_confirmation_button_divider_height" />
+		<com.ubercab.ui.core.button.BaseMaterialButton android:id="@id/ub__penny_auth_consent_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_2x" android:text="@string/penny_auth_consent_continue" app:buttonType="primary" app:shape="rect" app:size="large" style="@style/Platform.Button.BaseDynamic" />
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.risk.challenges.penny_auth.consent.PennyAuthConsentView>

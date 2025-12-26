@@ -1,0 +1,303 @@
+{
+  "default-rectangle-1-large": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 36,
+    "x": 250,
+    "y": 78
+  },
+  "default-rectangle-1-xl": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 72,
+    "y": 0
+  },
+  "default-rectangle-2-large": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 242,
+    "y": 142
+  },
+  "default-rectangle-2-xl": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 48,
+    "x": 0,
+    "y": 78
+  },
+  "default-rectangle-3-large": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 56,
+    "x": 150,
+    "y": 206
+  },
+  "default-rectangle-3-xl": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 48,
+    "y": 78
+  },
+  "default-rectangle-4-large": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 72,
+    "x": 206,
+    "y": 206
+  },
+  "default-rectangle-4-xl": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 82,
+    "x": 112,
+    "y": 78
+  },
+  "default-rectangle-5-large": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 82,
+    "x": 286,
+    "y": 78
+  },
+  "default-rectangle-5-xl": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 96,
+    "x": 116,
+    "y": 0
+  },
+  "default-rectangle-6-large": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 98,
+    "x": 368,
+    "y": 78
+  },
+  "default-rectangle-6-xl": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 112,
+    "x": 0,
+    "y": 142
+  },
+  "default-rectangle-7-large": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 114,
+    "x": 282,
+    "y": 142
+  },
+  "default-rectangle-7-xl": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 130,
+    "x": 112,
+    "y": 142
+  },
+  "default-rectangle-8-large": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 126,
+    "x": 396,
+    "y": 142
+  },
+  "default-rectangle-8-xl": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 150,
+    "x": 0,
+    "y": 206
+  },
+  "inc-road-closed-large": {
+    "height": 78,
+    "pixelRatio": 2,
+    "width": 72,
+    "x": 0,
+    "y": 0
+  },
+  "inc-road-closed-medium": {
+    "height": 62,
+    "pixelRatio": 2,
+    "width": 56,
+    "x": 194,
+    "y": 78
+  },
+  "inc-road-closed-small": {
+    "height": 54,
+    "pixelRatio": 2,
+    "width": 48,
+    "x": 466,
+    "y": 78
+  },
+  "muted-airport-medium": {
+    "height": 54,
+    "pixelRatio": 2,
+    "width": 48,
+    "x": 514,
+    "y": 78
+  },
+  "muted-airport-small": {
+    "height": 38,
+    "pixelRatio": 2,
+    "width": 32,
+    "x": 430,
+    "y": 206
+  },
+  "oneway-spaced-highway-large": {
+    "height": 26,
+    "pixelRatio": 2,
+    "width": 30,
+    "x": 522,
+    "y": 0
+  },
+  "oneway-spaced-highway-small": {
+    "height": 24,
+    "pixelRatio": 2,
+    "width": 32,
+    "x": 60,
+    "y": 270
+  },
+  "oneway-spaced-highway-xl": {
+    "height": 30,
+    "pixelRatio": 2,
+    "width": 38,
+    "x": 408,
+    "y": 0
+  },
+  "oneway-spaced-highway-xxl": {
+    "height": 36,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 276,
+    "y": 0
+  },
+  "oneway-spaced-large": {
+    "height": 26,
+    "pixelRatio": 2,
+    "width": 30,
+    "x": 0,
+    "y": 270
+  },
+  "oneway-spaced-small": {
+    "height": 24,
+    "pixelRatio": 2,
+    "width": 32,
+    "x": 92,
+    "y": 270
+  },
+  "oneway-spaced-white-large": {
+    "height": 26,
+    "pixelRatio": 2,
+    "width": 30,
+    "x": 30,
+    "y": 270
+  },
+  "oneway-spaced-white-small": {
+    "height": 24,
+    "pixelRatio": 2,
+    "width": 32,
+    "x": 124,
+    "y": 270
+  },
+  "oneway-spaced-white-xl": {
+    "height": 30,
+    "pixelRatio": 2,
+    "width": 38,
+    "x": 446,
+    "y": 0
+  },
+  "oneway-spaced-white-xxl": {
+    "height": 36,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 320,
+    "y": 0
+  },
+  "oneway-spaced-xl": {
+    "height": 30,
+    "pixelRatio": 2,
+    "width": 38,
+    "x": 484,
+    "y": 0
+  },
+  "oneway-spaced-xxl": {
+    "height": 36,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 364,
+    "y": 0
+  },
+  "poi-generic-medium": {
+    "height": 54,
+    "pixelRatio": 2,
+    "width": 48,
+    "x": 522,
+    "y": 142
+  },
+  "poi-generic-small": {
+    "height": 38,
+    "pixelRatio": 2,
+    "width": 32,
+    "x": 462,
+    "y": 206
+  },
+  "santurce-airport-airport-medium": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 38,
+    "x": 278,
+    "y": 206
+  },
+  "santurce-airport-airport-small": {
+    "height": 38,
+    "pixelRatio": 2,
+    "width": 32,
+    "x": 494,
+    "y": 206
+  },
+  "santurce-generic-small": {
+    "height": 38,
+    "pixelRatio": 2,
+    "width": 32,
+    "x": 526,
+    "y": 206
+  },
+  "santurce-park-generic-medium": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 38,
+    "x": 316,
+    "y": 206
+  },
+  "santurce-park-generic-small": {
+    "height": 38,
+    "pixelRatio": 2,
+    "width": 32,
+    "x": 212,
+    "y": 0
+  },
+  "santurce-poi-generic-medium": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 38,
+    "x": 354,
+    "y": 206
+  },
+  "santurce-poi-generic-small": {
+    "height": 38,
+    "pixelRatio": 2,
+    "width": 32,
+    "x": 244,
+    "y": 0
+  },
+  "santurce-transit-generic-medium": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 38,
+    "x": 392,
+    "y": 206
+  }
+}

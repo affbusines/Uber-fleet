@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_org_selection.OrgSelectionView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="54bb1623-1506">
+	<include android:id="@id/fleet_fixed_toolbar" layout="@layout/ub__fixed_tool_bar" />
+	<com.ubercab.fleet_ui.views.FleetEmptyStateView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:titleText="@string/you_need_organization" />
+	<com.ubercab.ui.core.UTextView android:id="@id/ub__instruction" android:padding="?contentInset" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/org_selection_instruction" app:analyticsId="c3d2747c-f900" style="@style/Platform.TextStyle.Paragraph.Medium" />
+	<com.ubercab.ui.core.URecyclerView android:id="@id/ub__orgs_recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__create_org_view_group" android:background="?brandWhite" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/ui__elevation_medium">
+		<com.ubercab.ui.core.button.BaseMaterialButton android:id="@id/ub__create_org_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_2x" android:text="@string/create_organization" app:buttonType="primary" app:shape="rect" app:size="large" style="@style/Platform.Button.BaseDynamic" />
+		<com.ubercab.ui.core.button.BaseMaterialButton android:id="@id/ub__create_org_sign_out_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_2x" android:text="@string/signout" app:buttonType="secondary" app:shape="rect" app:size="large" style="@style/Platform.Button.BaseDynamic" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.fleet_ui.views.FleetErrorView android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ubercab.fleet_org_selection.OrgSelectionView>

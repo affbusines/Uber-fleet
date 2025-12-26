@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_driver_settlements.bottom_sheets.StatementPeriodPickerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/ub__fleet_rectangle_top_corners_rounded" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UTextView android:id="@id/ub__statement_period_picker_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:layout_marginBottom="?contentInset" android:text="@string/statement_period_title" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset" app:analyticsId="6f481d53-628a" style="@style/Platform.TextStyle.Paragraph.Normal" />
+</com.ubercab.fleet_driver_settlements.bottom_sheets.StatementPeriodPickerView>

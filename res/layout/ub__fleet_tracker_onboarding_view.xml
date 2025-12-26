@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_map_tracker.onboarding.FleetTrackerOnboardingView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.ULinearLayout android:background="?brandGrey20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+			<com.ubercab.ui.core.UTextView android:background="?brandGrey20" android:paddingTop="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/build_your_fleet" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" app:analyticsId="d76c0f2a-18fa" style="@style/Platform.TextStyle.Subtitle.Normal" />
+			<com.ubercab.ui.core.UTextView android:background="?brandGrey20" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/what_would_you_like_to_do" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" app:analyticsId="d930c613-8fbc" style="@style/Platform.TextStyle.Small.Secondary" />
+		</com.ubercab.ui.core.ULinearLayout>
+		<com.ubercab.ui.core.UImageView android:layout_gravity="end|center|top" android:id="@id/ub__fleet_tracker_onboarding_close_button" android:background="?android:selectableItemBackground" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" android:layout_margin="@dimen/ui__spacing_unit_1x" app:analyticsId="acaef387-de5d" app:srcCompat="@drawable/ic_close" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__drivers_list_onboarding_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.fleet_map_tracker.onboarding.FleetTrackerOnboardingView>

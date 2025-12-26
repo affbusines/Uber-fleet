@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_vehicle_based_incentives.break_down.PromotionBreakDownCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:id="@id/ub__promotion_break_down_card_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__promotion_break_down_top_header" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5" />
+		<com.ubercab.ui.core.UFrameLayout android:background="?fleetGrey1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.UCardView android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_1x" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_1x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" uber:cardCornerRadius="@dimen/fleet_ui__radius_container" uber:cardElevation="@dimen/ui__elevation_medium">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.UTextView android:gravity="center_horizontal" android:id="@id/ub__promotion_break_down_remaining_time" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_1x" android:paddingEnd="@dimen/ui__spacing_unit_1x" />
+			<com.ubercab.ui.core.ULinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/entire_fleet" android:layout_weight="0.5" style="@style/Platform.TextStyle.Paragraph.Medium" />
+				<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:gravity="end" android:id="@id/ub__promotion_break_down_trips" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" style="@style/Platform.TextStyle.Paragraph.Normal" />
+			</com.ubercab.ui.core.ULinearLayout>
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="end" android:id="@id/ub__promotion_break_down_earning" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Paragraph.Medium" />
+			<ProgressBar android:layout_gravity="center_vertical" android:id="@id/ub__promotion_break_down_progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_1x" android:indeterminate="false" style="?android:progressBarStyleHorizontal" />
+			<com.ubercab.ui.core.ULinearLayout android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:gravity="start" android:id="@id/ub__promotion_break_down_min_earning" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/entire_fleet" android:layout_weight="0.5" style="@style/Platform.TextStyle.Meta.Bold" />
+				<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:gravity="end" android:id="@id/ub__promotion_break_down_max_earning" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" style="@style/Platform.TextStyle.Meta.Bold" />
+			</com.ubercab.ui.core.ULinearLayout>
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.UCardView>
+</com.ubercab.fleet_vehicle_based_incentives.break_down.PromotionBreakDownCardView>

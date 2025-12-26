@@ -1,0 +1,40 @@
+.class public interface abstract Lcom/ubercab/partnersignup/webview/rib/PartnerSignupScopeImpl$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/ubercab/partnersignup/webview/rib/PartnerSignupScopeImpl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "a"
+.end annotation
+
+
+# virtual methods
+.method public abstract a()Landroid/net/Uri;
+.end method
+
+.method public abstract b()Landroid/view/ViewGroup;
+.end method
+
+.method public abstract c()Z
+.end method
+
+.method public abstract d()Ltq/a;
+.end method
+
+.method public abstract e()Lcom/ubercab/analytics/core/e;
+.end method
+
+.method public abstract f()Lamx/a;
+.end method
+
+.method public abstract g()Lcom/ubercab/partnersignup/webview/rib/a$a;
+.end method
+
+.method public abstract h()Ljava/lang/String;
+.end method

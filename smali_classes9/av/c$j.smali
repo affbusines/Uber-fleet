@@ -1,0 +1,93 @@
+.class public final Lav/c$j;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lav/c$d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lav/c;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .registers 1
+
+    .line 116
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public synthetic a()F
+    .registers 2
+
+    invoke-static {p0}, Lav/c$d$-CC;->$default$a(Lav/c$d;)F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public a(Lcy/d;I[ILcy/q;[I)V
+    .registers 7
+
+    const-string v0, "<this>"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p1, "sizes"
+
+    invoke-static {p3, p1}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p1, "layoutDirection"
+
+    invoke-static {p4, p1}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p1, "outPositions"
+
+    invoke-static {p5, p1}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 122
+    sget-object p1, Lcy/q;->a:Lcy/q;
+
+    if-ne p4, p1, :cond_1f
+
+    .line 123
+    sget-object p1, Lav/c;->a:Lav/c;
+
+    const/4 p2, 0x0
+
+    invoke-virtual {p1, p3, p5, p2}, Lav/c;->a([I[IZ)V
+
+    goto :goto_25
+
+    .line 125
+    :cond_1f
+    sget-object p1, Lav/c;->a:Lav/c;
+
+    const/4 p4, 0x1
+
+    invoke-virtual {p1, p2, p3, p5, p4}, Lav/c;->a(I[I[IZ)V
+
+    :goto_25
+    return-void
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 2
+
+    const-string v0, "Arrangement#Start"
+
+    return-object v0
+.end method

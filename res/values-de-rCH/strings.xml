@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="helix_phone_country_picker_description">Die Ländervorwahl lautet %1$s</string>
+<string name="helix_phone_enter_your_mobile_number">Gib deine Handynummer ein</string>
+<string name="helix_phone_mobile_number">Mobilfunknummer</string>
+</resources>

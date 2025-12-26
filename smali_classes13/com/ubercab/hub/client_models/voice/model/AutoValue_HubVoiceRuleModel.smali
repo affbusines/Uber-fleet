@@ -1,0 +1,278 @@
+.class final Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;
+.super Lcom/ubercab/hub/client_models/voice/model/HubVoiceRuleModel;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel$Builder;
+    }
+.end annotation
+
+
+# instance fields
+.field private final endDate:Lorg/threeten/bp/e;
+
+.field private final hubAreaResponse:Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;
+
+.field private final startDate:Lorg/threeten/bp/e;
+
+.field private final useTimeOnly:Z
+
+
+# direct methods
+.method private constructor <init>(Lorg/threeten/bp/e;Lorg/threeten/bp/e;Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;Z)V
+    .registers 5
+
+    .line 22
+    invoke-direct {p0}, Lcom/ubercab/hub/client_models/voice/model/HubVoiceRuleModel;-><init>()V
+
+    .line 23
+    iput-object p1, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->startDate:Lorg/threeten/bp/e;
+
+    .line 24
+    iput-object p2, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->endDate:Lorg/threeten/bp/e;
+
+    .line 25
+    iput-object p3, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->hubAreaResponse:Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;
+
+    .line 26
+    iput-boolean p4, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->useTimeOnly:Z
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lorg/threeten/bp/e;Lorg/threeten/bp/e;Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;ZLcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel$1;)V
+    .registers 6
+
+    .line 8
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;-><init>(Lorg/threeten/bp/e;Lorg/threeten/bp/e;Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;Z)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public endDate()Lorg/threeten/bp/e;
+    .registers 2
+
+    .line 36
+    iget-object v0, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->endDate:Lorg/threeten/bp/e;
+
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .registers 6
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_4
+
+    return v0
+
+    .line 64
+    :cond_4
+    instance-of v1, p1, Lcom/ubercab/hub/client_models/voice/model/HubVoiceRuleModel;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_3a
+
+    .line 65
+    check-cast p1, Lcom/ubercab/hub/client_models/voice/model/HubVoiceRuleModel;
+
+    .line 66
+    iget-object v1, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->startDate:Lorg/threeten/bp/e;
+
+    invoke-virtual {p1}, Lcom/ubercab/hub/client_models/voice/model/HubVoiceRuleModel;->startDate()Lorg/threeten/bp/e;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Lorg/threeten/bp/e;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_38
+
+    iget-object v1, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->endDate:Lorg/threeten/bp/e;
+
+    .line 67
+    invoke-virtual {p1}, Lcom/ubercab/hub/client_models/voice/model/HubVoiceRuleModel;->endDate()Lorg/threeten/bp/e;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Lorg/threeten/bp/e;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_38
+
+    iget-object v1, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->hubAreaResponse:Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;
+
+    .line 68
+    invoke-virtual {p1}, Lcom/ubercab/hub/client_models/voice/model/HubVoiceRuleModel;->hubAreaResponse()Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_38
+
+    iget-boolean v1, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->useTimeOnly:Z
+
+    .line 69
+    invoke-virtual {p1}, Lcom/ubercab/hub/client_models/voice/model/HubVoiceRuleModel;->useTimeOnly()Z
+
+    move-result p1
+
+    if-ne v1, p1, :cond_38
+
+    goto :goto_39
+
+    :cond_38
+    const/4 v0, 0x0
+
+    :goto_39
+    return v0
+
+    :cond_3a
+    return v2
+.end method
+
+.method public hashCode()I
+    .registers 4
+
+    .line 78
+    iget-object v0, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->startDate:Lorg/threeten/bp/e;
+
+    invoke-virtual {v0}, Lorg/threeten/bp/e;->hashCode()I
+
+    move-result v0
+
+    const v1, 0xf4243
+
+    xor-int/2addr v0, v1
+
+    mul-int v0, v0, v1
+
+    .line 80
+    iget-object v2, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->endDate:Lorg/threeten/bp/e;
+
+    invoke-virtual {v2}, Lorg/threeten/bp/e;->hashCode()I
+
+    move-result v2
+
+    xor-int/2addr v0, v2
+
+    mul-int v0, v0, v1
+
+    .line 82
+    iget-object v2, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->hubAreaResponse:Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;
+
+    invoke-virtual {v2}, Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;->hashCode()I
+
+    move-result v2
+
+    xor-int/2addr v0, v2
+
+    mul-int v0, v0, v1
+
+    .line 84
+    iget-boolean v1, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->useTimeOnly:Z
+
+    if-eqz v1, :cond_25
+
+    const/16 v1, 0x4cf
+
+    goto :goto_27
+
+    :cond_25
+    const/16 v1, 0x4d5
+
+    :goto_27
+    xor-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public hubAreaResponse()Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;
+    .registers 2
+
+    .line 41
+    iget-object v0, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->hubAreaResponse:Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;
+
+    return-object v0
+.end method
+
+.method public startDate()Lorg/threeten/bp/e;
+    .registers 2
+
+    .line 31
+    iget-object v0, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->startDate:Lorg/threeten/bp/e;
+
+    return-object v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 3
+
+    .line 51
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "HubVoiceRuleModel{startDate="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->startDate:Lorg/threeten/bp/e;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", endDate="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->endDate:Lorg/threeten/bp/e;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", hubAreaResponse="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->hubAreaResponse:Lcom/uber/model/core/generated/growth/rankingengine/HubAreaResponse;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", useTimeOnly="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->useTimeOnly:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, "}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public useTimeOnly()Z
+    .registers 2
+
+    .line 46
+    iget-boolean v0, p0, Lcom/ubercab/hub/client_models/voice/model/AutoValue_HubVoiceRuleModel;->useTimeOnly:Z
+
+    return v0
+.end method

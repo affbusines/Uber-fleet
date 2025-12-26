@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.uber.fleet_authorized_partner.FleetAuthorizedPartnerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="?brandWhite" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ui__spacing_unit_6x">
+		<com.ubercab.ui.core.UTextView android:gravity="center_horizontal" android:id="@id/ub__authorized_partner_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?contentInset" app:analyticsId="bb4b1aff-4c28" style="@style/Platform.TextStyle.Move.H10" />
+		<com.ubercab.ui.core.UTextView android:id="@id/ub__authorized_partner_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_4x" app:analyticsId="3bf71ff9-457b" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.ULinearLayout android:gravity="bottom|center" android:orientation="vertical" android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+			<com.ubercab.ui.core.UButton android:id="@id/ub__authorized_partner_signout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/signout" app:analyticsId="a9eec606-0cef" style="@style/Platform.Button.Primary" />
+			<com.ubercab.ui.core.UButton android:id="@id/ub__authorized_partner_restart" android:paddingTop="?contentInset" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/restart_your_app" app:analyticsId="2e657abc-d6f8" style="@style/Platform.Button.Secondary" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.ULinearLayout>
+</com.uber.fleet_authorized_partner.FleetAuthorizedPartnerView>

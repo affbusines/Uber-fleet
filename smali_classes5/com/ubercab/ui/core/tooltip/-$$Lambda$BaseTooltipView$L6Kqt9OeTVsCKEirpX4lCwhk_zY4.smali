@@ -1,0 +1,34 @@
+.class public final synthetic Lcom/ubercab/ui/core/tooltip/-$$Lambda$BaseTooltipView$L6Kqt9OeTVsCKEirpX4lCwhk_zY4;
+.super Ljava/lang/Object;
+.source "lambda"
+
+# interfaces
+.implements Lcom/ubercab/ui/core/tooltip/BaseTooltipView$f;
+
+
+# instance fields
+.field private final synthetic f$0:Lcom/ubercab/ui/core/tooltip/BaseTooltipView;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/ubercab/ui/core/tooltip/BaseTooltipView;)V
+    .registers 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/ubercab/ui/core/tooltip/-$$Lambda$BaseTooltipView$L6Kqt9OeTVsCKEirpX4lCwhk_zY4;->f$0:Lcom/ubercab/ui/core/tooltip/BaseTooltipView;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onEndButtonClick(Lcom/ubercab/ui/core/tooltip/BaseTooltipView;)V
+    .registers 3
+
+    iget-object v0, p0, Lcom/ubercab/ui/core/tooltip/-$$Lambda$BaseTooltipView$L6Kqt9OeTVsCKEirpX4lCwhk_zY4;->f$0:Lcom/ubercab/ui/core/tooltip/BaseTooltipView;
+
+    invoke-static {v0, p1}, Lcom/ubercab/ui/core/tooltip/BaseTooltipView;->lambda$L6Kqt9OeTVsCKEirpX4lCwhk_zY4(Lcom/ubercab/ui/core/tooltip/BaseTooltipView;Lcom/ubercab/ui/core/tooltip/BaseTooltipView;)V
+
+    return-void
+.end method

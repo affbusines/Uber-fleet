@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/ub__fleet_trips_date" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsId="cdcde225-15bf" style="@style/Platform.TextStyle.Small.Medium" />
+	<com.ubercab.ui.core.ULinearLayout android:id="@id/ub__fleet_trips_item_view" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:layout_gravity="top" android:id="@id/ub__fleet_trips_time" android:padding="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/ub__fleet_trips_fare" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Paragraph.Normal" />
+			<com.ubercab.ui.core.UTextView android:id="@id/ub__fleet_trips_cash_collected" android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Small.Secondary" />
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/ub__fleet_trips_vehicle_type" android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

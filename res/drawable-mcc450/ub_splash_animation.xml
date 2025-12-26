@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/ub_splash_ub_logo">
+	<target android:name="ut_logo" android:animation="@drawable/$ub_splash_animation__0" />
+	<target android:name="ut_logo" android:animation="@drawable/$ub_splash_animation__1" />
+	<target android:name="ut_logo" android:animation="@drawable/$ub_splash_animation__2" />
+	<target android:name="ut_logo" android:animation="@drawable/$ub_splash_animation__3" />
+	<target android:name="uber_logo" android:animation="@drawable/$ub_splash_animation__4" />
+	<target android:name="uber_logo" android:animation="@drawable/$ub_splash_animation__5" />
+</animated-vector>

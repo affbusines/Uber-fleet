@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_ui.views.FixedToolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/fleet_fixed_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UToolbar android:theme="@style/Fleet.Toolbar.Theme" android:id="@id/toolbar_view" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" style="@style/Widget.Platform.Toolbar">
+			<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<com.ubercab.ui.core.UTextView android:id="@id/toolbar_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Platform.TextStyle.Title.Normal" />
+				<com.ubercab.ui.core.UTextView android:textColor="?brandGrey60" android:id="@id/toolbar_subtitle_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Platform.TextStyle.Subtitle.Normal" />
+			</com.ubercab.ui.core.ULinearLayout>
+		</com.ubercab.ui.core.UToolbar>
+		<com.ubercab.ui.commons.widget.BitLoadingIndicator android:layout_gravity="bottom" android:id="@id/toolbar_loading_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:bli_bitColor="?colorAccentInverse" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+	</com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.fleet_ui.views.FixedToolbar>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.chatui.conversation.header.ConversationBaseHeader xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/Theme.Platform.Header" android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="@dimen/ub__intercom_conversation_header_height" />

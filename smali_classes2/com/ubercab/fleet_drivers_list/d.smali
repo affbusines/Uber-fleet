@@ -1,0 +1,178 @@
+.class public Lcom/ubercab/fleet_drivers_list/d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/ubercab/fleet_drivers_list/c;
+
+
+# instance fields
+.field private final a:Ltq/a;
+
+
+# direct methods
+.method public constructor <init>(Ltq/a;)V
+    .registers 2
+
+    .line 18
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 19
+    iput-object p1, p0, Lcom/ubercab/fleet_drivers_list/d;->a:Ltq/a;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Lcom/uber/parameters/models/BoolParameter;
+    .registers 5
+
+    .line 24
+    iget-object v0, p0, Lcom/ubercab/fleet_drivers_list/d;->a:Ltq/a;
+
+    const-string v1, "fleet_mobile"
+
+    const-string v2, "show_add_drivers"
+
+    const-string v3, ""
+
+    invoke-static {v0, v1, v2, v3}, Lcom/uber/parameters/models/BoolParameter$-CC;->create(Ltq/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/uber/parameters/models/BoolParameter;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public b()Lcom/uber/parameters/models/BoolParameter;
+    .registers 5
+
+    .line 29
+    iget-object v0, p0, Lcom/ubercab/fleet_drivers_list/d;->a:Ltq/a;
+
+    const-string v1, "fleet_mobile"
+
+    const-string v2, "fleet_show_add_driver_sp"
+
+    const-string v3, ""
+
+    invoke-static {v0, v1, v2, v3}, Lcom/uber/parameters/models/BoolParameter$-CC;->create(Ltq/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/uber/parameters/models/BoolParameter;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public c()Lcom/uber/parameters/models/BoolParameter;
+    .registers 5
+
+    .line 34
+    iget-object v0, p0, Lcom/ubercab/fleet_drivers_list/d;->a:Ltq/a;
+
+    const-string v1, "fleet_mobile"
+
+    const-string v2, "fleet_show_register_new_driver"
+
+    const-string v3, ""
+
+    invoke-static {v0, v1, v2, v3}, Lcom/uber/parameters/models/BoolParameter$-CC;->create(Ltq/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/uber/parameters/models/BoolParameter;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public d()Lcom/uber/parameters/models/StringParameter;
+    .registers 5
+
+    .line 39
+    iget-object v0, p0, Lcom/ubercab/fleet_drivers_list/d;->a:Ltq/a;
+
+    const-string v1, "fleet_mobile"
+
+    const-string v2, "add_driver_url"
+
+    const-string v3, "https://partners.uber.com/p3/fleet-manager/adddriver"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/uber/parameters/models/StringParameter$-CC;->create(Ltq/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/uber/parameters/models/StringParameter;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public e()Lcom/uber/parameters/models/BoolParameter;
+    .registers 5
+
+    .line 44
+    iget-object v0, p0, Lcom/ubercab/fleet_drivers_list/d;->a:Ltq/a;
+
+    const-string v1, "fleet_mobile"
+
+    const-string v2, "fleet_drivers_list_flag"
+
+    const-string v3, ""
+
+    invoke-static {v0, v1, v2, v3}, Lcom/uber/parameters/models/BoolParameter$-CC;->create(Ltq/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/uber/parameters/models/BoolParameter;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public f()Lcom/uber/parameters/models/BoolParameter;
+    .registers 5
+
+    .line 49
+    iget-object v0, p0, Lcom/ubercab/fleet_drivers_list/d;->a:Ltq/a;
+
+    const-string v1, "fleet_mobile"
+
+    const-string v2, "fleet_show_add_driver"
+
+    const-string v3, ""
+
+    invoke-static {v0, v1, v2, v3}, Lcom/uber/parameters/models/BoolParameter$-CC;->create(Ltq/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/uber/parameters/models/BoolParameter;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public g()Lcom/uber/parameters/models/StringParameter;
+    .registers 5
+
+    .line 54
+    iget-object v0, p0, Lcom/ubercab/fleet_drivers_list/d;->a:Ltq/a;
+
+    const-string v1, "fleet_mobile"
+
+    const-string v2, "fleet_drivers_list_url"
+
+    const-string v3, ""
+
+    invoke-static {v0, v1, v2, v3}, Lcom/uber/parameters/models/StringParameter$-CC;->create(Ltq/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/uber/parameters/models/StringParameter;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public h()Lcom/uber/parameters/models/StringParameter;
+    .registers 5
+
+    .line 59
+    iget-object v0, p0, Lcom/ubercab/fleet_drivers_list/d;->a:Ltq/a;
+
+    const-string v1, "fleet_mobile"
+
+    const-string v2, "fleet_register_new_driver_url"
+
+    const-string v3, ""
+
+    invoke-static {v0, v1, v2, v3}, Lcom/uber/parameters/models/StringParameter$-CC;->create(Ltq/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/uber/parameters/models/StringParameter;
+
+    move-result-object v0
+
+    return-object v0
+.end method

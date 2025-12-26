@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/ub__uber_black_100" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.photo.CameraView android:id="@id/ub__photo_cameraview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

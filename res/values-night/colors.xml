@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="backgroundButtonAccent">@color/ub__ui_core_v3_dark_blue300</color>
+<color name="backgroundButtonBackgroundAlwaysDark">@color/ub__ui_core_v3_dark_gray200</color>
+<color name="backgroundButtonBackgroundAlwaysLight">@color/ub__ui_core_v3_dark_gray800</color>
+<color name="backgroundButtonBackgroundInverseSecondary">@color/ub__ui_core_v3_dark_gray600</color>
+<color name="backgroundButtonBackgroundTertiary">@color/ub__ui_core_v3_dark_gray300</color>
+<color name="backgroundButtonLightAccent">@color/ub__ui_core_v3_dark_blue200</color>
+<color name="backgroundButtonLightNegative">@color/ub__ui_core_v3_dark_red200</color>
+<color name="backgroundButtonLightPositive">@color/ub__ui_core_v3_dark_green200</color>
+<color name="backgroundButtonLightWarning">@color/ub__ui_core_v3_dark_yellow200</color>
+<color name="backgroundButtonNegative">@color/ub__ui_core_v3_dark_red300</color>
+<color name="backgroundButtonPositive">@color/ub__ui_core_v3_dark_green300</color>
+<color name="backgroundButtonWarning">@color/ub__ui_core_v3_dark_yellow500</color>
+<color name="microphone_stand">@color/ub__ui_core_v3_gray200</color>
+<color name="tertiary_route_line">#ffafafaf</color>
+</resources>

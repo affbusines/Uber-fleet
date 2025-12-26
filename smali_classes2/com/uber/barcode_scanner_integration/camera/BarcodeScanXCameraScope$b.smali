@@ -1,0 +1,99 @@
+.class public abstract Lcom/uber/barcode_scanner_integration/camera/BarcodeScanXCameraScope$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/uber/barcode_scanner_integration/camera/BarcodeScanXCameraScope;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "b"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 17
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/view/ViewGroup;)Lcom/uber/barcode_scanner_integration/camera/BarcodeScanXCameraView;
+    .registers 9
+
+    const-string v0, "parentViewGroup"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 32
+    new-instance v0, Lcom/uber/barcode_scanner_integration/camera/BarcodeScanXCameraView;
+
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    const-string p1, "parentViewGroup.context"
+
+    invoke-static {v2, p1}, Lawt/q;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x6
+
+    const/4 v6, 0x0
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v6}, Lcom/uber/barcode_scanner_integration/camera/BarcodeScanXCameraView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILawt/h;)V
+
+    return-object v0
+.end method
+
+.method public final a(Lcom/uber/barcode_scanner_integration/camera/BarcodeScanXCameraView;)Lcom/uber/barcode_scanner_integration/camera/c;
+    .registers 4
+
+    const-string v0, "view"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 36
+    new-instance v0, Lcom/uber/barcode_scanner_integration/camera/c;
+
+    .line 37
+    new-instance v1, Lcom/google/android/gms/vision/barcode/a$a;
+
+    invoke-virtual {p1}, Lcom/uber/barcode_scanner_integration/camera/BarcodeScanXCameraView;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-direct {v1, p1}, Lcom/google/android/gms/vision/barcode/a$a;-><init>(Landroid/content/Context;)V
+
+    const/16 p1, 0x100
+
+    invoke-virtual {v1, p1}, Lcom/google/android/gms/vision/barcode/a$a;->a(I)Lcom/google/android/gms/vision/barcode/a$a;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/google/android/gms/vision/barcode/a$a;->a()Lcom/google/android/gms/vision/barcode/a;
+
+    move-result-object p1
+
+    const-string v1, "Builder(view.context).se\u2026(Barcode.QR_CODE).build()"
+
+    invoke-static {p1, v1}, Lawt/q;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 36
+    invoke-direct {v0, p1}, Lcom/uber/barcode_scanner_integration/camera/c;-><init>(Lcom/google/android/gms/vision/barcode/a;)V
+
+    return-object v0
+.end method

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_true_earnings.promotion.EarningsPromotionView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?brandGrey20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:paddingTop="@dimen/ui__section_header_padding_top" android:paddingBottom="@dimen/ui__section_header_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/true_earnings_promotions_title" android:paddingStart="@dimen/ui__spacing_unit_2x" android:paddingEnd="@dimen/ui__spacing_unit_2x" app:analyticsId="5305d578-24c4" style="@style/Platform.TextStyle.Small.Medium" />
+</com.ubercab.fleet_true_earnings.promotion.EarningsPromotionView>

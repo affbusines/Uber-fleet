@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_ui.step_progress_bar.StepNodeView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/ub__step_node_top_text" android:paddingBottom="@dimen/ui__spacing_unit_0.5x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:analyticsId="776dea2e-630b" style="@style/Platform.TextStyle.Meta.Bold" />
+	<com.ubercab.ui.core.UImageView android:id="@id/ub__step_node_view" android:layout_width="@dimen/ui__avatar_size_micro" android:layout_height="@dimen/ui__avatar_size_micro" app:analyticsId="f4b122c3-03e0" />
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/ub__step_node_bottom_text" android:paddingTop="@dimen/ui__spacing_unit_0.5x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:analyticsId="6aef9348-878b" style="@style/Platform.TextStyle.Meta.Bold" />
+</com.ubercab.fleet_ui.step_progress_bar.StepNodeView>

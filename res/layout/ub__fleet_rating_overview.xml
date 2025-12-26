@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_qpm.overview.FleetRatingOverviewView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.URecyclerView android:id="@id/ub__fleet_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+	<com.ubercab.fleet_ui.views.FleetEmptyStateView android:id="@id/empty_view" android:background="?brandGrey20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:titleText="@string/no_feedback_available" />
+	<com.ubercab.fleet_ui.views.FleetErrorView android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+	<include layout="@layout/ub__fixed_tool_bar" />
+</com.ubercab.fleet_qpm.overview.FleetRatingOverviewView>

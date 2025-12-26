@@ -1,0 +1,27 @@
+.class public interface abstract Lcom/uber/autodispose/FlowableSubscribeProxy;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/reactivex/functions/Consumer<",
+            "-TT;>;)",
+            "Lio/reactivex/disposables/Disposable;"
+        }
+    .end annotation
+.end method

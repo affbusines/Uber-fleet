@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.uber.loyalty_points_to_ubercash.partner_account_list.LoyaltyPointsPartnerAccountListView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_anchorGravity="center">
+	<include layout="@layout/fixed_header" />
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/loyalty_point_partner_list_frame" android:background="?android:windowBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/account_list_header_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:layout_marginStart="@dimen/ui__spacing_unit_2x" android:layout_marginEnd="@dimen/ui__spacing_unit_2x">
+			<com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextStyle.HeadingLarge" android:id="@id/account_list_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/loyalty_partner_account_list_title" app:analyticsId="53d67d69-e915" />
+			<com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextStyle.ParagraphSmall" android:id="@id/account_list_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/loyalty_partner_account_list_subtitle" app:analyticsId="8254eb98-675e" />
+			<com.ubercab.ui.core.URecyclerView android:id="@id/loyalty_points_account_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_weight="1.0" app:analyticsId="772775e7-cca9" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.UFrameLayout>
+</com.uber.loyalty_points_to_ubercash.partner_account_list.LoyaltyPointsPartnerAccountListView>

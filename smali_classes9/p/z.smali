@@ -1,0 +1,131 @@
+.class final Lp/z;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method static a(Landroidx/camera/core/impl/m;)Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;
+    .registers 3
+
+    if-nez p0, :cond_4
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    .line 45
+    :cond_4
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 46
+    invoke-static {p0, v0}, Lp/z;->a(Landroidx/camera/core/impl/m;Ljava/util/List;)V
+
+    .line 47
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result p0
+
+    const/4 v1, 0x1
+
+    if-ne p0, v1, :cond_1b
+
+    const/4 p0, 0x0
+
+    .line 48
+    invoke-interface {v0, p0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;
+
+    goto :goto_1f
+
+    .line 49
+    :cond_1b
+    invoke-static {v0}, Lp/j;->a(Ljava/util/List;)Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;
+
+    move-result-object p0
+
+    :goto_1f
+    return-object p0
+.end method
+
+.method static a(Landroidx/camera/core/impl/m;Ljava/util/List;)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/camera/core/impl/m;",
+            "Ljava/util/List<",
+            "Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 65
+    instance-of v0, p0, Landroidx/camera/core/impl/n$a;
+
+    if-eqz v0, :cond_1e
+
+    .line 67
+    check-cast p0, Landroidx/camera/core/impl/n$a;
+
+    .line 69
+    invoke-virtual {p0}, Landroidx/camera/core/impl/n$a;->b()Ljava/util/List;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    :goto_e
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_34
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/camera/core/impl/m;
+
+    .line 70
+    invoke-static {v0, p1}, Lp/z;->a(Landroidx/camera/core/impl/m;Ljava/util/List;)V
+
+    goto :goto_e
+
+    .line 72
+    :cond_1e
+    instance-of v0, p0, Lp/y;
+
+    if-eqz v0, :cond_2c
+
+    .line 74
+    check-cast p0, Lp/y;
+
+    .line 76
+    invoke-virtual {p0}, Lp/y;->b()Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;
+
+    move-result-object p0
+
+    invoke-interface {p1, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_34
+
+    .line 79
+    :cond_2c
+    new-instance v0, Lp/x;
+
+    invoke-direct {v0, p0}, Lp/x;-><init>(Landroidx/camera/core/impl/m;)V
+
+    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_34
+    :goto_34
+    return-void
+.end method

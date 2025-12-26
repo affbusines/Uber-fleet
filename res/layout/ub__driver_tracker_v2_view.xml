@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_map_tracker.driver_tracker.DriverTrackerV2View xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+		<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__driver_tracker_map_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+		<com.ubercab.ui.core.UFloatingActionButton android:layout_gravity="start|center|top" android:id="@id/ub__driver_tracker_close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:scaleType="center" android:elevation="@dimen/ui__fleet_divider_height" app:backgroundTint="?brandWhite" app:fabCustomSize="@dimen/ui__spacing_unit_6x" app:srcCompat="@drawable/ic_close" />
+		<com.ubercab.ui.core.UFloatingActionButton android:layout_gravity="end|center|top" android:id="@id/ub__driver_tracker_next_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:scaleType="center" android:rotation="180.0" android:elevation="@dimen/ui__fleet_divider_height" app:backgroundTint="?brandWhite" app:fabCustomSize="@dimen/ui__spacing_unit_6x" app:srcCompat="@drawable/navigation_icon_back" />
+	</com.ubercab.ui.core.UFrameLayout>
+	<com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom" android:id="@id/ub__driver_tracker_info_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.fleet_map_tracker.driver_tracker.DriverTrackerV2View>

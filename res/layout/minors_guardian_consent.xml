@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.user_identity_flow.cpf_flow.minors.guardian_consent.MinorsGuardianConsentView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.UTextView android:id="@id/minors_guardian_consent_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset" style="@style/Platform.TextStyle.ParagraphLarge" />
+	<com.ubercab.ui.core.UPlainView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+	<com.ubercab.ui.core.button.BaseMaterialButton android:id="@id/minors_guardian_consent_learn_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?contentInset" android:text="@string/minors_guardian_consent_learn_more" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset" app:buttonType="primary" style="@style/Platform.Button.BaseDynamic" />
+</com.ubercab.user_identity_flow.cpf_flow.minors.guardian_consent.MinorsGuardianConsentView>

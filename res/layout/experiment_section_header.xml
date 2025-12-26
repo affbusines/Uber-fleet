@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.UTextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/section_name" android:background="?android:windowBackground" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?gutterSize" android:paddingEnd="?gutterSize" style="@style/Platform.TextStyle.Small.Medium" />

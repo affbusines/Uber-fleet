@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="230.0dip" android:width="360.0dip" android:viewportWidth="360.0" android:viewportHeight="230.0">
+	<path android:fillColor="?coreV2Gray50" android:pathData="M180,115m-75,0a75,75 0,1 1,150 0a75,75 0,1 1,-150 0" />
+	<path android:fillColor="?neonBlue" android:pathData="M153,184.993V105H116L116,154.123C124.55,168.08 137.538,179.025 153,184.993Z" />
+	<path android:fillColor="?neonBlue" android:pathData="M244,154.123V85H207L207,184.993C222.462,179.025 235.45,168.08 244,154.123Z" />
+	<path android:fillColor="?neonBlue" android:pathData="M162,32H198L197.965,187.835C192.209,189.25 186.192,190 180,190C173.808,190 167.791,189.25 162.035,187.835L162,32Z" />
+	<path android:fillColor="?brandWhite" android:pathData="M162,32H198L197.965,187.835C192.209,189.25 186.192,190 180,190C173.808,190 167.791,189.25 162.035,187.835L162,32Z" android:fillAlpha="0.8" />
+	<path android:fillColor="?brandBlack" android:pathData="M178.113,100.417L132.694,139.792L136.47,144.393L181.889,105.018L178.113,100.417Z" />
+	<path android:fillColor="?brandBlack" android:pathData="M181.079,100.668L178.901,106.255L224.321,124.967L226.5,119.379L181.079,100.668Z" />
+	<path android:fillColor="?brandWhite" android:pathData="M225.42,127.499C228.279,127.499 230.597,125.117 230.597,122.178C230.597,119.239 228.279,116.857 225.42,116.857C222.561,116.857 220.243,119.239 220.243,122.178C220.243,125.117 222.561,127.499 225.42,127.499Z" />
+	<path android:fillColor="?brandWhite" android:pathData="M180,108.786C182.859,108.786 185.177,106.403 185.177,103.464C185.177,100.526 182.859,98.143 180,98.143C177.141,98.143 174.823,100.526 174.823,103.464C174.823,106.403 177.141,108.786 180,108.786Z" />
+	<path android:fillColor="?brandWhite" android:pathData="M134.58,147.417C137.439,147.417 139.757,145.034 139.757,142.096C139.757,139.157 137.439,136.774 134.58,136.774C131.721,136.774 129.403,139.157 129.403,142.096C129.403,145.034 131.721,147.417 134.58,147.417Z" />
+</vector>

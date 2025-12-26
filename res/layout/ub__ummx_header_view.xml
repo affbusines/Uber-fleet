@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+	<com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+		<com.ubercab.ui.core.image.BaseImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/ub__ummx_header_icon_size" android:layout_height="@dimen/ub__ummx_header_icon_size" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" app:srcCompat="@drawable/ub_ic_currency_uber_money" app:tint="?brandWhite" />
+		<com.ubercab.ui.core.text.BaseTextView android:textAppearance="@style/Platform.TextStyle.LabelLarge" android:textColor="?contentOnColor" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ummx_header_title" />
+	</com.ubercab.ui.core.ULinearLayout>
+</merge>

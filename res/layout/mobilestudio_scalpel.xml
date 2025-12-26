@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.uber.mobilestudio.scalpel.ScalpelView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="2" style="@style/MobileStudio.Plugin">
+	<com.ubercab.ui.core.UTextView android:layout_gravity="end|fill_horizontal|start" android:layout_width="0.0dip" android:text="@string/ub__mobilestudio_scalpel" android:layout_columnSpan="2" app:analyticsId="6d83a8aa-61b2" style="@style/MobileStudio.Plugin.Header" />
+	<com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:text="@string/ub__mobilestudio_scalpel_enablescalpel" app:analyticsId="786eba7a-f7cc" style="@style/MobileStudio.Plugin.RowTitle" />
+	<com.ubercab.ui.core.USwitchCompat android:layout_gravity="start|center" android:id="@id/mobilestudio_enable_scalpel" style="@style/MobileStudio.Plugin.RowWidget" />
+	<com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:text="@string/ub__mobilestudio_scalpel_disablegraphics" app:analyticsId="ed3f0023-d6fb" style="@style/MobileStudio.Plugin.RowTitle" />
+	<com.ubercab.ui.core.USwitchCompat android:layout_gravity="start|center" android:id="@id/mobilestudio_disable_graphics" style="@style/MobileStudio.Plugin.RowWidget" />
+	<com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:text="@string/ub__mobilestudio_scalpel_enableids" app:analyticsId="cc51307a-fa23" style="@style/MobileStudio.Plugin.RowTitle" />
+	<com.ubercab.ui.core.USwitchCompat android:layout_gravity="start|center" android:id="@id/mobilestudio_show_ids" style="@style/MobileStudio.Plugin.RowWidget" />
+</com.uber.mobilestudio.scalpel.ScalpelView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+	<corners android:radius="@dimen/ub__mobilestudio_padding_1x" />
+	<solid android:color="?ms_colorOverlaySemiTransparent" />
+	<stroke android:width="@dimen/ui__line_indicator_height" android:color="?colorPrimaryDark" />
+</shape>

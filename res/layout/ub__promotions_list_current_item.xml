@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?selectableItemBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="top" android:id="@id/ub__promotion_start_date" android:layout_width="@dimen/ui__spacing_unit_12x" android:layout_height="wrap_content" app:analyticsId="915e535a-25b0" style="@style/Platform.TextStyle.Small.Medium" />
+	<Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/ub__promotion_description" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Paragraph.Medium" />
+		<com.ubercab.ui.core.UTextView android:id="@id/ub__promotion_time_description" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Small.Secondary" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="end" android:id="@id/ub__promotion_current_earning" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Subtitle.Normal" />
+		<ProgressBar android:layout_gravity="center_vertical" android:id="@id/ub__promotions_list_current_progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_1x" android:indeterminate="false" style="?android:progressBarStyleHorizontal" />
+		<com.ubercab.ui.core.UFrameLayout android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:layout_gravity="start" android:id="@id/ub__promotion_min_earning" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Meta.Bold" />
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:layout_gravity="end" android:id="@id/ub__promotion_max_earning" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Meta.Bold" />
+		</com.ubercab.ui.core.UFrameLayout>
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

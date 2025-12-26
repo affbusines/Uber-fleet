@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Theme.Helix.Splash" parent="@style/Theme.Platform.Splash"><item name="android:windowBackground">@drawable/ub__splash</item></style>
+</resources>

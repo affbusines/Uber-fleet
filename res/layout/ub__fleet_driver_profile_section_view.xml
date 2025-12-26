@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_driver_profile.DriverProfileSectionView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/ub__fleet_driver_profile_section_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" app:analyticsId="bbbbe8c6-3491" style="@style/Platform.TextStyle.Paragraph.Normal" />
+	<com.ubercab.ui.core.URecyclerView android:id="@id/ub__fleet_driver_profile_section_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<com.ubercab.ui.core.UPlainView android:id="@id/ub__fleet_driver_profile_section_divider" android:background="@drawable/divider_horizontal_light" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" />
+</com.ubercab.fleet_driver_profile.DriverProfileSectionView>

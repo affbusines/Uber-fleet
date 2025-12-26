@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_referrals.contact_sync_app_setting.ContactSyncAppSettingsView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.UTextView android:background="?selectableItemBackground" android:padding="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contacts_sync" app:analyticsId="b405635c-9989" style="@style/Platform.TextStyle.Subtitle.Normal" />
+</com.ubercab.fleet_referrals.contact_sync_app_setting.ContactSyncAppSettingsView>

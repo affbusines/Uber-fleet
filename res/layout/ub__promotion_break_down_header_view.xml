@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_vehicle_based_incentives.break_down.PromotionBreakDownHeaderView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__promotion_break_down_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimaryInverse" android:gravity="center" android:id="@id/ub__promotion_break_down_date_range" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimaryInverse" android:gravity="center_horizontal" android:id="@id/ub__promotion_break_down_title" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Title.Normal" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimaryInverse" android:layout_gravity="center_horizontal" android:id="@id/ub__promotion_break_down_more_detail" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_more_details" style="@style/Platform.TextStyle.Small.Medium" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<include layout="@layout/ub__promotion_break_down_card_view" />
+	<com.ubercab.ui.core.UFrameLayout android:background="?fleetGrey1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/promo_earned_per_vehicle" style="@style/Platform.TextStyle.Small.Medium" />
+	</com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.fleet_vehicle_based_incentives.break_down.PromotionBreakDownHeaderView>

@@ -1,0 +1,60 @@
+.class public abstract Lcom/ubercab/presidio/contacts/model/Contact$Builder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/ubercab/presidio/contacts/model/Contact;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "Builder"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 51
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract build()Lcom/ubercab/presidio/contacts/model/Contact;
+.end method
+
+.method public abstract details(Lkq/y;)Lcom/ubercab/presidio/contacts/model/Contact$Builder;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkq/y<",
+            "Lcom/ubercab/presidio/contacts/model/ContactDetail;",
+            ">;)",
+            "Lcom/ubercab/presidio/contacts/model/Contact$Builder;"
+        }
+    .end annotation
+.end method
+
+.method public abstract displayName(Ljava/lang/String;)Lcom/ubercab/presidio/contacts/model/Contact$Builder;
+.end method
+
+.method public abstract id(Ljava/lang/String;)Lcom/ubercab/presidio/contacts/model/Contact$Builder;
+.end method
+
+.method public abstract photoThumbnailUri(Lcom/google/common/base/Optional;)Lcom/ubercab/presidio/contacts/model/Contact$Builder;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/base/Optional<",
+            "Landroid/net/Uri;",
+            ">;)",
+            "Lcom/ubercab/presidio/contacts/model/Contact$Builder;"
+        }
+    .end annotation
+.end method

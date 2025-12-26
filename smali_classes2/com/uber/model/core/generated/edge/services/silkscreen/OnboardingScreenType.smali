@@ -1,0 +1,1455 @@
+.class public final enum Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+.super Ljava/lang/Enum;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lcom/uber/model/core/adapter/gson/GsonSerializable;
+    value = Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType_GsonTypeAdapter;
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final synthetic $VALUES:[Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum ACCEPT_QR_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum ACCOUNT_UPDATE_CONFIRMATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum ADD_PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum ADD_PAYMENT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum ADD_PROMO:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum AUTHENTICATOR_ASSERTION_RESPONSE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum BACKUP_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum CAPTCHA:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum CASH:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum CONFIRM_INFO:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum CONTINUE_WITH:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum CONTINUE_WITH_LINKING:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum CONTINUE_WITH_LINKING_SSO:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum CONTINUE_WITH_SIGNUP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum CREDIT_CARD_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum DRIVER_LICENSE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum DYNAMIC_AUTHENTICATE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum EMAIL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum EMAIL_OTP_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum EMAIL_OTP_POST_AUTH:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum EMAIL_PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum EMAIL_PROGRESSIVE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum FACE_ID:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum FULL_NAME:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum FULL_NAME_PROGRESSIVE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum GENERATE_QR_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum IDENTITY_PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum IDENTITY_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum INAPP_NOTIFICATION_UPDATE_PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum INVALID:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum INVITE_TOKEN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum LEGAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum LOGIN_CONFIRMATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum MULTIPLE_CHOICE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum NATIONAL_ID:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PHONE_NUMBER:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PHONE_NUMBER_CHECK:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PHONE_NUMBER_INITIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PHONE_NUMBER_PROGRESSIVE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PHONE_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PHONE_OTP_PWDLESS_DRIVER:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PHONE_VOICE_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PHONE_WHATSAPP_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PM_EMAIL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PM_EMAIL_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PM_PHONE_NUMBER_INITIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PM_PHONE_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PM_TOKEN_INITIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PUBLICKEY_CREDENTIAL_IDENTIFY:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PUBLICKEY_CREDENTIAL_REGISTER:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PUBLICKEY_CREDENTIAL_VERIFY:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PUBLIC_KEY_CREDENTIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PUSH_LOGIN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum PUSH_PERMISSION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum REAUTH_TOKEN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum REQUEST_CLIENT_CERT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum RESET_ACCOUNT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum SAML_AUTH:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum SCAN_QR_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum SELECT_ACCOUNT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum SELECT_ACCOUNT_FROM_DRIVER_LICENSE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum SESSION_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum SIGN_IN_PASSWORD_MANAGER:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum SIGN_IN_WITH_ONE_TIME_TOKEN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum SKIP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum SOCIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum TOTP_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum TRIP_CHALLENGE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum UNKNOWN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum VALIDATE_CLIENT_CERT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+.field public static final enum WEB_SESSION_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+
+# direct methods
+.method private static final synthetic $values()[Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+    .registers 3
+
+    const/16 v0, 0x48
+
+    new-array v0, v0, [Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->INVALID:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_NUMBER_INITIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->EMAIL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/4 v2, 0x3
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/4 v2, 0x4
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->FULL_NAME:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/4 v2, 0x5
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CONFIRM_INFO:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/4 v2, 0x6
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SOCIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/4 v2, 0x7
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->TRIP_CHALLENGE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x8
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PUSH_PERMISSION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x9
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->EMAIL_PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0xa
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->IDENTITY_PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0xb
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->RESET_ACCOUNT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0xc
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->ADD_PAYMENT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0xd
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CASH:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0xe
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->ADD_PROMO:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0xf
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->EMAIL_OTP_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x10
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CAPTCHA:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x11
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->DRIVER_LICENSE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x12
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->ADD_PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x13
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_OTP_PWDLESS_DRIVER:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x14
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->NATIONAL_ID:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x15
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->MULTIPLE_CHOICE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x16
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_VOICE_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x17
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->REQUEST_CLIENT_CERT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x18
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->VALIDATE_CLIENT_CERT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x19
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->INAPP_NOTIFICATION_UPDATE_PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x1a
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->LEGAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x1b
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PUSH_LOGIN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x1c
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SESSION_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x1d
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SIGN_IN_PASSWORD_MANAGER:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x1e
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CREDIT_CARD_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x1f
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_NUMBER_CHECK:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x20
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->BACKUP_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x21
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->TOTP_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x22
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->UNKNOWN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x23
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SKIP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x24
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->LOGIN_CONFIRMATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x25
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SCAN_QR_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x26
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_WHATSAPP_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x27
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->WEB_SESSION_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x28
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->ACCOUNT_UPDATE_CONFIRMATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x29
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PM_TOKEN_INITIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x2a
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PM_PHONE_NUMBER_INITIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x2b
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PM_EMAIL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x2c
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PM_PHONE_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x2d
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PM_EMAIL_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x2e
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CONTINUE_WITH_LINKING:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x2f
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CONTINUE_WITH:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x30
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CONTINUE_WITH_LINKING_SSO:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x31
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CONTINUE_WITH_SIGNUP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x32
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SIGN_IN_WITH_ONE_TIME_TOKEN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x33
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_NUMBER:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x34
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SELECT_ACCOUNT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x35
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->FACE_ID:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x36
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PUBLICKEY_CREDENTIAL_REGISTER:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x37
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PUBLICKEY_CREDENTIAL_IDENTIFY:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x38
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PUBLICKEY_CREDENTIAL_VERIFY:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x39
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->INVITE_TOKEN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x3a
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SELECT_ACCOUNT_FROM_DRIVER_LICENSE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x3b
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SAML_AUTH:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x3c
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_NUMBER_PROGRESSIVE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x3d
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->EMAIL_PROGRESSIVE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x3e
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->EMAIL_OTP_POST_AUTH:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x3f
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->FULL_NAME_PROGRESSIVE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x40
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->REAUTH_TOKEN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x41
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->GENERATE_QR_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x42
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->ACCEPT_QR_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x43
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->DYNAMIC_AUTHENTICATE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x44
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->AUTHENTICATOR_ASSERTION_RESPONSE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x45
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PUBLIC_KEY_CREDENTIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x46
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->IDENTITY_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const/16 v2, 0x47
+
+    aput-object v1, v0, v2
+
+    return-object v0
+.end method
+
+.method static constructor <clinit>()V
+    .registers 3
+
+    .line 24
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "INVALID"
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->INVALID:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 25
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PHONE_NUMBER_INITIAL"
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_NUMBER_INITIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 29
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PHONE_OTP"
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 30
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "EMAIL"
+
+    const/4 v2, 0x3
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->EMAIL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 31
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PASSWORD"
+
+    const/4 v2, 0x4
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 32
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "FULL_NAME"
+
+    const/4 v2, 0x5
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->FULL_NAME:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 37
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "CONFIRM_INFO"
+
+    const/4 v2, 0x6
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CONFIRM_INFO:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 38
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "SOCIAL"
+
+    const/4 v2, 0x7
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SOCIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 39
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "TRIP_CHALLENGE"
+
+    const/16 v2, 0x8
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->TRIP_CHALLENGE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 40
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PUSH_PERMISSION"
+
+    const/16 v2, 0x9
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PUSH_PERMISSION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 44
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "EMAIL_PASSWORD"
+
+    const/16 v2, 0xa
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->EMAIL_PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 49
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "IDENTITY_PASSWORD"
+
+    const/16 v2, 0xb
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->IDENTITY_PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 53
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "RESET_ACCOUNT"
+
+    const/16 v2, 0xc
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->RESET_ACCOUNT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 58
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "ADD_PAYMENT"
+
+    const/16 v2, 0xd
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->ADD_PAYMENT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 59
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "CASH"
+
+    const/16 v2, 0xe
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CASH:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 60
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "ADD_PROMO"
+
+    const/16 v2, 0xf
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->ADD_PROMO:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 64
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "EMAIL_OTP_CODE"
+
+    const/16 v2, 0x10
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->EMAIL_OTP_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 68
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "CAPTCHA"
+
+    const/16 v2, 0x11
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CAPTCHA:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 69
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "DRIVER_LICENSE"
+
+    const/16 v2, 0x12
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->DRIVER_LICENSE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 70
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "ADD_PASSWORD"
+
+    const/16 v2, 0x13
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->ADD_PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 71
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PHONE_OTP_PWDLESS_DRIVER"
+
+    const/16 v2, 0x14
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_OTP_PWDLESS_DRIVER:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 72
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "NATIONAL_ID"
+
+    const/16 v2, 0x15
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->NATIONAL_ID:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 73
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "MULTIPLE_CHOICE"
+
+    const/16 v2, 0x16
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->MULTIPLE_CHOICE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 74
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PHONE_VOICE_OTP"
+
+    const/16 v2, 0x17
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_VOICE_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 75
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "REQUEST_CLIENT_CERT"
+
+    const/16 v2, 0x18
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->REQUEST_CLIENT_CERT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 76
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "VALIDATE_CLIENT_CERT"
+
+    const/16 v2, 0x19
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->VALIDATE_CLIENT_CERT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 77
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "INAPP_NOTIFICATION_UPDATE_PASSWORD"
+
+    const/16 v2, 0x1a
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->INAPP_NOTIFICATION_UPDATE_PASSWORD:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 78
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "LEGAL"
+
+    const/16 v2, 0x1b
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->LEGAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 79
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PUSH_LOGIN"
+
+    const/16 v2, 0x1c
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PUSH_LOGIN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 80
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "SESSION_VERIFICATION"
+
+    const/16 v2, 0x1d
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SESSION_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 86
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "SIGN_IN_PASSWORD_MANAGER"
+
+    const/16 v2, 0x1e
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SIGN_IN_PASSWORD_MANAGER:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 87
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "CREDIT_CARD_VERIFICATION"
+
+    const/16 v2, 0x1f
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CREDIT_CARD_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 88
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PHONE_NUMBER_CHECK"
+
+    const/16 v2, 0x20
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_NUMBER_CHECK:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 89
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "BACKUP_CODE"
+
+    const/16 v2, 0x21
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->BACKUP_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 90
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "TOTP_VERIFICATION"
+
+    const/16 v2, 0x22
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->TOTP_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 94
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "UNKNOWN"
+
+    const/16 v2, 0x23
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->UNKNOWN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 98
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "SKIP"
+
+    const/16 v2, 0x24
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SKIP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 99
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "LOGIN_CONFIRMATION"
+
+    const/16 v2, 0x25
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->LOGIN_CONFIRMATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 100
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "SCAN_QR_CODE"
+
+    const/16 v2, 0x26
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SCAN_QR_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 101
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PHONE_WHATSAPP_OTP"
+
+    const/16 v2, 0x27
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_WHATSAPP_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 102
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "WEB_SESSION_VERIFICATION"
+
+    const/16 v2, 0x28
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->WEB_SESSION_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 103
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "ACCOUNT_UPDATE_CONFIRMATION"
+
+    const/16 v2, 0x29
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->ACCOUNT_UPDATE_CONFIRMATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 104
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PM_TOKEN_INITIAL"
+
+    const/16 v2, 0x2a
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PM_TOKEN_INITIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 105
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PM_PHONE_NUMBER_INITIAL"
+
+    const/16 v2, 0x2b
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PM_PHONE_NUMBER_INITIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 106
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PM_EMAIL"
+
+    const/16 v2, 0x2c
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PM_EMAIL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 107
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PM_PHONE_OTP"
+
+    const/16 v2, 0x2d
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PM_PHONE_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 108
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PM_EMAIL_OTP"
+
+    const/16 v2, 0x2e
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PM_EMAIL_OTP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 109
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "CONTINUE_WITH_LINKING"
+
+    const/16 v2, 0x2f
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CONTINUE_WITH_LINKING:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 110
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "CONTINUE_WITH"
+
+    const/16 v2, 0x30
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CONTINUE_WITH:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 111
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "CONTINUE_WITH_LINKING_SSO"
+
+    const/16 v2, 0x31
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CONTINUE_WITH_LINKING_SSO:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 112
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "CONTINUE_WITH_SIGNUP"
+
+    const/16 v2, 0x32
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->CONTINUE_WITH_SIGNUP:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 113
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "SIGN_IN_WITH_ONE_TIME_TOKEN"
+
+    const/16 v2, 0x33
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SIGN_IN_WITH_ONE_TIME_TOKEN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 114
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PHONE_NUMBER"
+
+    const/16 v2, 0x34
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_NUMBER:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 115
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "SELECT_ACCOUNT"
+
+    const/16 v2, 0x35
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SELECT_ACCOUNT:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 116
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "FACE_ID"
+
+    const/16 v2, 0x36
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->FACE_ID:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 120
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PUBLICKEY_CREDENTIAL_REGISTER"
+
+    const/16 v2, 0x37
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PUBLICKEY_CREDENTIAL_REGISTER:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 125
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PUBLICKEY_CREDENTIAL_IDENTIFY"
+
+    const/16 v2, 0x38
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PUBLICKEY_CREDENTIAL_IDENTIFY:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 130
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PUBLICKEY_CREDENTIAL_VERIFY"
+
+    const/16 v2, 0x39
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PUBLICKEY_CREDENTIAL_VERIFY:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 132
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "INVITE_TOKEN"
+
+    const/16 v2, 0x3a
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->INVITE_TOKEN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 133
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "SELECT_ACCOUNT_FROM_DRIVER_LICENSE"
+
+    const/16 v2, 0x3b
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SELECT_ACCOUNT_FROM_DRIVER_LICENSE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 134
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "SAML_AUTH"
+
+    const/16 v2, 0x3c
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->SAML_AUTH:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 135
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PHONE_NUMBER_PROGRESSIVE"
+
+    const/16 v2, 0x3d
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PHONE_NUMBER_PROGRESSIVE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 136
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "EMAIL_PROGRESSIVE"
+
+    const/16 v2, 0x3e
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->EMAIL_PROGRESSIVE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 140
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "EMAIL_OTP_POST_AUTH"
+
+    const/16 v2, 0x3f
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->EMAIL_OTP_POST_AUTH:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 141
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "FULL_NAME_PROGRESSIVE"
+
+    const/16 v2, 0x40
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->FULL_NAME_PROGRESSIVE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 142
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "REAUTH_TOKEN"
+
+    const/16 v2, 0x41
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->REAUTH_TOKEN:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 143
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "GENERATE_QR_CODE"
+
+    const/16 v2, 0x42
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->GENERATE_QR_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 144
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "ACCEPT_QR_CODE"
+
+    const/16 v2, 0x43
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->ACCEPT_QR_CODE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 148
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "DYNAMIC_AUTHENTICATE"
+
+    const/16 v2, 0x44
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->DYNAMIC_AUTHENTICATE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 149
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "AUTHENTICATOR_ASSERTION_RESPONSE"
+
+    const/16 v2, 0x45
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->AUTHENTICATOR_ASSERTION_RESPONSE:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 150
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "PUBLIC_KEY_CREDENTIAL"
+
+    const/16 v2, 0x46
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->PUBLIC_KEY_CREDENTIAL:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    .line 151
+    new-instance v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    const-string v1, "IDENTITY_VERIFICATION"
+
+    const/16 v2, 0x47
+
+    invoke-direct {v0, v1, v2}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->IDENTITY_VERIFICATION:Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    invoke-static {}, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->$values()[Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->$VALUES:[Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;I)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 10
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+    .registers 2
+
+    const-class v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    return-object p0
+.end method
+
+.method public static values()[Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+    .registers 1
+
+    sget-object v0, Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;->$VALUES:[Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Lcom/uber/model/core/generated/edge/services/silkscreen/OnboardingScreenType;
+
+    return-object v0
+.end method

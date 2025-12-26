@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__notification_card" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.CircleImageView android:layout_gravity="center_vertical" android:id="@id/ub__fleet_notification_image" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" app:analyticsId="178badb1-37db" />
+	<com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/ub__fleet_notification_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/ub__fleet_notification_time" android:paddingBottom="@dimen/ui__spacing_unit_0.5x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Meta.Normal" />
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.presidio.app_onboarding.optional.entry.onboard.steps.welcome.sso.chooser.AccountChooserView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsId="2d5ae6fc-a9eb">
+	<com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextStyle.LabelLarge" android:gravity="center" android:id="@id/account_chooser_header" android:background="@drawable/ub__account_chooser_header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ui__spacing_unit_8x" android:text="@string/account_chooser_header" app:analyticsId="28b7fa55-baf6" />
+	<com.ubercab.ui.core.UPlainView android:background="?borderOpaque" android:layout_width="fill_parent" android:layout_height="@dimen/account_chooser_header_divider_width" />
+	<com.ubercab.ui.core.URecyclerView android:id="@id/account_chooser_recycler_view" android:background="?backgroundAlwaysLight" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.presidio.app_onboarding.optional.entry.onboard.steps.welcome.sso.chooser.AccountChooserView>

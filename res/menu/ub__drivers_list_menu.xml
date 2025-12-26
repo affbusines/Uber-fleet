@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+	<item android:icon="@drawable/ub__fleet_add_driver" android:id="@id/action_add_driver" android:title="@string/find_new_drivers" uber:showAsAction="always" />
+</menu>

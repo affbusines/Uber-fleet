@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Theme.Helix.Splash" parent="@style/Theme.Platform.Splash"><item name="android:windowBackground">@drawable/ub__splash</item><item name="android:windowSplashScreenBackground">@color/ub__ui_core_brand_white</item><item name="android:windowSplashScreenAnimatedIcon">@drawable/ub_splash_animation</item><item name="android:windowSplashScreenAnimationDuration">720</item></style>
+</resources>

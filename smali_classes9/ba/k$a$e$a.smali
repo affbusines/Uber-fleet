@@ -1,0 +1,89 @@
+.class final synthetic Lba/k$a$e$a;
+.super Lawt/n;
+.source "SourceFile"
+
+# interfaces
+.implements Laws/b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lba/k$a$e;->a(Lcl/ae;JIZLcl/ag;)J
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1000
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lawt/n;",
+        "Laws/b<",
+        "Ljava/lang/Integer;",
+        "Lcl/ag;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/Object;)V
+    .registers 9
+
+    const-class v3, Lcl/ae;
+
+    const/4 v1, 0x1
+
+    const-string v4, "getWordBoundary"
+
+    const-string v5, "getWordBoundary--jx7JFs(I)J"
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    move-object v2, p1
+
+    invoke-direct/range {v0 .. v6}, Lawt/n;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(I)J
+    .registers 4
+
+    .line 121
+    iget-object v0, p0, Lba/k$a$e$a;->receiver:Ljava/lang/Object;
+
+    check-cast v0, Lcl/ae;
+
+    invoke-virtual {v0, p1}, Lcl/ae;->j(I)J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 4
+
+    .line 121
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Lba/k$a$e$a;->a(I)J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Lcl/ag;->k(J)Lcl/ag;
+
+    move-result-object p1
+
+    return-object p1
+.end method

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_performance_analytics.feature.individual_page.SingleEntityView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="e4b2bee1-78d5">
+	<include layout="@layout/ub__collapsing_avatar_toolbar" />
+	<com.ubercab.ui.core.UScrollView android:id="@id/ub__performance_scroll_view" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/summary_with_date_range" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/summary_weekly_earnings" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/weekly_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<com.ubercab.ui.core.UFrameLayout android:id="@id/summary_rating" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<com.ubercab.ui.core.UButton android:layout_gravity="center_horizontal" android:id="@id/view_trips_on_web" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/performance_view_trips_cta" android:textAllCaps="true" style="@style/Platform.Button.Secondary" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.UScrollView>
+	<com.ubercab.fleet_ui.views.FleetEmptyStateView android:id="@id/empty_view" android:background="?lightBackground" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ubercab.fleet_performance_analytics.feature.individual_page.SingleEntityView>

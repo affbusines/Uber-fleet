@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_inbox.hub.FleetInboxHubView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="535b0059-9226">
+	<include layout="@layout/ub__fixed_tool_bar" />
+	<com.ubercab.ui.core.UFrameLayout android:id="@id/notification_center" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</com.ubercab.fleet_inbox.hub.FleetInboxHubView>

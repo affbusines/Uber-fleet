@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_driver_settlements.DriverSettlementsView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:background="?brandGrey20" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true" uber:analyticsId="75baf5ae-118a">
+	<com.ubercab.fleet_ui.views.FleetEmptyStateView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:titleText="@string/driver_settlement_empty_drivers_msg" />
+	<com.ubercab.fleet_ui.views.FleetErrorView android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+	<com.ubercab.ui.core.URecyclerView android:id="@id/ub__driver_settlements_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="@string/appbar_scrolling_view_behavior" />
+	<com.ubercab.ui.core.UPlainView android:id="@id/ub__loading_block" android:background="?loadingBlockingWhite" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" />
+	<com.ubercab.ui.core.UAppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/ub__appbar" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:elevation="0.0dip">
+		<com.ubercab.ui.core.UToolbar android:theme="@style/Fleet.Toolbar.Theme" android:id="@id/toolbar_view" android:layout_width="fill_parent" android:layout_height="?actionBarSize" uber:contentInsetStartWithNavigation="0.0dip" uber:layout_scrollFlags="scroll|snap" uber:popupTheme="@style/ThemeOverlay.AppCompat.Light" style="@style/Widget.Platform.Toolbar">
+			<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<com.ubercab.ui.core.UTextView android:id="@id/toolbar_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Platform.TextStyle.Title.Normal" />
+				<com.ubercab.ui.core.UTextView android:textColor="?brandGrey60" android:id="@id/toolbar_subtitle_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Platform.TextStyle.Subtitle.Normal" />
+			</com.ubercab.ui.core.ULinearLayout>
+		</com.ubercab.ui.core.UToolbar>
+		<com.ubercab.ui.core.UFrameLayout android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<com.ubercab.fleet_driver_settlements.views.StatementPeriodHeaderView android:theme="@style/Fleet.PeriodHeader.Light" android:id="@id/ub__statement_period_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/toolbar_loading_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorAccent" />
+		</com.ubercab.ui.core.UFrameLayout>
+	</com.ubercab.ui.core.UAppBarLayout>
+</com.ubercab.fleet_driver_settlements.DriverSettlementsView>

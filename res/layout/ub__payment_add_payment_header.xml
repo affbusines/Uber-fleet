@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.text.BaseTextView android:id="@id/ub__payment_add_payment_header_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_add_payment_header_title" android:layout_marginStart="@dimen/ui__spacing_unit_3x" android:layout_marginEnd="@dimen/ui__spacing_unit_3x" app:analyticsId="3e60305e-33be" style="@style/Platform.TextStyle.HeadingSmall" />
+</com.ubercab.ui.core.ULinearLayout>

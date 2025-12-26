@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.UFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/ub__chat_voice_note_input_enhancer_background" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_1.5x" android:paddingEnd="@dimen/ui__spacing_unit_1.5x">
+	<com.ubercab.ui.core.UProgressBar android:layout_gravity="center" android:id="@id/recording_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="100" android:indeterminate="false" android:progressDrawable="@drawable/ub__voice_note_progress_bar_bg" android:progressTint="?contentInversePrimary" android:progressBackgroundTint="?contentSecondary" style="?android:progressBarStyleHorizontal" />
+</com.ubercab.ui.core.UFrameLayout>

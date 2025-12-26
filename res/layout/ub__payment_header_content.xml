@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+	<com.ubercab.ui.core.UToolbar android:theme="@style/ThemeOverlay.ToolbarFont" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:layout_collapseMode="pin" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" style="@style/Widget.Platform.Toolbar" />
+</merge>

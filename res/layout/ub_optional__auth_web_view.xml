@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.profiles.features.create_org_flow.auth_web.AuthWebView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/Theme.Helix.Light" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:analyticsId="ff1af206-ba39">
+	<include android:theme="@style/U4BLightHeader" layout="@layout/fixed_header" />
+	<com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+			<com.ubercab.ui.core.ULinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="?contentInset">
+				<Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+				<com.ubercab.ui.core.UTextView android:id="@id/auth_web_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_4x" android:textAlignment="viewStart" app:analyticsId="4d5621d6-dcae" style="@style/Platform.TextStyle.DisplayDefault" />
+				<com.ubercab.ui.core.UImageView android:id="@id/auth_web_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerHorizontal="true" android:importantForAccessibility="no" app:analyticsId="bf5dee6b-28b8" />
+				<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/auth_web_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_5x" android:textAlignment="viewStart" app:analyticsId="1963adea-8d2b" style="@style/Platform.TextStyle.ParagraphLarge" />
+				<Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.0" />
+			</com.ubercab.ui.core.ULinearLayout>
+		</com.ubercab.ui.core.UScrollView>
+	</com.ubercab.ui.core.UFrameLayout>
+	<com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?contentInset">
+		<com.ubercab.ui.core.UPlainView android:id="@id/auth_web_divider" android:background="?dividerColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" />
+		<com.ubercab.ui.core.button.BaseMaterialButton android:id="@id/auth_web_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" android:text="@string/org_create_payment_auth_web_continue" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset" app:analyticsId="81225ea6-ecb7" app:buttonType="primary" style="@style/Platform.Button.BaseDynamic" />
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.profiles.features.create_org_flow.auth_web.AuthWebView>

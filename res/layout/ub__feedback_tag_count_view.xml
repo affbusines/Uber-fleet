@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/ub__rating_feedback_unchecked_background" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:layout_marginEnd="@dimen/ui__spacing_unit_1x">
+	<com.ubercab.ui.core.UTextView android:textColor="?colorWarning" android:id="@id/ub__feedback_tag_name" android:layout_width="wrap_content" android:layout_height="wrap_content" app:analyticsId="59a24049-f758" style="@style/Platform.TextStyle.Meta.Bold" />
+	<com.ubercab.ui.core.UTextView android:textColor="?colorWarning" android:id="@id/ub__feedback_tag_count" android:layout_width="wrap_content" android:layout_height="wrap_content" app:analyticsId="7accab5a-0c7b" style="@style/Platform.TextStyle.Meta.Bold" />
+</com.ubercab.ui.core.ULinearLayout>

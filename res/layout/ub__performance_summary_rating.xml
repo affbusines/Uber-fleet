@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_performance_analytics.feature.rating.DriversRatingView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.URelativeLayout android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/performance_summary_title_ratings" android:layout_alignParentStart="true" style="@style/Platform.TextStyle.Paragraph.Medium" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/ratings_selected_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/Platform.TextStyle.Paragraph.Medium" />
+	</com.ubercab.ui.core.URelativeLayout>
+	<com.ubercab.ui.core.URelativeLayout android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/performance_summary_rating_lifetime" android:layout_alignParentStart="true" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/ratings_lifetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/Platform.TextStyle.Paragraph.Normal" />
+	</com.ubercab.ui.core.URelativeLayout>
+	<com.ubercab.ui.core.URelativeLayout android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/performance_summary_acceptance_rate" android:layout_alignParentStart="true" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/ratings_acceptance_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/Platform.TextStyle.Paragraph.Normal" />
+	</com.ubercab.ui.core.URelativeLayout>
+	<com.ubercab.ui.core.URelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset" android:layout_marginBottom="@dimen/ui__spacing_unit_3x">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/performance_summary_driver_cancellation" android:layout_alignParentStart="true" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/ratings__driver_cancellation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/Platform.TextStyle.Paragraph.Normal" />
+	</com.ubercab.ui.core.URelativeLayout>
+	<com.ubercab.ui.core.UPlainView android:background="?brandGrey20" android:layout_width="fill_parent" android:layout_height="@dimen/ui__fleet_divider_height" />
+</com.ubercab.fleet_performance_analytics.feature.rating.DriversRatingView>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<plurals name="bug_reporter_fab_trigger_options_reports"><item quantity="other">@string/bug_reporter_fab_trigger_options_reports_many</item><item quantity="one">@string/bug_reporter_fab_trigger_options_reports_many</item></plurals>
+</resources>

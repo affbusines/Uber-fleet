@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.UFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.URelativeLayout android:id="@id/map_debug_paddings" android:background="@drawable/ub__map_corner_paddings_debug_border" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.75" />
+	<com.ubercab.ui.core.URelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<com.ubercab.ui.core.UFrameLayout android:id="@id/map_debug_cp_tl" android:background="?accentPrimary" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:alpha="0.4" />
+		<com.ubercab.ui.core.UFrameLayout android:id="@id/map_debug_cp_tr" android:background="?accentPrimary" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:alpha="0.4" />
+		<com.ubercab.ui.core.UFrameLayout android:id="@id/map_debug_cp_bl" android:background="?accentPrimary" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:alpha="0.4" />
+		<com.ubercab.ui.core.UFrameLayout android:id="@id/map_debug_cp_br" android:background="?accentPrimary" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:alpha="0.4" />
+	</com.ubercab.ui.core.URelativeLayout>
+</com.ubercab.ui.core.UFrameLayout>

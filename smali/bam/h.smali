@@ -1,0 +1,28 @@
+.class public final Lbam/h;
+.super Ljava/lang/RuntimeException;
+.source "SourceFile"
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x3fc38e1f743aa0eeL
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    .registers 3
+
+    if-eqz p2, :cond_3
+
+    goto :goto_8
+
+    .line 47
+    :cond_3
+    new-instance p2, Ljava/lang/NullPointerException;
+
+    invoke-direct {p2}, Ljava/lang/NullPointerException;-><init>()V
+
+    :goto_8
+    invoke-direct {p0, p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    return-void
+.end method

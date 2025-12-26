@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.profiles.profile_selector.v3.ProfileSelectorV3View xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="116a888c-0072">
+	<com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__profile_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	</com.ubercab.ui.core.UScrollView>
+</com.ubercab.profiles.profile_selector.v3.ProfileSelectorV3View>

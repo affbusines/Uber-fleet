@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:background="?selectableItemBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="?contentInset">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/earnings_title" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="d406afc1-a462" style="@style/Platform.TextStyle.Subtitle.Medium" />
+		<com.ubercab.ui.core.UTextView android:id="@id/earnings_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view" uber:analyticsId="e6cb6d4e-6017" style="@style/Platform.TextStyle.Small.Secondary" />
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:layout_gravity="center_vertical" android:id="@id/earnings_value" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="b71ce9da-a4fe" style="@style/Platform.TextStyle.Subtitle.Medium" />
+</com.ubercab.ui.core.ULinearLayout>

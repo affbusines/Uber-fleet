@@ -1,0 +1,58 @@
+.class public abstract Laye/g$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Laye/g;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "b"
+.end annotation
+
+
+# static fields
+.field public static final f:Laye/g$b;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 928
+    new-instance v0, Laye/g$b$1;
+
+    invoke-direct {v0}, Laye/g$b$1;-><init>()V
+
+    sput-object v0, Laye/g$b;->f:Laye/g$b;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 1
+
+    .line 927
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Laye/g;)V
+    .registers 2
+
+    return-void
+.end method
+
+.method public abstract a(Laye/i;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method

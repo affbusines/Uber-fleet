@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.UImageButton xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ub__chat_keyboard_conversation_input_button" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="@dimen/ui__spacing_unit_6x" android:layout_height="@dimen/ui__spacing_unit_6x" android:layout_margin="@dimen/ui__spacing_unit_1x" />

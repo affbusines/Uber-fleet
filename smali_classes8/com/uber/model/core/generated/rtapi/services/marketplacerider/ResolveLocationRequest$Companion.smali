@@ -1,0 +1,234 @@
+.class public final Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    .line 175
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lawt/h;)V
+    .registers 2
+
+    invoke-direct {p0}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final builder()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+    .registers 13
+
+    .line 256
+    new-instance v11, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/16 v9, 0xff
+
+    const/4 v10, 0x0
+
+    move-object v0, v11
+
+    invoke-direct/range {v0 .. v10}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;-><init>(Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ClientRequestLocation;Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationContext;Ljava/util/List;Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ClientRequestLocation;Lcom/uber/model/core/generated/ms/search/generated/Telemetry;Ljava/lang/Boolean;Lcom/uber/model/core/generated/rtapi/models/ts/TimestampInMs;Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationExperimentationParams;ILawt/h;)V
+
+    return-object v11
+.end method
+
+.method public final builderWithDefaults()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+    .registers 5
+
+    .line 261
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion;->builder()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+
+    move-result-object v0
+
+    .line 262
+    sget-object v1, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ClientRequestLocation;->Companion:Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ClientRequestLocation$Companion;
+
+    invoke-virtual {v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ClientRequestLocation$Companion;->stub()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ClientRequestLocation;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;->requestLocation(Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ClientRequestLocation;)Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+
+    move-result-object v0
+
+    .line 263
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    const-class v2, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationContext;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->randomMemberOf(Ljava/lang/Class;)Ljava/lang/Enum;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationContext;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;->context(Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationContext;)Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+
+    move-result-object v0
+
+    .line 264
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion$builderWithDefaults$1;
+
+    sget-object v3, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion$builderWithDefaults$1;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableRandomListOf(Laws/a;)Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;->productsToOptimize(Ljava/util/List;)Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+
+    move-result-object v0
+
+    .line 265
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion$builderWithDefaults$2;
+
+    sget-object v3, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ClientRequestLocation;->Companion:Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ClientRequestLocation$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion$builderWithDefaults$2;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ClientRequestLocation;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;->optimizeLocation(Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ClientRequestLocation;)Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+
+    move-result-object v0
+
+    .line 266
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion$builderWithDefaults$3;
+
+    sget-object v3, Lcom/uber/model/core/generated/ms/search/generated/Telemetry;->Companion:Lcom/uber/model/core/generated/ms/search/generated/Telemetry$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion$builderWithDefaults$3;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/ms/search/generated/Telemetry;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;->telemetry(Lcom/uber/model/core/generated/ms/search/generated/Telemetry;)Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+
+    move-result-object v0
+
+    .line 267
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    invoke-virtual {v1}, Lcom/uber/model/core/internal/RandomUtil;->nullableRandomBoolean()Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;->requestNearbyLocations(Ljava/lang/Boolean;)Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+
+    move-result-object v0
+
+    .line 268
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion$builderWithDefaults$4;
+
+    sget-object v3, Lcom/uber/model/core/generated/rtapi/models/ts/TimestampInMs;->Companion:Lcom/uber/model/core/generated/rtapi/models/ts/TimestampInMs$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion$builderWithDefaults$4;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/b;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableRandomDoubleTypedef(Laws/b;)Lcom/uber/model/core/wrapper/TypeSafeDouble;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/rtapi/models/ts/TimestampInMs;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;->timestamp(Lcom/uber/model/core/generated/rtapi/models/ts/TimestampInMs;)Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+
+    move-result-object v0
+
+    .line 269
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion$builderWithDefaults$5;
+
+    sget-object v3, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationExperimentationParams;->Companion:Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationExperimentationParams$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion$builderWithDefaults$5;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationExperimentationParams;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;->experimentationParams(Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationExperimentationParams;)Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final stub()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest;
+    .registers 2
+
+    .line 274
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Companion;->builderWithDefaults()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest$Builder;->build()Lcom/uber/model/core/generated/rtapi/services/marketplacerider/ResolveLocationRequest;
+
+    move-result-object v0
+
+    return-object v0
+.end method

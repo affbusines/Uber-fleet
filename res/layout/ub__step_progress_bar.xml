@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_ui.step_progress_bar.StepProgressBar xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ub__fleet_step_progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_2x" android:paddingEnd="@dimen/ui__spacing_unit_2x">
+	<ProgressBar android:layout_gravity="center_vertical" android:id="@id/ub__fleet_progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_1x" android:indeterminate="false" style="?android:progressBarStyleHorizontal" />
+</com.ubercab.fleet_ui.step_progress_bar.StepProgressBar>

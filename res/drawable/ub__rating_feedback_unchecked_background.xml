@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+	<stroke android:width="@dimen/ub__abc_button_secondary_stroke_width" android:color="?colorWarning" />
+	<solid android:color="?brandWhite" />
+	<corners android:radius="@dimen/fleet_ui__radius_feedback" />
+</shape>

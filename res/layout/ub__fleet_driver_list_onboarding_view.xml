@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_drivers_list.onboarding.DriversListOnboardingView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.UImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:analyticsId="441fa2ef-89a9" app:srcCompat="@drawable/ub__fleet_discover_driver" />
+	<com.ubercab.ui.core.UTextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/looking_for_driver" app:analyticsId="5590b737-f1e2" style="@style/Platform.TextStyle.Move.H8.Bold" />
+	<com.ubercab.ui.core.UButton android:layout_gravity="center_horizontal" android:id="@id/ub__fleet_driver_list_onboarding_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_a_driver" app:analyticsId="60af8dc0-4945" style="@style/Platform.Button.Primary" />
+</com.ubercab.fleet_drivers_list.onboarding.DriversListOnboardingView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_true_earnings.overview.EarningsView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.UPlainView android:background="?brandGrey40" android:layout_width="fill_parent" android:layout_height="@dimen/ui__fleet_divider_height" />
+	<com.ubercab.ui.core.URelativeLayout android:id="@id/true_earnings_section_earnings" android:background="@drawable/true_earnings_item_background" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/true_earnings_section_earnings_title" style="@style/Platform.TextStyle.Subtitle.Medium" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/earnings_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/Platform.TextStyle.Subtitle.Medium" />
+	</com.ubercab.ui.core.URelativeLayout>
+	<com.ubercab.ui.core.URelativeLayout android:id="@id/true_earnings_section_expenses" android:background="@drawable/true_earnings_item_background" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/true_earnings_section_expenses_title" style="@style/Platform.TextStyle.Subtitle.Medium" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/expenses_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/Platform.TextStyle.Subtitle.Medium" />
+	</com.ubercab.ui.core.URelativeLayout>
+	<com.ubercab.ui.core.URelativeLayout android:id="@id/true_earnings_section_payouts" android:background="@drawable/true_earnings_item_background" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/true_earnings_section_payouts_title" style="@style/Platform.TextStyle.Subtitle.Medium" />
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/payouts_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/Platform.TextStyle.Subtitle.Medium" />
+	</com.ubercab.ui.core.URelativeLayout>
+</com.ubercab.fleet_true_earnings.overview.EarningsView>

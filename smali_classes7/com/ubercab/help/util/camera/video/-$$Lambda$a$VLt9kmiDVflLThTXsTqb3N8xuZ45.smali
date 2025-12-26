@@ -1,0 +1,46 @@
+.class public final synthetic Lcom/ubercab/help/util/camera/video/-$$Lambda$a$VLt9kmiDVflLThTXsTqb3N8xuZ45;
+.super Ljava/lang/Object;
+.source "lambda"
+
+# interfaces
+.implements Lio/reactivex/functions/Function;
+
+
+# static fields
+.field public static final synthetic INSTANCE:Lcom/ubercab/help/util/camera/video/-$$Lambda$a$VLt9kmiDVflLThTXsTqb3N8xuZ45;
+
+
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .registers 1
+
+    new-instance v0, Lcom/ubercab/help/util/camera/video/-$$Lambda$a$VLt9kmiDVflLThTXsTqb3N8xuZ45;
+
+    invoke-direct {v0}, Lcom/ubercab/help/util/camera/video/-$$Lambda$a$VLt9kmiDVflLThTXsTqb3N8xuZ45;-><init>()V
+
+    sput-object v0, Lcom/ubercab/help/util/camera/video/-$$Lambda$a$VLt9kmiDVflLThTXsTqb3N8xuZ45;->INSTANCE:Lcom/ubercab/help/util/camera/video/-$$Lambda$a$VLt9kmiDVflLThTXsTqb3N8xuZ45;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 2
+
+    check-cast p1, Lwm/a;
+
+    invoke-static {p1}, Lcom/ubercab/help/util/camera/video/a;->lambda$VLt9kmiDVflLThTXsTqb3N8xuZ45(Lwm/a;)Lwm/a$a;
+
+    move-result-object p1
+
+    return-object p1
+.end method

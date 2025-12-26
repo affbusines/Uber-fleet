@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape android:shape="oval">
+			<solid android:color="?iconColor" />
+			<size android:height="@dimen/fleet_ui__spacing_unit_1.75x" android:width="@dimen/fleet_ui__spacing_unit_1.75x" />
+		</shape>
+	</item>
+	<item android:left="@dimen/fleet_ui__status_border_width" android:top="@dimen/fleet_ui__status_border_width" android:right="@dimen/fleet_ui__status_border_width" android:bottom="@dimen/fleet_ui__status_border_width">
+		<shape android:shape="oval">
+			<stroke android:width="@dimen/fleet_ui__status_border_width" android:color="?iconPositive" />
+		</shape>
+	</item>
+</layer-list>

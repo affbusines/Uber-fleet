@@ -1,0 +1,162 @@
+.class public final Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/Shape_ReportRequestBody;
+.super Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/ReportRequestBody;
+.source "SourceFile"
+
+
+# instance fields
+.field private report:Lcom/ubercab/feedback/optional/phabs/realtime/model/Report;
+
+
+# direct methods
+.method constructor <init>()V
+    .registers 1
+
+    .line 10
+    invoke-direct {p0}, Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/ReportRequestBody;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .registers 6
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_4
+
+    return v0
+
+    :cond_4
+    const/4 v1, 0x0
+
+    if-eqz p1, :cond_31
+
+    .line 30
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v3
+
+    if-eq v2, v3, :cond_12
+
+    goto :goto_31
+
+    .line 34
+    :cond_12
+    check-cast p1, Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/ReportRequestBody;
+
+    .line 36
+    invoke-virtual {p1}, Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/ReportRequestBody;->getReport()Lcom/ubercab/feedback/optional/phabs/realtime/model/Report;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_29
+
+    invoke-virtual {p1}, Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/ReportRequestBody;->getReport()Lcom/ubercab/feedback/optional/phabs/realtime/model/Report;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/Shape_ReportRequestBody;->getReport()Lcom/ubercab/feedback/optional/phabs/realtime/model/Report;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_30
+
+    goto :goto_2f
+
+    :cond_29
+    invoke-virtual {p0}, Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/Shape_ReportRequestBody;->getReport()Lcom/ubercab/feedback/optional/phabs/realtime/model/Report;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_30
+
+    :goto_2f
+    return v1
+
+    :cond_30
+    return v0
+
+    :cond_31
+    :goto_31
+    return v1
+.end method
+
+.method public getReport()Lcom/ubercab/feedback/optional/phabs/realtime/model/Report;
+    .registers 2
+
+    .line 15
+    iget-object v0, p0, Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/Shape_ReportRequestBody;->report:Lcom/ubercab/feedback/optional/phabs/realtime/model/Report;
+
+    return-object v0
+.end method
+
+.method public hashCode()I
+    .registers 3
+
+    .line 47
+    iget-object v0, p0, Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/Shape_ReportRequestBody;->report:Lcom/ubercab/feedback/optional/phabs/realtime/model/Report;
+
+    if-nez v0, :cond_6
+
+    const/4 v0, 0x0
+
+    goto :goto_a
+
+    :cond_6
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    :goto_a
+    const v1, 0xf4243
+
+    xor-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public setReport(Lcom/ubercab/feedback/optional/phabs/realtime/model/Report;)Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/ReportRequestBody;
+    .registers 2
+
+    .line 20
+    iput-object p1, p0, Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/Shape_ReportRequestBody;->report:Lcom/ubercab/feedback/optional/phabs/realtime/model/Report;
+
+    return-object p0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 3
+
+    .line 53
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "ReportRequestBody{report="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/ubercab/feedback/optional/phabs/realtime/request/body/model/Shape_ReportRequestBody;->report:Lcom/ubercab/feedback/optional/phabs/realtime/model/Report;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, "}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

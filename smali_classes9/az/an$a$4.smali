@@ -1,0 +1,114 @@
+.class final Laz/an$a$4;
+.super Lawt/r;
+.source "SourceFile"
+
+# interfaces
+.implements Laws/b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Laz/an$a;->a(Lba/t;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lawt/r;",
+        "Laws/b<",
+        "Lba/t;",
+        "Lcr/g;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Laz/an$a$4;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    new-instance v0, Laz/an$a$4;
+
+    invoke-direct {v0}, Laz/an$a$4;-><init>()V
+
+    sput-object v0, Laz/an$a$4;->a:Laz/an$a$4;
+
+    return-void
+.end method
+
+.method constructor <init>()V
+    .registers 2
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lawt/r;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lba/t;)Lcr/g;
+    .registers 7
+
+    const-string v0, "$this$deleteIfSelectedOr"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 137
+    invoke-virtual {p1}, Lba/t;->k()I
+
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_1e
+
+    .line 141
+    new-instance v1, Lcr/e;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {p1}, Lba/t;->c()J
+
+    move-result-wide v3
+
+    invoke-static {v3, v4}, Lcl/ag;->b(J)I
+
+    move-result p1
+
+    sub-int/2addr v0, p1
+
+    invoke-direct {v1, v2, v0}, Lcr/e;-><init>(II)V
+
+    check-cast v1, Lcr/g;
+
+    goto :goto_1f
+
+    :cond_1e
+    const/4 v1, 0x0
+
+    :goto_1f
+    return-object v1
+.end method
+
+.method public synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 2
+
+    .line 136
+    check-cast p1, Lba/t;
+
+    invoke-virtual {p0, p1}, Laz/an$a$4;->a(Lba/t;)Lcr/g;
+
+    move-result-object p1
+
+    return-object p1
+.end method

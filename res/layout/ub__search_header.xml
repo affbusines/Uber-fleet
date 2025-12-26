@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_ui.views.SearchToolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UToolbar android:theme="@style/Fleet.Toolbar.Theme" android:id="@id/toolbar_view" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" style="@style/Widget.Platform.Toolbar">
+			<com.ubercab.ui.core.input.BaseEditText android:layout_gravity="start|center" android:id="@id/toolbar_search_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="text" android:imeOptions="actionDone" android:layout_marginEnd="?contentInset" app:input_clearButtonEnabled="true" />
+		</com.ubercab.ui.core.UToolbar>
+		<com.ubercab.ui.commons.widget.BitLoadingIndicator android:layout_gravity="bottom" android:id="@id/toolbar_loading_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:bli_bitColor="?colorAccentInverse" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+	</com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.fleet_ui.views.SearchToolbar>

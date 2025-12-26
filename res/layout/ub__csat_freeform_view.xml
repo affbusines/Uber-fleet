@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_csat.answer.freeform.CsatFreeformView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_horizontal_light" android:showDividers="beginning|end">
+	<com.ubercab.ui.core.UTextInputEditText android:gravity="top" android:id="@id/ub__csat_edit_text" android:background="?brandTransparent" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="@integer/ub__csat_freeform_min_line" android:maxLength="@integer/ub__csat_freeform_max_length" android:inputType="textCapSentences|textMultiLine" />
+</com.ubercab.fleet_csat.answer.freeform.CsatFreeformView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_notification_center.center.NotificationCenterView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true" uber:analyticsId="fda85ecb-9690">
+	<com.ubercab.fleet_ui.views.FleetEmptyStateView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:descriptionText="@string/notification_center_empty_description" uber:titleText="@string/notification_center_empty_title" />
+	<com.ubercab.ui.core.URecyclerView android:id="@id/ub__notification_center_card_recycler" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="@string/appbar_scrolling_view_behavior" />
+	<include layout="@layout/ub__inbox_tool_bar" />
+</com.ubercab.fleet_notification_center.center.NotificationCenterView>

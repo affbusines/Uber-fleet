@@ -1,0 +1,508 @@
+.class public final Lcom/uber/model/core/generated/learning/learning/CallToAction$Companion$ADAPTER$1;
+.super Lcom/squareup/wire/j;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/uber/model/core/generated/learning/learning/CallToAction;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/squareup/wire/j<",
+        "Lcom/uber/model/core/generated/learning/learning/CallToAction;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final metadataAdapter:Lcom/squareup/wire/j;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/squareup/wire/j<",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>(Lcom/squareup/wire/b;Laxa/c;)V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/squareup/wire/b;",
+            "Laxa/c<",
+            "Lcom/uber/model/core/generated/learning/learning/CallToAction;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 139
+    invoke-direct {p0, p1, p2}, Lcom/squareup/wire/j;-><init>(Lcom/squareup/wire/b;Laxa/c;)V
+
+    .line 144
+    sget-object p1, Lcom/squareup/wire/j;->Companion:Lcom/squareup/wire/j$a;
+
+    sget-object p2, Lcom/squareup/wire/j;->STRING:Lcom/squareup/wire/j;
+
+    sget-object v0, Lcom/squareup/wire/j;->STRING:Lcom/squareup/wire/j;
+
+    invoke-virtual {p1, p2, v0}, Lcom/squareup/wire/j$a;->a(Lcom/squareup/wire/j;Lcom/squareup/wire/j;)Lcom/squareup/wire/j;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/uber/model/core/generated/learning/learning/CallToAction$Companion$ADAPTER$1;->metadataAdapter:Lcom/squareup/wire/j;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public decode(Lcom/squareup/wire/l;)Lcom/uber/model/core/generated/learning/learning/CallToAction;
+    .registers 13
+
+    const-string v0, "reader"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 163
+    sget-object v0, Lcom/uber/model/core/generated/learning/learning/ActionType;->DISMISS:Lcom/uber/model/core/generated/learning/learning/ActionType;
+
+    .line 165
+    new-instance v1, Ljava/util/LinkedHashMap;
+
+    invoke-direct {v1}, Ljava/util/LinkedHashMap;-><init>()V
+
+    check-cast v1, Ljava/util/Map;
+
+    .line 209
+    invoke-virtual {p1}, Lcom/squareup/wire/l;->a()J
+
+    move-result-wide v2
+
+    const/4 v4, 0x0
+
+    move-object v8, v4
+
+    .line 211
+    :goto_14
+    invoke-virtual {p1}, Lcom/squareup/wire/l;->b()I
+
+    move-result v5
+
+    const/4 v6, -0x1
+
+    const/4 v7, 0x2
+
+    const/4 v9, 0x1
+
+    if-eq v5, v6, :cond_55
+
+    if-eq v5, v9, :cond_4e
+
+    if-eq v5, v7, :cond_47
+
+    const/4 v6, 0x3
+
+    if-eq v5, v6, :cond_37
+
+    const/4 v6, 0x4
+
+    if-eq v5, v6, :cond_2b
+
+    .line 172
+    invoke-virtual {p1, v5}, Lcom/squareup/wire/l;->a(I)V
+
+    goto :goto_14
+
+    .line 171
+    :cond_2b
+    iget-object v5, p0, Lcom/uber/model/core/generated/learning/learning/CallToAction$Companion$ADAPTER$1;->metadataAdapter:Lcom/squareup/wire/j;
+
+    invoke-virtual {v5, p1}, Lcom/squareup/wire/j;->decode(Lcom/squareup/wire/l;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/util/Map;
+
+    invoke-interface {v1, v5}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
+
+    goto :goto_14
+
+    .line 170
+    :cond_37
+    sget-object v5, Lcom/uber/model/core/generated/learning/learning/URL;->Companion:Lcom/uber/model/core/generated/learning/learning/URL$Companion;
+
+    sget-object v6, Lcom/squareup/wire/j;->STRING:Lcom/squareup/wire/j;
+
+    invoke-virtual {v6, p1}, Lcom/squareup/wire/j;->decode(Lcom/squareup/wire/l;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/lang/String;
+
+    invoke-virtual {v5, v6}, Lcom/uber/model/core/generated/learning/learning/URL$Companion;->wrap(Ljava/lang/String;)Lcom/uber/model/core/generated/learning/learning/URL;
+
+    move-result-object v5
+
+    move-object v8, v5
+
+    goto :goto_14
+
+    .line 169
+    :cond_47
+    sget-object v0, Lcom/uber/model/core/generated/learning/learning/ActionType;->ADAPTER:Lcom/squareup/wire/j;
+
+    invoke-virtual {v0, p1}, Lcom/squareup/wire/j;->decode(Lcom/squareup/wire/l;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    goto :goto_14
+
+    .line 168
+    :cond_4e
+    sget-object v4, Lcom/squareup/wire/j;->STRING:Lcom/squareup/wire/j;
+
+    invoke-virtual {v4, p1}, Lcom/squareup/wire/j;->decode(Lcom/squareup/wire/l;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    goto :goto_14
+
+    .line 215
+    :cond_55
+    invoke-virtual {p1, v2, v3}, Lcom/squareup/wire/l;->a(J)Layj/i;
+
+    move-result-object v10
+
+    .line 175
+    new-instance p1, Lcom/uber/model/core/generated/learning/learning/CallToAction;
+
+    .line 176
+    move-object v6, v4
+
+    check-cast v6, Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    if-eqz v6, :cond_7d
+
+    .line 177
+    move-object v3, v0
+
+    check-cast v3, Lcom/uber/model/core/generated/learning/learning/ActionType;
+
+    if-eqz v3, :cond_70
+
+    .line 179
+    invoke-static {v1}, Lkq/z;->a(Ljava/util/Map;)Lkq/z;
+
+    move-result-object v9
+
+    move-object v5, p1
+
+    move-object v7, v3
+
+    .line 175
+    invoke-direct/range {v5 .. v10}, Lcom/uber/model/core/generated/learning/learning/CallToAction;-><init>(Ljava/lang/String;Lcom/uber/model/core/generated/learning/learning/ActionType;Lcom/uber/model/core/generated/learning/learning/URL;Lkq/z;Layj/i;)V
+
+    return-object p1
+
+    :cond_70
+    new-array p1, v7, [Ljava/lang/Object;
+
+    aput-object v0, p1, v2
+
+    const-string v0, "actionType"
+
+    aput-object v0, p1, v9
+
+    .line 177
+    invoke-static {p1}, Lnd/c;->a([Ljava/lang/Object;)Ljava/lang/IllegalStateException;
+
+    move-result-object p1
+
+    throw p1
+
+    :cond_7d
+    new-array p1, v7, [Ljava/lang/Object;
+
+    aput-object v4, p1, v2
+
+    const-string v0, "label"
+
+    aput-object v0, p1, v9
+
+    .line 176
+    invoke-static {p1}, Lnd/c;->a([Ljava/lang/Object;)Ljava/lang/IllegalStateException;
+
+    move-result-object p1
+
+    goto :goto_8b
+
+    :goto_8a
+    throw p1
+
+    :goto_8b
+    goto :goto_8a
+.end method
+
+.method public bridge synthetic decode(Lcom/squareup/wire/l;)Ljava/lang/Object;
+    .registers 2
+
+    .line 139
+    invoke-virtual {p0, p1}, Lcom/uber/model/core/generated/learning/learning/CallToAction$Companion$ADAPTER$1;->decode(Lcom/squareup/wire/l;)Lcom/uber/model/core/generated/learning/learning/CallToAction;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public encode(Lcom/squareup/wire/m;Lcom/uber/model/core/generated/learning/learning/CallToAction;)V
+    .registers 6
+
+    const-string v0, "writer"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "value"
+
+    invoke-static {p2, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 154
+    sget-object v0, Lcom/squareup/wire/j;->STRING:Lcom/squareup/wire/j;
+
+    invoke-virtual {p2}, Lcom/uber/model/core/generated/learning/learning/CallToAction;->label()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, p1, v2, v1}, Lcom/squareup/wire/j;->encodeWithTag(Lcom/squareup/wire/m;ILjava/lang/Object;)V
+
+    .line 155
+    sget-object v0, Lcom/uber/model/core/generated/learning/learning/ActionType;->ADAPTER:Lcom/squareup/wire/j;
+
+    invoke-virtual {p2}, Lcom/uber/model/core/generated/learning/learning/CallToAction;->actionType()Lcom/uber/model/core/generated/learning/learning/ActionType;
+
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    invoke-virtual {v0, p1, v2, v1}, Lcom/squareup/wire/j;->encodeWithTag(Lcom/squareup/wire/m;ILjava/lang/Object;)V
+
+    .line 156
+    sget-object v0, Lcom/squareup/wire/j;->STRING:Lcom/squareup/wire/j;
+
+    invoke-virtual {p2}, Lcom/uber/model/core/generated/learning/learning/CallToAction;->link()Lcom/uber/model/core/generated/learning/learning/URL;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_2b
+
+    invoke-virtual {v1}, Lcom/uber/model/core/generated/learning/learning/URL;->get()Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_2c
+
+    :cond_2b
+    const/4 v1, 0x0
+
+    :goto_2c
+    const/4 v2, 0x3
+
+    invoke-virtual {v0, p1, v2, v1}, Lcom/squareup/wire/j;->encodeWithTag(Lcom/squareup/wire/m;ILjava/lang/Object;)V
+
+    .line 157
+    iget-object v0, p0, Lcom/uber/model/core/generated/learning/learning/CallToAction$Companion$ADAPTER$1;->metadataAdapter:Lcom/squareup/wire/j;
+
+    const/4 v1, 0x4
+
+    invoke-virtual {p2}, Lcom/uber/model/core/generated/learning/learning/CallToAction;->metadata()Lkq/z;
+
+    move-result-object v2
+
+    invoke-virtual {v0, p1, v1, v2}, Lcom/squareup/wire/j;->encodeWithTag(Lcom/squareup/wire/m;ILjava/lang/Object;)V
+
+    .line 158
+    invoke-virtual {p2}, Lcom/uber/model/core/generated/learning/learning/CallToAction;->getUnknownItems()Layj/i;
+
+    move-result-object p2
+
+    invoke-virtual {p1, p2}, Lcom/squareup/wire/m;->a(Layj/i;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic encode(Lcom/squareup/wire/m;Ljava/lang/Object;)V
+    .registers 3
+
+    .line 139
+    check-cast p2, Lcom/uber/model/core/generated/learning/learning/CallToAction;
+
+    invoke-virtual {p0, p1, p2}, Lcom/uber/model/core/generated/learning/learning/CallToAction$Companion$ADAPTER$1;->encode(Lcom/squareup/wire/m;Lcom/uber/model/core/generated/learning/learning/CallToAction;)V
+
+    return-void
+.end method
+
+.method public encodedSize(Lcom/uber/model/core/generated/learning/learning/CallToAction;)I
+    .registers 6
+
+    const-string v0, "value"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 147
+    sget-object v0, Lcom/squareup/wire/j;->STRING:Lcom/squareup/wire/j;
+
+    invoke-virtual {p1}, Lcom/uber/model/core/generated/learning/learning/CallToAction;->label()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v2, v1}, Lcom/squareup/wire/j;->encodedSizeWithTag(ILjava/lang/Object;)I
+
+    move-result v0
+
+    .line 148
+    sget-object v1, Lcom/uber/model/core/generated/learning/learning/ActionType;->ADAPTER:Lcom/squareup/wire/j;
+
+    invoke-virtual {p1}, Lcom/uber/model/core/generated/learning/learning/CallToAction;->actionType()Lcom/uber/model/core/generated/learning/learning/ActionType;
+
+    move-result-object v2
+
+    const/4 v3, 0x2
+
+    invoke-virtual {v1, v3, v2}, Lcom/squareup/wire/j;->encodedSizeWithTag(ILjava/lang/Object;)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 149
+    sget-object v1, Lcom/squareup/wire/j;->STRING:Lcom/squareup/wire/j;
+
+    invoke-virtual {p1}, Lcom/uber/model/core/generated/learning/learning/CallToAction;->link()Lcom/uber/model/core/generated/learning/learning/URL;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_29
+
+    invoke-virtual {v2}, Lcom/uber/model/core/generated/learning/learning/URL;->get()Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_2a
+
+    :cond_29
+    const/4 v2, 0x0
+
+    :goto_2a
+    const/4 v3, 0x3
+
+    invoke-virtual {v1, v3, v2}, Lcom/squareup/wire/j;->encodedSizeWithTag(ILjava/lang/Object;)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 150
+    iget-object v1, p0, Lcom/uber/model/core/generated/learning/learning/CallToAction$Companion$ADAPTER$1;->metadataAdapter:Lcom/squareup/wire/j;
+
+    const/4 v2, 0x4
+
+    invoke-virtual {p1}, Lcom/uber/model/core/generated/learning/learning/CallToAction;->metadata()Lkq/z;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v2, v3}, Lcom/squareup/wire/j;->encodedSizeWithTag(ILjava/lang/Object;)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 151
+    invoke-virtual {p1}, Lcom/uber/model/core/generated/learning/learning/CallToAction;->getUnknownItems()Layj/i;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Layj/i;->j()I
+
+    move-result p1
+
+    add-int/2addr v0, p1
+
+    return v0
+.end method
+
+.method public bridge synthetic encodedSize(Ljava/lang/Object;)I
+    .registers 2
+
+    .line 139
+    check-cast p1, Lcom/uber/model/core/generated/learning/learning/CallToAction;
+
+    invoke-virtual {p0, p1}, Lcom/uber/model/core/generated/learning/learning/CallToAction$Companion$ADAPTER$1;->encodedSize(Lcom/uber/model/core/generated/learning/learning/CallToAction;)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public redact(Lcom/uber/model/core/generated/learning/learning/CallToAction;)Lcom/uber/model/core/generated/learning/learning/CallToAction;
+    .registers 11
+
+    const-string v0, "value"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 185
+    sget-object v6, Layj/i;->a:Layj/i;
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/16 v7, 0xf
+
+    const/4 v8, 0x0
+
+    move-object v1, p1
+
+    .line 184
+    invoke-static/range {v1 .. v8}, Lcom/uber/model/core/generated/learning/learning/CallToAction;->copy$default(Lcom/uber/model/core/generated/learning/learning/CallToAction;Ljava/lang/String;Lcom/uber/model/core/generated/learning/learning/ActionType;Lcom/uber/model/core/generated/learning/learning/URL;Lkq/z;Layj/i;ILjava/lang/Object;)Lcom/uber/model/core/generated/learning/learning/CallToAction;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic redact(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 2
+
+    .line 139
+    check-cast p1, Lcom/uber/model/core/generated/learning/learning/CallToAction;
+
+    invoke-virtual {p0, p1}, Lcom/uber/model/core/generated/learning/learning/CallToAction$Companion$ADAPTER$1;->redact(Lcom/uber/model/core/generated/learning/learning/CallToAction;)Lcom/uber/model/core/generated/learning/learning/CallToAction;
+
+    move-result-object p1
+
+    return-object p1
+.end method

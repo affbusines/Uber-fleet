@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:background="?selectableItemBackground" android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="6054cb25-e63c">
+	<com.ubercab.ui.core.URadioButton android:id="@id/ub__csat_selection_answer_radio_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" />
+	<com.ubercab.ui.core.UCheckBox android:id="@id/ub__csat_selection_answer_checkbox" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" />
+	<com.ubercab.ui.core.UTextView android:id="@id/ub__csat_selection_answer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" uber:analyticsId="289d5ab5-380a" style="@style/Platform.TextStyle.Subtitle.Normal" />
+	<androidx.legacy.widget.Space android:layout_width="?contentInset" android:layout_height="fill_parent" />
+</com.ubercab.ui.core.ULinearLayout>

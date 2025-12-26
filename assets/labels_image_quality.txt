@@ -1,0 +1,4 @@
+id
+truncated
+glare
+blur

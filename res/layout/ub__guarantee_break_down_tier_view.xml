@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_guarantee.guarantee_break_down_by_vehicle.GuaranteeBreakDownTierView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UPlainView android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ui__fleet_divider_height" />
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_2x" android:layout_marginEnd="@dimen/ui__spacing_unit_2x">
+		<com.ubercab.ui.core.ULinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.UTextView android:id="@id/ub__guarantee_break_down_tier_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:analyticsId="8d79e689-3223" />
+			<Space android:layout_width="?contentInset" android:layout_height="fill_parent" />
+			<com.ubercab.ui.core.UTextView android:id="@id/ub__guarantee_break_down_tier_vehicle_count" android:layout_width="wrap_content" android:layout_height="wrap_content" app:analyticsId="f3495f15-906f" />
+			<com.ubercab.ui.core.UImageView android:id="@id/ub__guarantee_break_down_tier_chevron" android:paddingTop="@dimen/ui__fleet_divider_height" android:visibility="gone" android:layout_width="?avatarExtraTiny" android:layout_height="?avatarExtraTiny" app:analyticsId="ae3c745b-396d" app:srcCompat="@drawable/ub__fleet_chevron_end" />
+		</com.ubercab.ui.core.ULinearLayout>
+		<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__guarantee_break_down_tier_annotation_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.UImageView android:layout_width="@dimen/ui__avatar_size_extra_tiny" android:layout_height="@dimen/ui__avatar_size_extra_tiny" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginStart="@dimen/ui__spacing_unit_2x" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" app:analyticsId="1bca09db-fac3" app:srcCompat="@drawable/ub__fleet_notification" />
+			<com.ubercab.ui.core.UTextView android:textColor="?textColorAccent" android:layout_gravity="center_vertical" android:id="@id/ub__guarantee_break_down_single_vehicle_annotation" android:layout_width="wrap_content" android:layout_height="wrap_content" app:analyticsId="4d1ba6b4-010f" style="@style/Platform.TextStyle.Small.Normal" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.fleet_guarantee.guarantee_break_down_by_vehicle.GuaranteeBreakDownTierView>

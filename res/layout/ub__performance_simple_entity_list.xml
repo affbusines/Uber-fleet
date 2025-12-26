@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_performance_analytics.feature.v2.simple_entity_list.SimpleEntityListView xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" />

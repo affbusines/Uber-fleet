@@ -1,0 +1,622 @@
+.class public final Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+.super Lcom/google/protobuf/GeneratedMessageLite;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponseOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/ubercab/beacon_v2/Beacon;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "MatrixAnimationStopResponse"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse$Builder;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite<",
+        "Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;",
+        "Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse$Builder;",
+        ">;",
+        "Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponseOrBuilder;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+.field private static volatile PARSER:Lcom/google/protobuf/Parser; = null
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/protobuf/Parser<",
+            "Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final STATUS_FIELD_NUMBER:I = 0x1
+
+
+# instance fields
+.field private status_:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 2
+
+    .line 36611
+    new-instance v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-direct {v0}, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;-><init>()V
+
+    .line 36614
+    sput-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    .line 36615
+    const-class v1, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v1, v0}, Lcom/google/protobuf/GeneratedMessageLite;->registerDefaultInstance(Ljava/lang/Class;Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .registers 1
+
+    .line 36371
+    invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
+
+    return-void
+.end method
+
+.method static synthetic access$69700()Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 1
+
+    .line 36366
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object v0
+.end method
+
+.method static synthetic access$69800(Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;I)V
+    .registers 2
+
+    .line 36366
+    invoke-direct {p0, p1}, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->setStatusValue(I)V
+
+    return-void
+.end method
+
+.method static synthetic access$69900(Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;Lcom/ubercab/beacon_v2/Beacon$GenericStatus;)V
+    .registers 2
+
+    .line 36366
+    invoke-direct {p0, p1}, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->setStatus(Lcom/ubercab/beacon_v2/Beacon$GenericStatus;)V
+
+    return-void
+.end method
+
+.method static synthetic access$70000(Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;)V
+    .registers 1
+
+    .line 36366
+    invoke-direct {p0}, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->clearStatus()V
+
+    return-void
+.end method
+
+.method private clearStatus()V
+    .registers 2
+
+    const/4 v0, 0x0
+
+    .line 36412
+    iput v0, p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->status_:I
+
+    return-void
+.end method
+
+.method public static getDefaultInstance()Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 1
+
+    .line 36620
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object v0
+.end method
+
+.method public static newBuilder()Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse$Builder;
+    .registers 1
+
+    .line 36490
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-virtual {v0}, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$Builder;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse$Builder;
+
+    return-object v0
+.end method
+
+.method public static newBuilder(Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse$Builder;
+    .registers 2
+
+    .line 36493
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-virtual {v0, p0}, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$Builder;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse$Builder;
+
+    return-object p0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 36467
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v0, p0}, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 36473
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v0, p0, p1}, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 36431
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 36438
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 36478
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/CodedInputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 36485
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 36455
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 36462
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 36418
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 36425
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom([B)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 36443
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[B)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 36450
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p0
+.end method
+
+.method public static parser()Lcom/google/protobuf/Parser;
+    .registers 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/protobuf/Parser<",
+            "Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;",
+            ">;"
+        }
+    .end annotation
+
+    .line 36626
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-virtual {v0}, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->getParserForType()Lcom/google/protobuf/Parser;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private setStatus(Lcom/ubercab/beacon_v2/Beacon$GenericStatus;)V
+    .registers 2
+
+    .line 36404
+    invoke-virtual {p1}, Lcom/ubercab/beacon_v2/Beacon$GenericStatus;->getNumber()I
+
+    move-result p1
+
+    iput p1, p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->status_:I
+
+    return-void
+.end method
+
+.method private setStatusValue(I)V
+    .registers 2
+
+    .line 36397
+    iput p1, p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->status_:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$MethodToInvoke;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 4
+
+    .line 36563
+    sget-object p2, Lcom/ubercab/beacon_v2/Beacon$1;->a:[I
+
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$MethodToInvoke;->ordinal()I
+
+    move-result p1
+
+    aget p1, p2, p1
+
+    const/4 p2, 0x1
+
+    const/4 p3, 0x0
+
+    packed-switch p1, :pswitch_data_54
+
+    .line 36604
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
+
+    :pswitch_13
+    return-object p3
+
+    .line 36598
+    :pswitch_14
+    invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 36583
+    :pswitch_19
+    sget-object p1, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    if-nez p1, :cond_33
+
+    .line 36585
+    const-class p1, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    monitor-enter p1
+
+    .line 36586
+    :try_start_20
+    sget-object p2, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    if-nez p2, :cond_2d
+
+    .line 36588
+    new-instance p2, Lcom/google/protobuf/GeneratedMessageLite$DefaultInstanceBasedParser;
+
+    sget-object p3, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-direct {p2, p3}, Lcom/google/protobuf/GeneratedMessageLite$DefaultInstanceBasedParser;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    .line 36591
+    sput-object p2, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 36593
+    :cond_2d
+    monitor-exit p1
+    :try_end_2e
+    .catchall {:try_start_20 .. :try_end_2e} :catchall_30
+
+    move-object p1, p2
+
+    goto :goto_33
+
+    :catchall_30
+    move-exception p2
+
+    monitor-exit p1
+
+    throw p2
+
+    :cond_33
+    :goto_33
+    return-object p1
+
+    .line 36580
+    :pswitch_34
+    sget-object p1, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    return-object p1
+
+    :pswitch_37
+    new-array p1, p2, [Ljava/lang/Object;
+
+    const/4 p2, 0x0
+
+    const-string p3, "status_"
+
+    aput-object p3, p1, p2
+
+    .line 36576
+    sget-object p2, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->DEFAULT_INSTANCE:Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    const-string p3, "\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u000c"
+
+    invoke-static {p2, p3, p1}, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->newMessageInfo(Lcom/google/protobuf/MessageLite;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 36568
+    :pswitch_47
+    new-instance p1, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse$Builder;
+
+    invoke-direct {p1, p3}, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse$Builder;-><init>(Lcom/ubercab/beacon_v2/Beacon$1;)V
+
+    return-object p1
+
+    .line 36565
+    :pswitch_4d
+    new-instance p1, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;
+
+    invoke-direct {p1}, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;-><init>()V
+
+    return-object p1
+
+    nop
+
+    :pswitch_data_54
+    .packed-switch 0x1
+        :pswitch_4d
+        :pswitch_47
+        :pswitch_37
+        :pswitch_34
+        :pswitch_19
+        :pswitch_14
+        :pswitch_13
+    .end packed-switch
+.end method
+
+.method public getStatus()Lcom/ubercab/beacon_v2/Beacon$GenericStatus;
+    .registers 2
+
+    .line 36389
+    iget v0, p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->status_:I
+
+    invoke-static {v0}, Lcom/ubercab/beacon_v2/Beacon$GenericStatus;->forNumber(I)Lcom/ubercab/beacon_v2/Beacon$GenericStatus;
+
+    move-result-object v0
+
+    if-nez v0, :cond_a
+
+    .line 36390
+    sget-object v0, Lcom/ubercab/beacon_v2/Beacon$GenericStatus;->UNRECOGNIZED:Lcom/ubercab/beacon_v2/Beacon$GenericStatus;
+
+    :cond_a
+    return-object v0
+.end method
+
+.method public getStatusValue()I
+    .registers 2
+
+    .line 36381
+    iget v0, p0, Lcom/ubercab/beacon_v2/Beacon$MatrixAnimationStopResponse;->status_:I
+
+    return v0
+.end method

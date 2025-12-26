@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:padding="?contentInset" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsEnabled="false">
+	<com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+		<com.ubercab.ui.core.UImageView android:id="@id/ub__profile_onboarding_item_image" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:contentDescription="@string/feature_profile_badge" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" />
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__profile_onboarding_item_primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Platform.TextStyle.H5.News.Link" />
+			<com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__profile_onboarding_item_secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Platform.TextStyle.H6.News.Tertiary" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.UImageView android:gravity="center" android:id="@id/ub__profile_selected_check" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?android:textColorTertiary" app:analyticsId="dd0edb9c-bb62" app:srcCompat="@drawable/ic_checkmark" />
+</com.ubercab.ui.core.ULinearLayout>

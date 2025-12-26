@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.commons.tag_selection.TagSelectionLayout android:id="@id/ub__vehicle_labels_view" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" app:gutter="@dimen/ui__spacing_unit_1x" />
+	<com.ubercab.fleet_ui.views.FleetEmptyStateView android:id="@id/empty_view" android:background="?brandGrey20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="?contentInset" app:emptyIcon="@drawable/ub__fleet_ic_tag" app:titleText="@string/vehicle_label_list_empty" />
+</merge>

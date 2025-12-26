@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_ui.views.FixedToolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/fleet_fixed_avatar_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UToolbar android:theme="@style/Fleet.Toolbar.Theme" android:id="@id/toolbar_view" android:background="?brandBlack" android:layout_width="fill_parent" android:layout_height="@dimen/ub__action_bar_height_avatar" app:contentInsetStartWithNavigation="0.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" style="@style/Widget.Platform.Toolbar">
+			<com.ubercab.ui.core.ULinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/ui__spacing_unit_6x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<com.ubercab.ui.CircleImageView android:id="@id/toolbar_avatar" android:layout_width="@dimen/ui__spacing_unit_10x" android:layout_height="@dimen/ui__spacing_unit_10x" android:layout_marginEnd="@dimen/ui__spacing_unit_3x" />
+				<com.ubercab.ui.core.UTextView android:textColor="?brandWhite" android:id="@id/toolbar_title_textview" android:paddingTop="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_3x" style="@style/Platform.TextStyle.Title.Normal" />
+			</com.ubercab.ui.core.ULinearLayout>
+		</com.ubercab.ui.core.UToolbar>
+		<com.ubercab.ui.commons.widget.BitLoadingIndicator android:layout_gravity="bottom" android:id="@id/toolbar_loading_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:bli_bitColor="?colorAccentInverse" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+	</com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.fleet_ui.views.FixedToolbar>

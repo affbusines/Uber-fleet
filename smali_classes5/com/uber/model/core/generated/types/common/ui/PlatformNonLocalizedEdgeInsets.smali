@@ -1,0 +1,724 @@
+.class public Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;
+.super Lcom/squareup/wire/f;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lcom/uber/model/core/adapter/gson/GsonSerializable;
+    value = Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets_GsonTypeAdapter;
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Builder;,
+        Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion;
+    }
+.end annotation
+
+
+# static fields
+.field public static final ADAPTER:Lcom/squareup/wire/j;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/squareup/wire/j<",
+            "Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final Companion:Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion;
+
+
+# instance fields
+.field private final bottom:Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+.field private final left:Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+.field private final right:Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+.field private final top:Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+.field private final unknownItems:Layj/i;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 3
+
+    new-instance v0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion;-><init>(Lawt/h;)V
+
+    sput-object v0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->Companion:Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion;
+
+    .line 135
+    sget-object v0, Lcom/squareup/wire/b;->c:Lcom/squareup/wire/b;
+
+    .line 133
+    const-class v1, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;
+
+    invoke-static {v1}, Lawt/ae;->b(Ljava/lang/Class;)Laxa/c;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion$ADAPTER$1;
+
+    invoke-direct {v2, v0, v1}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion$ADAPTER$1;-><init>(Lcom/squareup/wire/b;Laxa/c;)V
+
+    check-cast v2, Lcom/squareup/wire/j;
+
+    sput-object v2, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->ADAPTER:Lcom/squareup/wire/j;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;)V
+    .registers 14
+
+    const-string v0, "top"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "left"
+
+    invoke-static {p2, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "right"
+
+    invoke-static {p3, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "bottom"
+
+    invoke-static {p4, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v6, 0x0
+
+    const/16 v7, 0x10
+
+    const/4 v8, 0x0
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    invoke-direct/range {v1 .. v8}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;-><init>(Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Layj/i;ILawt/h;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Layj/i;)V
+    .registers 7
+
+    const-string v0, "top"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "left"
+
+    invoke-static {p2, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "right"
+
+    invoke-static {p3, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "bottom"
+
+    invoke-static {p4, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "unknownItems"
+
+    invoke-static {p5, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 61
+    sget-object v0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->ADAPTER:Lcom/squareup/wire/j;
+
+    invoke-direct {p0, v0, p5}, Lcom/squareup/wire/f;-><init>(Lcom/squareup/wire/j;Layj/i;)V
+
+    .line 48
+    iput-object p1, p0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->top:Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    .line 51
+    iput-object p2, p0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->left:Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    .line 54
+    iput-object p3, p0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->right:Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    .line 57
+    iput-object p4, p0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->bottom:Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    .line 60
+    iput-object p5, p0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->unknownItems:Layj/i;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Layj/i;ILawt/h;)V
+    .registers 14
+
+    and-int/lit8 p6, p6, 0x10
+
+    if-eqz p6, :cond_6
+
+    .line 60
+    sget-object p5, Layj/i;->a:Layj/i;
+
+    :cond_6
+    move-object v5, p5
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v3, p3
+
+    move-object v4, p4
+
+    .line 47
+    invoke-direct/range {v0 .. v5}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;-><init>(Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Layj/i;)V
+
+    return-void
+.end method
+
+.method public static final builder()Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Builder;
+    .registers 1
+
+    sget-object v0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->Companion:Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion;->builder()Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static final builderWithDefaults()Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Builder;
+    .registers 1
+
+    sget-object v0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->Companion:Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion;->builderWithDefaults()Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static synthetic copy$default(Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Layj/i;ILjava/lang/Object;)Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;
+    .registers 11
+
+    if-nez p7, :cond_39
+
+    and-int/lit8 p7, p6, 0x1
+
+    if-eqz p7, :cond_a
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->top()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object p1
+
+    :cond_a
+    and-int/lit8 p7, p6, 0x2
+
+    if-eqz p7, :cond_12
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->left()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object p2
+
+    :cond_12
+    move-object p7, p2
+
+    and-int/lit8 p2, p6, 0x4
+
+    if-eqz p2, :cond_1b
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->right()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object p3
+
+    :cond_1b
+    move-object v0, p3
+
+    and-int/lit8 p2, p6, 0x8
+
+    if-eqz p2, :cond_24
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->bottom()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object p4
+
+    :cond_24
+    move-object v1, p4
+
+    and-int/lit8 p2, p6, 0x10
+
+    if-eqz p2, :cond_2d
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->getUnknownItems()Layj/i;
+
+    move-result-object p5
+
+    :cond_2d
+    move-object v2, p5
+
+    move-object p2, p0
+
+    move-object p3, p1
+
+    move-object p4, p7
+
+    move-object p5, v0
+
+    move-object p6, v1
+
+    move-object p7, v2
+
+    invoke-virtual/range {p2 .. p7}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->copy(Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Layj/i;)Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_39
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Super calls with default arguments not supported in this target, function: copy"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static final stub()Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;
+    .registers 1
+
+    sget-object v0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->Companion:Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Companion;->stub()Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public bottom()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+    .registers 2
+
+    .line 59
+    iget-object v0, p0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->bottom:Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    return-object v0
+.end method
+
+.method public final component1()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+    .registers 2
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->top()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final component2()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+    .registers 2
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->left()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final component3()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+    .registers 2
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->right()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final component4()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+    .registers 2
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->bottom()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final component5()Layj/i;
+    .registers 2
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->getUnknownItems()Layj/i;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final copy(Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Layj/i;)Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;
+    .registers 13
+
+    const-string v0, "top"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "left"
+
+    invoke-static {p2, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "right"
+
+    invoke-static {p3, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "bottom"
+
+    invoke-static {p4, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "unknownItems"
+
+    invoke-static {p5, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;
+
+    move-object v1, v0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    move-object v6, p5
+
+    invoke-direct/range {v1 .. v6}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;-><init>(Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Layj/i;)V
+
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .registers 6
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_4
+
+    return v0
+
+    .line 74
+    :cond_4
+    instance-of v1, p1, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_a
+
+    return v2
+
+    .line 76
+    :cond_a
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->top()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v1
+
+    check-cast p1, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;
+
+    invoke-virtual {p1}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->top()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v3
+
+    invoke-static {v1, v3}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_45
+
+    .line 77
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->left()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v1
+
+    invoke-virtual {p1}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->left()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v3
+
+    invoke-static {v1, v3}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_45
+
+    .line 78
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->right()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v1
+
+    invoke-virtual {p1}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->right()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v3
+
+    invoke-static {v1, v3}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_45
+
+    .line 79
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->bottom()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v1
+
+    invoke-virtual {p1}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->bottom()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object p1
+
+    invoke-static {v1, p1}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_45
+
+    goto :goto_46
+
+    :cond_45
+    const/4 v0, 0x0
+
+    :goto_46
+    return v0
+.end method
+
+.method public getUnknownItems()Layj/i;
+    .registers 2
+
+    .line 60
+    iget-object v0, p0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->unknownItems:Layj/i;
+
+    return-object v0
+.end method
+
+.method public hashCode()I
+    .registers 3
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->top()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;->hashCode()I
+
+    move-result v0
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->left()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->right()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->bottom()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->getUnknownItems()Layj/i;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Layj/i;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public left()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+    .registers 2
+
+    .line 53
+    iget-object v0, p0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->left:Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic newBuilder()Lcom/squareup/wire/f$a;
+    .registers 2
+
+    .line 37
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->newBuilder()Ljava/lang/Void;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/squareup/wire/f$a;
+
+    return-object v0
+.end method
+
+.method public synthetic newBuilder()Ljava/lang/Void;
+    .registers 2
+
+    .line 66
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+.end method
+
+.method public right()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+    .registers 2
+
+    .line 56
+    iget-object v0, p0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->right:Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    return-object v0
+.end method
+
+.method public toBuilder()Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Builder;
+    .registers 6
+
+    .line 87
+    new-instance v0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Builder;
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->top()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->left()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v2
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->right()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v3
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->bottom()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v4
+
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets$Builder;-><init>(Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;)V
+
+    return-object v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "PlatformNonLocalizedEdgeInsets(top="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->top()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", left="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->left()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", right="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->right()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", bottom="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->bottom()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", unknownItems="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->getUnknownItems()Layj/i;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x29
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public top()Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+    .registers 2
+
+    .line 50
+    iget-object v0, p0, Lcom/uber/model/core/generated/types/common/ui/PlatformNonLocalizedEdgeInsets;->top:Lcom/uber/model/core/generated/types/common/ui/PlatformDimension;
+
+    return-object v0
+.end method

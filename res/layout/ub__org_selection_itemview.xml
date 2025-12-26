@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.URelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/org_group" android:background="?selectableItemBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/org_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toEndOf="@id/org_icon" android:layout_alignParentStart="true" app:analyticsId="0cdd3b7e-9f65" style="@style/Platform.TextStyle.Paragraph.Medium" />
+	<com.ubercab.ui.core.UTextView android:id="@id/org_types" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/org_name" android:layout_alignStart="@id/org_name" app:analyticsId="e47f4075-d554" style="@style/Platform.TextStyle.Small.Normal" />
+	<com.ubercab.ui.core.UTextView android:id="@id/org_roles" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/org_types" android:layout_alignStart="@id/org_name" app:analyticsId="5d3a20c7-7cd5" style="@style/Platform.TextStyle.Small.Normal" />
+</com.ubercab.ui.core.URelativeLayout>

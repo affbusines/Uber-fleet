@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.profiles.features.shared.text_entry.TextEntryView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="97e1abe1-3260">
+	<com.ubercab.ui.core.widget.CollapsingHeaderAppBarLayout android:theme="@style/U4BLightHeader" android:id="@id/appbar" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/header_elevation" app:contentInsetStartWithNavigation="0.0dip" app:elevation="0.0dip" />
+	<com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<include layout="@layout/ub_profile_text_entry_v2" />
+	</com.ubercab.ui.core.UScrollView>
+	<androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+	<com.ubercab.ui.core.ULinearLayout android:id="@id/ub__text_entry_footer_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset" />
+	<com.ubercab.ui.core.button.BaseMaterialButton android:id="@id/ub__profile_editor_text_primary_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:textAllCaps="false" app:analyticsId="b10de82a-ed09" app:buttonType="primary" style="@style/Platform.Button.BaseDynamic" />
+</com.ubercab.profiles.features.shared.text_entry.TextEntryView>

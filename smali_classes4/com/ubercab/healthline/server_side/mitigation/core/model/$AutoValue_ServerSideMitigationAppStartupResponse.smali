@@ -1,0 +1,166 @@
+.class abstract Lcom/ubercab/healthline/server_side/mitigation/core/model/$AutoValue_ServerSideMitigationAppStartupResponse;
+.super Lcom/ubercab/healthline/server_side/mitigation/core/model/ServerSideMitigationAppStartupResponse;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/ubercab/healthline/server_side/mitigation/core/model/$AutoValue_ServerSideMitigationAppStartupResponse$Builder;
+    }
+.end annotation
+
+
+# instance fields
+.field private final actions:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/ubercab/healthline/server_side/mitigation/core/model/ServerSideMitigationAppStartupAction;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>(Ljava/util/List;)V
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/ubercab/healthline/server_side/mitigation/core/model/ServerSideMitigationAppStartupAction;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 13
+    invoke-direct {p0}, Lcom/ubercab/healthline/server_side/mitigation/core/model/ServerSideMitigationAppStartupResponse;-><init>()V
+
+    .line 14
+    iput-object p1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/$AutoValue_ServerSideMitigationAppStartupResponse;->actions:Ljava/util/List;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .registers 5
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_4
+
+    return v0
+
+    .line 35
+    :cond_4
+    instance-of v1, p1, Lcom/ubercab/healthline/server_side/mitigation/core/model/ServerSideMitigationAppStartupResponse;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_1d
+
+    .line 36
+    check-cast p1, Lcom/ubercab/healthline/server_side/mitigation/core/model/ServerSideMitigationAppStartupResponse;
+
+    .line 37
+    iget-object v1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/$AutoValue_ServerSideMitigationAppStartupResponse;->actions:Ljava/util/List;
+
+    invoke-virtual {p1}, Lcom/ubercab/healthline/server_side/mitigation/core/model/ServerSideMitigationAppStartupResponse;->getActions()Ljava/util/List;
+
+    move-result-object p1
+
+    if-nez v1, :cond_18
+
+    if-nez p1, :cond_16
+
+    goto :goto_1c
+
+    :cond_16
+    const/4 v0, 0x0
+
+    goto :goto_1c
+
+    :cond_18
+    invoke-interface {v1, p1}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    :goto_1c
+    return v0
+
+    :cond_1d
+    return v2
+.end method
+
+.method public getActions()Ljava/util/List;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/ubercab/healthline/server_side/mitigation/core/model/ServerSideMitigationAppStartupAction;",
+            ">;"
+        }
+    .end annotation
+
+    .line 20
+    iget-object v0, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/$AutoValue_ServerSideMitigationAppStartupResponse;->actions:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public hashCode()I
+    .registers 3
+
+    .line 46
+    iget-object v0, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/$AutoValue_ServerSideMitigationAppStartupResponse;->actions:Ljava/util/List;
+
+    if-nez v0, :cond_6
+
+    const/4 v0, 0x0
+
+    goto :goto_a
+
+    :cond_6
+    invoke-interface {v0}, Ljava/util/List;->hashCode()I
+
+    move-result v0
+
+    :goto_a
+    const v1, 0xf4243
+
+    xor-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 3
+
+    .line 25
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "ServerSideMitigationAppStartupResponse{actions="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/$AutoValue_ServerSideMitigationAppStartupResponse;->actions:Ljava/util/List;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, "}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

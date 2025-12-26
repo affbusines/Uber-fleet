@@ -1,0 +1,94 @@
+.class final Lretrofit2/adapter/rxjava/BodyOnSubscribe;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lbaj/e$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lretrofit2/adapter/rxjava/BodyOnSubscribe$BodySubscriber;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lbaj/e$a<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final upstream:Lbaj/e$a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lbaj/e$a<",
+            "Lretrofit2/Response<",
+            "TT;>;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>(Lbaj/e$a;)V
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lbaj/e$a<",
+            "Lretrofit2/Response<",
+            "TT;>;>;)V"
+        }
+    .end annotation
+
+    .line 31
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 32
+    iput-object p1, p0, Lretrofit2/adapter/rxjava/BodyOnSubscribe;->upstream:Lbaj/e$a;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public call(Lbaj/k;)V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lbaj/k<",
+            "-TT;>;)V"
+        }
+    .end annotation
+
+    .line 36
+    iget-object v0, p0, Lretrofit2/adapter/rxjava/BodyOnSubscribe;->upstream:Lbaj/e$a;
+
+    new-instance v1, Lretrofit2/adapter/rxjava/BodyOnSubscribe$BodySubscriber;
+
+    invoke-direct {v1, p1}, Lretrofit2/adapter/rxjava/BodyOnSubscribe$BodySubscriber;-><init>(Lbaj/k;)V
+
+    invoke-interface {v0, v1}, Lbaj/e$a;->call(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic call(Ljava/lang/Object;)V
+    .registers 2
+
+    .line 28
+    check-cast p1, Lbaj/k;
+
+    invoke-virtual {p0, p1}, Lretrofit2/adapter/rxjava/BodyOnSubscribe;->call(Lbaj/k;)V
+
+    return-void
+.end method

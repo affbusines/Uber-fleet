@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_my_account.entry.MyAccountEntryView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:background="?selectableItemBackground" android:paddingLeft="@dimen/ui__spacing_unit_0.5x" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_0.5x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.CircleImageView android:id="@id/ub__my_account_entry_avatar" android:layout_width="@dimen/ui__avatar_xsmall" android:layout_height="@dimen/ui__avatar_xsmall" android:layout_margin="@dimen/ui__spacing_unit_2x" app:analyticsId="0f082947-2816" app:srcCompat="@drawable/avatar_blank" />
+	<com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile" style="@style/Platform.TextStyle.Paragraph.Normal" />
+		<com.ubercab.ui.core.UTextView android:paddingTop="@dimen/ui__spacing_unit_0.5x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_and_update" style="@style/Platform.TextStyle.Small.Secondary" />
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.fleet_my_account.entry.MyAccountEntryView>

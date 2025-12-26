@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item android:icon="@drawable/ic_filter_list_inverse" android:id="@id/menu_filter_item" android:title="@string/add_driver_list_filter" app:showAsAction="always" />
+</menu>

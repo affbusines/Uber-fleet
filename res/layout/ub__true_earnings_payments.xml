@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_true_earnings.summary.PaymentsView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="d1131240-d878">
+	<include layout="@layout/ub__fixed_tool_bar" />
+	<com.ubercab.ui.core.UCoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<com.ubercab.ui.core.UFrameLayout android:id="@id/true_earnings_ledger_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<com.ubercab.fleet_ui.views.FleetEmptyStateView android:id="@id/empty_view" android:background="?lightBackground" android:paddingBottom="@dimen/ui__spacing_unit_0.5x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+	</com.ubercab.ui.core.UCoordinatorLayout>
+</com.ubercab.fleet_true_earnings.summary.PaymentsView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_legal_terms.TermsAndConditionsView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.URecyclerView android:id="@id/ub__fleet_recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+	<com.ubercab.ui.commons.widget.BitLoadingIndicator android:layout_gravity="bottom" android:id="@id/ub__fleet_terms_loading_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" />
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="?brandWhite" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/ui__elevation_high">
+		<com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__fleet_terms_accept" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x">
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/terms_agree" android:layout_weight="1.0" style="@style/Platform.TextStyle.Small.Normal" />
+			<com.ubercab.ui.core.UCheckBox android:theme="@style/Fleet.Button.Checkbox.Secondary" android:gravity="center_vertical" android:id="@id/ub__fleet_terms_accept_checkbox" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</com.ubercab.ui.core.ULinearLayout>
+		<com.ubercab.ui.core.UButton android:id="@id/ub__fleet_terms_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/terms_continue" android:textAllCaps="true" style="?platformButtonPrimary" />
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.fleet_legal_terms.TermsAndConditionsView>

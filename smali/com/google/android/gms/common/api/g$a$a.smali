@@ -1,0 +1,86 @@
+.class public Lcom/google/android/gms/common/api/g$a$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/gms/common/api/g$a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field private a:Lcom/google/android/gms/common/api/internal/r;
+
+.field private b:Landroid/os/Looper;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lcom/google/android/gms/common/api/internal/r;)Lcom/google/android/gms/common/api/g$a$a;
+    .registers 3
+
+    const-string v0, "StatusExceptionMapper must not be null."
+
+    .line 1
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/o;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    iput-object p1, p0, Lcom/google/android/gms/common/api/g$a$a;->a:Lcom/google/android/gms/common/api/internal/r;
+
+    return-object p0
+.end method
+
+.method public a()Lcom/google/android/gms/common/api/g$a;
+    .registers 5
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/api/g$a$a;->a:Lcom/google/android/gms/common/api/internal/r;
+
+    if-nez v0, :cond_b
+
+    new-instance v0, Lcom/google/android/gms/common/api/internal/a;
+
+    invoke-direct {v0}, Lcom/google/android/gms/common/api/internal/a;-><init>()V
+
+    iput-object v0, p0, Lcom/google/android/gms/common/api/g$a$a;->a:Lcom/google/android/gms/common/api/internal/r;
+
+    :cond_b
+    iget-object v0, p0, Lcom/google/android/gms/common/api/g$a$a;->b:Landroid/os/Looper;
+
+    if-nez v0, :cond_15
+
+    .line 2
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/google/android/gms/common/api/g$a$a;->b:Landroid/os/Looper;
+
+    .line 3
+    :cond_15
+    new-instance v0, Lcom/google/android/gms/common/api/g$a;
+
+    iget-object v1, p0, Lcom/google/android/gms/common/api/g$a$a;->a:Lcom/google/android/gms/common/api/internal/r;
+
+    iget-object v2, p0, Lcom/google/android/gms/common/api/g$a$a;->b:Landroid/os/Looper;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v0, v1, v3, v2, v3}, Lcom/google/android/gms/common/api/g$a;-><init>(Lcom/google/android/gms/common/api/internal/r;Landroid/accounts/Account;Landroid/os/Looper;Lcom/google/android/gms/common/api/u;)V
+
+    return-object v0
+.end method

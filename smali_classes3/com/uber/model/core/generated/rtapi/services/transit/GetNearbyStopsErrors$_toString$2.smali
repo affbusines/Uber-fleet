@@ -1,0 +1,227 @@
+.class final Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;
+.super Lawt/r;
+.source "SourceFile"
+
+# interfaces
+.implements Laws/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;-><init>(Ljava/lang/String;Lcom/uber/model/core/generated/rtapi/models/exception/BadRequest;Lcom/uber/model/core/generated/rtapi/models/exception/Unauthenticated;Lcom/uber/model/core/generated/rtapi/models/exception/ServerError;Lcom/uber/model/core/generated/rtapi/services/transit/ValidationError;Lcom/uber/model/core/generated/rtapi/services/transit/FailedRequestError;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lawt/r;",
+        "Laws/a<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+
+# direct methods
+.method constructor <init>(Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;)V
+    .registers 2
+
+    iput-object p1, p0, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lawt/r;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .registers 2
+
+    .line 47
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->invoke()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final invoke()Ljava/lang/String;
+    .registers 5
+
+    .line 51
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+    invoke-static {v0}, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;->access$getCode$p(Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_15
+
+    .line 53
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+    invoke-static {v0}, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;->access$getCode$p(Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "code"
+
+    goto :goto_75
+
+    .line 54
+    :cond_15
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;->badRequest()Lcom/uber/model/core/generated/rtapi/models/exception/BadRequest;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2a
+
+    .line 56
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;->badRequest()Lcom/uber/model/core/generated/rtapi/models/exception/BadRequest;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "badRequest"
+
+    goto :goto_75
+
+    .line 57
+    :cond_2a
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;->unauthenticated()Lcom/uber/model/core/generated/rtapi/models/exception/Unauthenticated;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3f
+
+    .line 59
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;->unauthenticated()Lcom/uber/model/core/generated/rtapi/models/exception/Unauthenticated;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "unauthenticated"
+
+    goto :goto_75
+
+    .line 60
+    :cond_3f
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;->serverError()Lcom/uber/model/core/generated/rtapi/models/exception/ServerError;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_54
+
+    .line 62
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;->serverError()Lcom/uber/model/core/generated/rtapi/models/exception/ServerError;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "serverError"
+
+    goto :goto_75
+
+    .line 63
+    :cond_54
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;->validationError()Lcom/uber/model/core/generated/rtapi/services/transit/ValidationError;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_69
+
+    .line 65
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;->validationError()Lcom/uber/model/core/generated/rtapi/services/transit/ValidationError;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "validationError"
+
+    goto :goto_75
+
+    .line 68
+    :cond_69
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors$_toString$2;->this$0:Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/transit/GetNearbyStopsErrors;->failedRequestError()Lcom/uber/model/core/generated/rtapi/services/transit/FailedRequestError;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "failedRequestError"
+
+    .line 71
+    :goto_75
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "GetNearbyStopsErrors("
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x3d
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v0, 0x29
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

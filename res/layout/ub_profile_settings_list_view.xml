@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.profiles.features.settings.profile_list.ProfileSettingsListView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsId="2d252028-cca1">
+	<com.ubercab.ui.core.text.BaseTextView android:textColor="?contentPrimary" android:id="@id/ub_profile_settings_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/feature_profiles" android:layout_marginHorizontal="@dimen/ui__spacing_unit_2x" app:analyticsId="e9d76286-01ee" style="@style/Platform.TextStyle.HeadingXSmall" />
+	<com.ubercab.ui.core.URecyclerView android:id="@id/ub__profile_settings_list_recyclerview" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__profile_settings_list_onboarding_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.profiles.features.settings.profile_list.ProfileSettingsListView>

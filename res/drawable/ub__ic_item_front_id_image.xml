@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="36.0dip" android:width="36.0dip" android:viewportWidth="36.0" android:viewportHeight="36.0">
+	<path android:fillColor="?black" android:pathData="M34.9998 7.89163V23.9311C34.9998 24.9557 34.1884 25.8227 33.1453 25.8227H6.6021C5.59755 25.8227 4.74756 24.9952 4.74756 23.9311V7.89163C4.74756 6.867 5.55892 6 6.6021 6H33.1453C34.1498 6.03941 34.9998 6.867 34.9998 7.89163Z" />
+	<path android:fillColor="?black" android:pathData="M35 7.734V7.89163C35 6.867 34.1887 6 33.1455 6H33.3C34.2273 6.03941 35 6.78818 35 7.734Z" />
+	<path android:fillColor="?black" android:pathData="M35 23.9312V24.0888C35 25.0346 34.2273 25.8228 33.3 25.8228H33.1455C34.1501 25.8228 35 24.9952 35 23.9312Z" />
+	<path android:fillColor="?blue400" android:pathData="M31.2522 25.8226V12.0689C31.2522 11.0442 30.4409 10.1772 29.3977 10.1772H2.85454C1.84999 10.1772 1 11.0048 1 12.0689V25.8226H31.2522Z" />
+	<path android:fillColor="?blue400" android:pathData="M30.9817 10.9656C30.8658 10.7685 30.7112 10.6109 30.5181 10.4927C30.6726 10.6109 30.8272 10.7685 30.9817 10.9656Z" />
+	<path android:fillColor="?blue200" android:pathData="M27.3116 17.2314H16.957V18.8078H27.3116V17.2314Z" />
+	<path android:fillColor="?blue200" android:pathData="M22.1343 20.4238H16.957V22.0002H22.1343V20.4238Z" />
+	<path android:fillColor="?blue200" android:pathData="M27.3116 14.0396H16.957V15.6159H27.3116V14.0396Z" />
+	<path android:fillColor="?blue200" android:pathData="M1 25.8228V28.1085C1 29.1331 1.81136 30.0001 2.85454 30.0001H29.3977C30.4023 30.0001 31.2522 29.1725 31.2522 28.1085V25.8228H1Z" />
+	<path android:fillColor="?white" android:pathData="M9.22949 17.5865C10.4031 17.5865 11.3545 16.616 11.3545 15.419C11.3545 14.2219 10.4031 13.2515 9.22949 13.2515C8.05589 13.2515 7.10449 14.2219 7.10449 15.419C7.10449 16.616 8.05589 17.5865 9.22949 17.5865Z" />
+	<path android:fillColor="?white" android:pathData="M12.707 21.9998H5.75244V20.7387C5.75244 19.4776 6.757 18.4136 8.03199 18.4136H10.4661C11.7024 18.4136 12.7456 19.4382 12.7456 20.7387V21.9998H12.707Z" />
+</vector>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" android:versionCode="112061749" android:versionName="1.407.10000" package="com.ubercab.fleet" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk android:minSdkVersion="26" android:targetSdkVersion="33" />
+	<meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-feature android:glEsVersion="0x20000" android:required="true" />
+	<uses-permission android:name="android.permission.USE_BIOMETRIC" />
+	<uses-permission android:name="android.permission.USE_FINGERPRINT" />
+	<permission android:name="com.ubercab.fleet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature" />
+	<uses-permission android:name="com.ubercab.fleet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+	<uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+	<queries>
+		<intent>
+			<action android:name="android.intent.action.VIEW" />
+			<category android:name="android.intent.category.BROWSABLE" />
+			<data android:scheme="https" />
+		</intent>
+		<package android:name="com.venmo" />
+		<package android:name="com.paypal.android.p2pmobile" />
+		<package android:name="com.google.android.apps.maps" />
+		<intent>
+			<action android:name="android.support.customtabs.action.CustomTabsService" />
+		</intent>
+		<package android:name="com.android.chrome" />
+		<package android:name="com.chrome.beta" />
+		<package android:name="com.chrome.dev" />
+		<package android:name="org.mozilla.firefox" />
+		<package android:name="com.ubercab" />
+		<package android:name="com.ubercab.rider.internal" />
+		<package android:name="com.ubercab.presidio.exo" />
+		<package android:name="com.ubercab.eats" />
+		<package android:name="com.ubercab.eats.internal" />
+		<package android:name="com.ubercab.eats.exo" />
+		<package android:name="com.ubercab.driver" />
+		<package android:name="com.ubercab.driver.internal" />
+		<package android:name="com.ubercab.driver.exo" />
+		<package android:name="com.whatsapp" />
+		<package android:name="com.facebook.katana" />
+		<package android:name="com.google.android.talk" />
+		<package android:name="com.android.mms" />
+		<package android:name="com.facebook.orca" />
+		<package android:name="com.bbm" />
+		<package android:name="com.groupme.android" />
+		<package android:name="com.viber.voip" />
+		<package android:name="com.skype.raider" />
+		<package android:name="com.whatsapp" />
+		<package android:name="com.tencent.mm" />
+		<package android:name="com.sina.weibo" />
+		<package android:name="jp.naver.line.android" />
+		<package android:name="com.kakao.talk" />
+		<intent>
+			<action android:name="android.intent.action.SEND" />
+			<data android:mimeType="text/plain" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.SENDTO" />
+			<data android:host="*" android:scheme="smsto" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.DIAL" />
+			<data android:host="*" android:scheme="tel" />
+		</intent>
+		<intent>
+			<action android:name="android.media.action.IMAGE_CAPTURE" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.VIEW" />
+			<data android:scheme="otpauth" />
+		</intent>
+		<package android:name="com.android.settings" />
+		<package android:name="com.google.android.gms" />
+		<package android:name="com.koushikdutta.superuser" />
+		<package android:name="com.noshufou.android.su" />
+		<package android:name="com.ramdroid.appquarantine" />
+		<package android:name="com.thirdparty.superuser" />
+		<package android:name="com.zachspong.temprootremovejb" />
+		<package android:name="eu.chainfire.supersu" />
+		<package android:name="com.ubercab.rider" />
+		<package android:name="com.ubercab.rider.internal" />
+	</queries>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-feature android:name="android.hardware.camera" android:required="true" />
+	<uses-feature android:name="android.hardware.camera.front" android:required="false" />
+	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+	<uses-feature android:name="android.hardware.microphone" android:required="false" />
+	<uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+	<uses-feature android:name="android.hardware.sensor.stepcounter" android:required="false" />
+	<uses-feature android:name="android.hardware.sensor.stepdetector" android:required="false" />
+	<uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+	<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+	<uses-permission-sdk-23 android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:hardwareAccelerated="true" android:icon="@drawable/ub__ic_launcher" android:label="Uber Fleet Pro" android:name="com.ubercab.fleet.app.FleetManagerApplication" android:supportsRtl="true" android:theme="@style/LauncherTheme">
+		<activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:launchMode="singleTask" android:name="com.ubercab.fleet.app.root.RootActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter android:autoVerify="true">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="https" />
+				<data android:host="conecta.uber.com" />
+			</intent-filter>
+			<intent-filter android:autoVerify="true">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="https" />
+				<data android:host="getmatched.uber.com" />
+			</intent-filter>
+			<intent-filter android:autoVerify="true">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="https" />
+				<data android:host="partners.uber.com" />
+				<data android:pathPrefix="/fleet-app" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="uberfleet" />
+			</intent-filter>
+		</activity>
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCjC6UUy1kPNoIFVx_-cYj19YsrK6YqSyQ" />
+		<meta-data android:name="com.crashlytics.ApiKey" android:value="c539e979e5ca22fe420a5e6c91687d3b22b04e50" />
+		<uses-library android:name="org.apache.http.legacy" android:required="false" />
+		<service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+			<meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+		</service>
+		<activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity" />
+		<provider android:authorities="com.ubercab.fleet.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+			<meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup" />
+			<meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup" />
+			<meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup" />
+		</provider>
+		<receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+			<intent-filter>
+				<action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+			</intent-filter>
+		</receiver>
+		<service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService" />
+		<service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" />
+		<service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" />
+		<service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService" />
+		<receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" />
+		<receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+			<intent-filter>
+				<action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+				<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+			</intent-filter>
+		</receiver>
+		<receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+			<intent-filter>
+				<action android:name="android.intent.action.BATTERY_OKAY" />
+				<action android:name="android.intent.action.BATTERY_LOW" />
+			</intent-filter>
+		</receiver>
+		<receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+			<intent-filter>
+				<action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+				<action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+			</intent-filter>
+		</receiver>
+		<receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		</receiver>
+		<receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.TIME_SET" />
+				<action android:name="android.intent.action.TIMEZONE_CHANGED" />
+			</intent-filter>
+		</receiver>
+		<receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+			<intent-filter>
+				<action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+			</intent-filter>
+		</receiver>
+		<receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+			<intent-filter>
+				<action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+			</intent-filter>
+		</receiver>
+		<service android:name="com.braintreepayments.api.internal.AnalyticsIntentService" />
+		<activity android:name="com.braintreepayments.api.ThreeDSecureActivity" />
+		<activity android:name="com.braintreepayments.api.GooglePaymentActivity" android:theme="@style/bt_transparent_activity" />
+		<service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+			<meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct" />
+		</service>
+		<service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" />
+		<receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" />
+		<activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+		<service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true" />
+		<activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+		<service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.ml.modeldownloader.FirebaseModelDownloaderRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+			<meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+		</service>
+		<receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver" />
+		<service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService" />
+		<service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" />
+		<activity android:enabled="false" android:exported="false" android:launchMode="singleInstance" android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true" />
+		<activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent" />
+		<service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService">
+			<meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="11003" />
+		</service>
+		<service android:enabled="false" android:exported="false" android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" />
+		<provider android:authorities="com.ubercab.fleet.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider" />
+		<receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+			</intent-filter>
+		</receiver>
+		<service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+			<intent-filter android:priority="-500">
+				<action android:name="com.google.firebase.MESSAGING_EVENT" />
+			</intent-filter>
+		</service>
+		<provider android:authorities="com.ubercab.fleet.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider" />
+		<activity android:name="com.jakewharton.processphoenix.ProcessPhoenix" android:process=":phoenix" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+		<provider android:authorities="com.ubercab.fleet.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider" />
+		<provider android:authorities="com.ubercab.fleet.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.ubercab.external_web_view.core.WebviewFileProvider">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/document" />
+		</provider>
+		<service android:enabled="true" android:exported="false" android:name="com.ubercab.push.UberFirebaseMessagingService">
+			<intent-filter>
+				<action android:name="com.google.firebase.MESSAGING_EVENT" />
+			</intent-filter>
+		</service>
+		<meta-data android:name="delivery_metrics_exported_to_big_query_enabled" android:value="true" />
+		<receiver android:exported="false" android:name="com.ubercab.presidio.pushnotifier.core.PushReceiver">
+			<intent-filter>
+				<action android:name="com.ubercab.push.UBER_MESSAGE" />
+			</intent-filter>
+		</receiver>
+		<receiver android:exported="false" android:name="com.ubercab.presidio.pushnotifier.core.PushRegistrationNewTokenReceiver">
+			<intent-filter>
+				<action android:name="com.ubercab.push.UBER_NEW_TOKEN" />
+			</intent-filter>
+		</receiver>
+		<receiver android:exported="true" android:name="com.uber.time.ntp.NtpBootCompletedReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+		<activity android:name="com.ubercab.external_web_view.core.WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+		<provider android:authorities="com.ubercab.fleet.provider.sso" android:enabled="@bool/ub__sso_provider_enabled" android:exported="@bool/ub__sso_provider_exported" android:name="com.uber.firstpartysso.provider.SSOContentProvider" android:process=":ssoProvider" />
+		<meta-data android:name="asset_statements" android:resource="@string/asset_statements" />
+		<activity android:exported="true" android:launchMode="singleTask" android:name="com.uber.identity.api.uauth.internal.helper.AppLinkActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="@string/uauth_host" android:pathPrefix="@string/uauth_redirectUrl" android:scheme="@string/uauth_dl_scheme" />
+			</intent-filter>
+			<intent-filter android:autoVerify="true">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="@string/uauth_host" android:pathPrefix="@string/uauth_redirectUrl" android:scheme="https" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="@string/uauth_host" android:pathPrefix="@string/uauth_socialPath" android:scheme="@string/uauth_dl_scheme" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="@string/uauth_host" android:pathPrefix="@string/uauth_magicLink" android:scheme="@string/uauth_dl_scheme" />
+			</intent-filter>
+			<intent-filter android:autoVerify="true">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="@string/uauth_host" android:pathPrefix="@string/uauth_magicLink" android:scheme="http" />
+				<data android:host="@string/uauth_host" android:pathPrefix="@string/uauth_magicLink" android:scheme="https" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="@string/uauth_host_new" android:pathPrefix="@string/uauth_redirectUrl_v2" android:scheme="@string/uauth_dl_scheme" />
+			</intent-filter>
+			<intent-filter android:autoVerify="true">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="@string/uauth_host_new" android:pathPrefix="@string/uauth_redirectUrl_v2" android:scheme="http" />
+				<data android:host="@string/uauth_host_new" android:pathPrefix="@string/uauth_redirectUrl_v2" android:scheme="https" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="@string/uauth_host_new" android:pathPrefix="@string/uauth_socialPath_v2" android:scheme="@string/uauth_dl_scheme" />
+			</intent-filter>
+			<intent-filter android:autoVerify="true">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="@string/uauth_host_new" android:pathPrefix="@string/uauth_magicLink_v2" android:scheme="http" />
+				<data android:host="@string/uauth_host_new" android:pathPrefix="@string/uauth_magicLink_v2" android:scheme="https" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="@string/uauth_host_new" android:pathPrefix="@string/uauth_magicLink_v2" android:scheme="@string/uauth_dl_scheme" />
+			</intent-filter>
+			<intent-filter android:autoVerify="true">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="@string/uauth_host" android:pathPrefix="@string/ub__usl_session_revival_path" android:scheme="http" />
+				<data android:host="@string/uauth_host" android:pathPrefix="@string/ub__usl_session_revival_path" android:scheme="https" />
+				<data android:host="@string/uauth_host_new" android:pathPrefix="@string/ub__usl_session_revival_path" android:scheme="http" />
+				<data android:host="@string/uauth_host_new" android:pathPrefix="@string/ub__usl_session_revival_path" android:scheme="https" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.whatsapp.otp.OTP_RETRIEVED" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.uber.identity.api.uauth.internal.helper.USLActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+		<provider android:authorities="com.ubercab.fleet.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_path" />
+		</provider>
+		<service android:exported="true" android:name="androidx.browser.customtabs.PostMessageService" />
+		<receiver android:enabled="true" android:exported="true" android:name="com.uber.identity.api.uauth.internal.helper.whatsapp.WhatsAppOtpCodeReceiver">
+			<intent-filter>
+				<action android:name="com.whatsapp.otp.OTP_RETRIEVED" />
+			</intent-filter>
+		</receiver>
+		<receiver android:enabled="true" android:exported="true" android:name="com.uber.identity.api.uauth.internal.helper.whatsapp.WhatsAppOtpCodeReceiver">
+			<intent-filter>
+				<action android:name="com.whatsapp.otp.OTP_RETRIEVED" />
+			</intent-filter>
+		</receiver>
+		<activity android:launchMode="singleTask" android:name="com.uber.uweber.WeberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+		<service android:exported="true" android:name="com.ubercab.login.AuthenticationService" />
+		<receiver android:exported="false" android:name="com.ubercab.notification.optional.PushNotificationActionReceiver">
+			<intent-filter>
+				<action android:name="com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_CLICK" />
+				<action android:name="com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_DELETE" />
+			</intent-filter>
+		</receiver>
+		<receiver android:exported="false" android:name="com.ubercab.notification.optional.NotificationBlockStateReceiver">
+			<intent-filter>
+				<action android:name="android.app.action.APP_BLOCK_STATE_CHANGED" />
+				<action android:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED" />
+				<action android:name="android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED" />
+			</intent-filter>
+		</receiver>
+		<receiver android:exported="false" android:name="com.ubercab.notification.core.actions.intercom.IntercomDirectReplyReceiver">
+			<intent-filter>
+				<action android:name="com.ubercab.notification.core.actions.intercom.IntercomDirectReplyReceiver" />
+			</intent-filter>
+		</receiver>
+		<activity android:name="com.ubercab.partnersignup.webview.PartnerSignupActivity" />
+		<activity android:name="com.ubercab.bug_reporter.ui.activity.BugReporterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Helix.Light" />
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.help.feature.chat.HelpChatActivity" android:screenOrientation="portrait" />
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.help.feature.conversation_details.HelpConversationDetailsActivity" android:screenOrientation="portrait" />
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.help.feature.issue_list.HelpIssueListActivity" android:screenOrientation="portrait" />
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.help.feature.phone_call.HelpPhoneCallActivity" android:screenOrientation="portrait" />
+		<provider android:authorities="com.ubercab.fleet.help.util.FileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.ubercab.help.util.HelpUtilFileProvider">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/help_util_file_paths" />
+		</provider>
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.help.feature.workflow.HelpWorkflowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+		<activity android:configChanges="keyboardHidden|orientation" android:name="io.card.payment.CardIOActivity" />
+		<activity android:name="io.card.payment.DataEntryActivity" />
+		<activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="com.ubercab.video_call.base.VideoCallActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:taskAffinity="com.ubercab.video_call.base" />
+		<activity android:name="com.ubercab.healthline.alternate.launch.core.AlternateLaunchWebActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<service android:exported="false" android:name="com.ubercab.healthline.crash.reporting.core.uploader.CrashUploadService" android:process=":processor" />
+		<receiver android:exported="false" android:name="com.ubercab.healthline.direct_command.push.core.receiver.DirectCommandPushReceiver">
+			<intent-filter android:priority="999">
+				<action android:name="com.ubercab.push.UBER_MESSAGE" />
+			</intent-filter>
+		</receiver>
+		<activity android:name="com.ubercab.healthline.core.actions.ShowWebViewAction$WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name="com.ubercab.healthline.core.actions.AlertAction$AlertActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan" />
+		<meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base" />
+		<meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store" />
+		<meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK" />
+		<meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0" />
+		<meta-data android:name="com.android.vending.derived.apk.id" android:value="2" />
+	</application>
+</manifest>

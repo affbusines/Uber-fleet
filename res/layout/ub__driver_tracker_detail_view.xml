@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.fleet_map_tracker.driver_tracker.driver_detail.DriverDetailView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_horizontal_light" android:showDividers="beginning">
+	<include layout="@layout/ub__fleet_driver_item" />
+	<com.ubercab.ui.core.ULinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="center_horizontal" android:id="@id/ub__driver_tracker_trip_count" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Subtitle.Normal" />
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/today_trips" android:textAllCaps="true" style="@style/Platform.TextStyle.Meta.Bold" />
+		</com.ubercab.ui.core.ULinearLayout>
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="center_horizontal" android:id="@id/ub__driver_tracker_earning_count" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextStyle.Subtitle.Normal" />
+			<com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/performance_summary_title_net_fare" android:textAllCaps="true" style="@style/Platform.TextStyle.Meta.Bold" />
+		</com.ubercab.ui.core.ULinearLayout>
+	</com.ubercab.ui.core.ULinearLayout>
+	<com.ubercab.ui.core.UPlainView android:id="@id/ub__driver_tracker_detail_divider" android:background="@drawable/ub__fleet_divider_horizontal" android:layout_width="fill_parent" android:layout_height="?dividerWidth" android:layout_margin="?contentInset" />
+	<com.ubercab.ui.core.ULinearLayout android:gravity="center_horizontal" android:id="@id/ub__driver_tracker_detail_call_container" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<com.ubercab.ui.core.UButton android:id="@id/ub__driver_tracker_detail_call_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/call" android:layout_weight="1.0" style="?platformButtonSecondary" />
+		<androidx.legacy.widget.Space android:layout_width="?contentInset" android:layout_height="fill_parent" />
+		<com.ubercab.ui.core.UButton android:id="@id/ub__driver_tracker_detail_text_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/message" android:layout_weight="1.0" style="?platformButtonSecondary" />
+	</com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.fleet_map_tracker.driver_tracker.driver_detail.DriverDetailView>

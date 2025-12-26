@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.UFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.core.UTextView android:id="@id/ub__promotions_list_section_header_text_view" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsId="e888a723-336b" />
+</com.ubercab.ui.core.UFrameLayout>

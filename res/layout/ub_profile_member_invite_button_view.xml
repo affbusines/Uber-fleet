@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.profiles.features.settings.bottom_button.invite.ProfileMemberInviteButtonView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/feature_profile_setting_invite_button" uber:analyticsId="1232879f-667f" style="?platformButtonPrimary" />

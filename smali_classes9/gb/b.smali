@@ -1,0 +1,14 @@
+.class final Lgb/b;
+.super Ljava/io/IOException;
+.source "SourceFile"
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;)V
+    .registers 2
+
+    .line 28
+    invoke-direct {p0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method

@@ -1,0 +1,174 @@
+.class public final Laqo/a$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Laqo/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Laqo/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field private final c:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeAuthToken;
+
+.field private final d:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeUuid;
+
+
+# direct methods
+.method public constructor <init>(Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeAuthToken;Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeUuid;)V
+    .registers 4
+
+    const-string v0, "authToken"
+
+    invoke-static {p1, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "uuid"
+
+    invoke-static {p2, v0}, Lawt/q;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 16
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 18
+    iput-object p1, p0, Laqo/a$a;->c:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeAuthToken;
+
+    .line 20
+    iput-object p2, p0, Laqo/a$a;->d:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeUuid;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeAuthToken;
+    .registers 2
+
+    .line 18
+    iget-object v0, p0, Laqo/a$a;->c:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeAuthToken;
+
+    return-object v0
+.end method
+
+.method public final b()Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeUuid;
+    .registers 2
+
+    .line 25
+    iget-object v0, p0, Laqo/a$a;->d:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeUuid;
+
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .registers 6
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_4
+
+    return v0
+
+    :cond_4
+    instance-of v1, p1, Laqo/a$a;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_a
+
+    return v2
+
+    :cond_a
+    check-cast p1, Laqo/a$a;
+
+    iget-object v1, p0, Laqo/a$a;->c:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeAuthToken;
+
+    iget-object v3, p1, Laqo/a$a;->c:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeAuthToken;
+
+    invoke-static {v1, v3}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_17
+
+    return v2
+
+    :cond_17
+    iget-object v1, p0, Laqo/a$a;->d:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeUuid;
+
+    iget-object p1, p1, Laqo/a$a;->d:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeUuid;
+
+    invoke-static {v1, p1}, Lawt/q;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_22
+
+    return v2
+
+    :cond_22
+    return v0
+.end method
+
+.method public hashCode()I
+    .registers 3
+
+    iget-object v0, p0, Laqo/a$a;->c:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeAuthToken;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeAuthToken;->hashCode()I
+
+    move-result v0
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Laqo/a$a;->d:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeUuid;
+
+    invoke-virtual {v1}, Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeUuid;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "AuthStateLoggedIn(authToken="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Laqo/a$a;->c:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeAuthToken;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", uuid="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Laqo/a$a;->d:Lcom/uber/model/core/generated/rtapi/services/auth/RealtimeUuid;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x29
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

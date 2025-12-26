@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.ui.core.ULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?selectableItemBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.ubercab.ui.CircleImageView android:layout_gravity="center_vertical" android:id="@id/ub__true_earnings_advance_filters_avatar" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" app:analyticsId="a2f4f64d-d595" />
+	<com.ubercab.ui.core.UPlainView android:layout_width="?contentInset" android:layout_height="fill_parent" />
+	<com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/ub__true_earnings_advance_filters_driver_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" app:analyticsId="6f23b0e9-75aa" style="@style/Platform.TextStyle.Paragraph.Normal" />
+	<com.ubercab.ui.core.UCheckBox android:theme="@style/Fleet.Button.Checkbox.Primary" android:layout_gravity="center_vertical" android:id="@id/ub__true_earnings_advance_filters_checkbox" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.ubercab.ui.core.ULinearLayout>

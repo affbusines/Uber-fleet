@@ -1,0 +1,111 @@
+.class public interface abstract Lcom/ubercab/presidio/identity_config/edit_flow/c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a()Lio/reactivex/Observable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/Observable<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract a(Larl/l;)V
+.end method
+
+.method public abstract a(Lcom/ubercab/presidio/identity_config/edit_flow/address/c;)V
+.end method
+
+.method public abstract a(Ljava/lang/String;)V
+.end method
+
+.method public abstract b()Lio/reactivex/Observable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/Observable<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract b(Ljava/lang/String;)V
+.end method
+
+.method public abstract c()Lio/reactivex/Observable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/Observable<",
+            "Larl/l;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract c(Ljava/lang/String;)V
+.end method
+
+.method public abstract d()Lio/reactivex/Observable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/Observable<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract e()Lio/reactivex/Observable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/Observable<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract f()Lio/reactivex/Observable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/Observable<",
+            "Lcom/ubercab/presidio/identity_config/edit_flow/address/c;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract g()Lio/reactivex/Observable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/Observable<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract h()Lio/reactivex/Observable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/Observable<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract i()Z
+.end method

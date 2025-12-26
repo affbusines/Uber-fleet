@@ -1,0 +1,156 @@
+.class public final Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Companion;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    .line 99
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lawt/h;)V
+    .registers 2
+
+    invoke-direct {p0}, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Companion;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final builder()Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;
+    .registers 4
+
+    .line 102
+    new-instance v0, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x3
+
+    invoke-direct {v0, v1, v1, v2, v1}, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;-><init>(Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload;Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayloadUnionType;ILawt/h;)V
+
+    return-object v0
+.end method
+
+.method public final builderWithDefaults()Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;
+    .registers 5
+
+    .line 107
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Companion;->builder()Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;
+
+    move-result-object v0
+
+    .line 108
+    sget-object v1, Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload;->Companion:Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload$Companion;
+
+    invoke-virtual {v1}, Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload$Companion;->stub()Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;->riderPriceConsistentRouteConfigurationPayload(Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload;)Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;
+
+    move-result-object v0
+
+    .line 109
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    new-instance v2, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Companion$builderWithDefaults$1;
+
+    sget-object v3, Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload;->Companion:Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload$Companion;
+
+    invoke-direct {v2, v3}, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Companion$builderWithDefaults$1;-><init>(Ljava/lang/Object;)V
+
+    check-cast v2, Laws/a;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->nullableOf(Laws/a;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;->riderPriceConsistentRouteConfigurationPayload(Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload;)Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;
+
+    move-result-object v0
+
+    .line 110
+    sget-object v1, Lcom/uber/model/core/internal/RandomUtil;->INSTANCE:Lcom/uber/model/core/internal/RandomUtil;
+
+    const-class v2, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayloadUnionType;
+
+    invoke-virtual {v1, v2}, Lcom/uber/model/core/internal/RandomUtil;->randomMemberOf(Ljava/lang/Class;)Ljava/lang/Enum;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayloadUnionType;
+
+    invoke-virtual {v0, v1}, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;->type(Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayloadUnionType;)Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final createRiderPriceConsistentRouteConfigurationPayload(Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload;)Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload;
+    .registers 4
+
+    .line 121
+    sget-object v0, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayloadUnionType;->RIDER_PRICE_CONSISTENT_ROUTE_CONFIGURATION_PAYLOAD:Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayloadUnionType;
+
+    .line 120
+    new-instance v1, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload;
+
+    invoke-direct {v1, p1, v0}, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload;-><init>(Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload;Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayloadUnionType;)V
+
+    return-object v1
+.end method
+
+.method public final createUnknown()Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload;
+    .registers 5
+
+    .line 127
+    new-instance v0, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload;
+
+    .line 128
+    sget-object v1, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayloadUnionType;->UNKNOWN:Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayloadUnionType;
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    .line 127
+    invoke-direct {v0, v2, v1, v3, v2}, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload;-><init>(Lcom/uber/model/core/generated/crack/lunagateway/benefits/RiderPriceConsistentRouteConfigurationPayload;Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayloadUnionType;ILawt/h;)V
+
+    return-object v0
+.end method
+
+.method public final stub()Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload;
+    .registers 2
+
+    .line 115
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Companion;->builderWithDefaults()Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload$Builder;->build()Lcom/uber/model/core/generated/crack/lunagateway/benefits/BenefitConfigurationPayload;
+
+    move-result-object v0
+
+    return-object v0
+.end method

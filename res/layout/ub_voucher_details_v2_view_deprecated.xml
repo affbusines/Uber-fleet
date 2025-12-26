@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.ubercab.profiles.features.voucher_details.v2.VoucherDetailsV2View xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.ubercab.ui.core.widget.CollapsingHeaderAppBarLayout android:theme="?toolbarTheme" android:id="@id/appbar" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="@dimen/ui__header_height" android:stateListAnimator="@animator/header_elevation" app:contentInsetStartWithNavigation="0.0dip" />
+	<com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__voucher_details_items" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	</com.ubercab.ui.core.UScrollView>
+</com.ubercab.profiles.features.voucher_details.v2.VoucherDetailsV2View>
