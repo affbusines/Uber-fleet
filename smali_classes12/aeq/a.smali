@@ -514,21 +514,10 @@
 
     invoke-virtual {v13, v0}, Lcom/ubercab/ui/core/list/t$a;->b(Lcom/ubercab/ui/core/list/r;)V
 
-    if-nez p1, :cond_ed
-
-    .line 115
-    invoke-virtual {v12}, Lcom/uber/model/core/generated/edge/services/vehicle_supplier/vs_documents/Document;->isReadOnly()Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_e0
-
-    .line 116
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    if-nez v0, :cond_ed
+    # Server checks removed - upload button always visible
+    # Original: if-nez p1, :cond_ed (isBanned check)
+    # Original: isReadOnly() check
+    # Both bypassed to always show upload button
 
     .line 117
     :cond_e0
