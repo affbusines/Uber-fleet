@@ -60,21 +60,8 @@
     .line 41
     invoke-super {p0, p1}, Lcom/uber/rib/core/c;->a(Lcom/uber/rib/core/e;)V
 
-    .line 42
-    iget-object p1, p0, Lcom/ubercab/fleet_forced_upgrade/upgrade/d;->g:Lcom/ubercab/analytics/core/e;
-
-    const-string v0, "239998ec-2218"
-
-    invoke-virtual {p1, v0}, Lcom/ubercab/analytics/core/e;->a(Ljava/lang/String;)V
-
-    .line 43
-    iget-object p1, p0, Lcom/ubercab/fleet_forced_upgrade/upgrade/d;->c:Ljava/lang/Object;
-
-    check-cast p1, Lcom/ubercab/fleet_forced_upgrade/upgrade/h;
-
-    iget-object v0, p0, Lcom/ubercab/fleet_forced_upgrade/upgrade/d;->h:Lcom/ubercab/fleet_forced_upgrade/upgrade/b;
-
-    invoke-virtual {p1, v0}, Lcom/ubercab/fleet_forced_upgrade/upgrade/h;->a(Lcom/ubercab/fleet_forced_upgrade/upgrade/b;)V
+    # Force upgrade disabled - skip upgrade UI trigger
+    # Original code that showed upgrade popup has been removed
 
     return-void
 .end method
@@ -188,17 +175,8 @@
 .method public h()V
     .registers 3
 
-    .line 78
-    iget-object v0, p0, Lcom/ubercab/fleet_forced_upgrade/upgrade/d;->g:Lcom/ubercab/analytics/core/e;
-
-    const-string v1, "a75a6d8e-514d"
-
-    invoke-virtual {v0, v1}, Lcom/ubercab/analytics/core/e;->a(Ljava/lang/String;)V
-
-    .line 79
-    iget-object v0, p0, Lcom/ubercab/fleet_forced_upgrade/upgrade/d;->b:Lcom/uber/rib/core/RibActivity;
-
-    invoke-virtual {v0}, Lcom/uber/rib/core/RibActivity;->finish()V
+    # Force upgrade disabled - do NOT finish activity
+    # Original code called activity.finish() to force-close the app
 
     return-void
 .end method
